@@ -95,8 +95,25 @@ a{
 }
 
 .faixa2-botao{
-    border-radius: 15%;
+    border-radius: 10em;
+    width: 14em;
+    height: 5em;
+    font-style: italic;
+    font-size: 1em;
+    background-color: #9A9A9A;
+    color: white;
 }
+
+.botao-faixa3{
+    border-radius: 10em;
+    width: 14em;
+    height: 5em;
+    font-style: italic;
+    font-size: 1em;
+    background-color: #9A9A9A;
+    color: white;
+}
+
 
 
 .autoestima{
@@ -136,4 +153,80 @@ a{
 
 .faixa3-conteudo{
     padding-top: 15em;
+}
+
+.tipos-de-assedio{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: center;
+}
+
+.faixa4-conteudo{
+    padding-top: 15em;
+}
+
+.faixa4-texto1{
+    text-align: center;
+    
+    font-size: 2.2em;
+    color: #0C0716;
+    font-style: italic;
+} 
+
+.faixa4-texto2{
+    text-align: center;
+    
+    font-size: 2.2em;
+    color: #0C0716;
+    font-style: italic;
+} 
+ 
+ 
+.botao-faixa4{
+    border-radius: 10em;
+    width: 14em;
+    height: 5em;
+    font-style: italic;
+    font-size: 1em;
+    background-color: #9A9A9A;
+    color: white;
+   
+}
+
+.faixa4-image{
+    padding-top: 12em;
+    padding-left: 18em;
+}
+
+.faixa4-botao{
+    text-align: center;
+}
+
+.pagina-mapa{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: whitesmoke;
+    justify-content: center;
+    
+}
+
+.pagina-chat{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.pagina-denuncia{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: whitesmoke;
+}
+
+.pagina-quem-somos{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
 }
