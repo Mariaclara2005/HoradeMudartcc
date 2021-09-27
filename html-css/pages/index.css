@@ -11,7 +11,7 @@ a{
 }
 
 .pagina-principal{
-    background-image: url(../images/mulheres1.png);
+    background-image: url(../src/images/mulheres1.png);
     height: 100%;
     margin: -5px;
     background-size: 100% 100%;
