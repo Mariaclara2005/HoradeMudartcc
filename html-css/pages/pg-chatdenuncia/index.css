@@ -1,0 +1,221 @@
+.site{
+    margin: 0px;
+}   
+
+
+
+.container {
+    background-color: #445D75;
+    width: 100%;
+    height: 220px;
+    margin: 0px;
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.logo{
+    margin-right: 62em;
+}
+
+.cabecalho-botoes {
+    position: absolute;
+    width: 705px;
+    height: 16px;
+    left: 1200px;
+    top: 33px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.titulo {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 59px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.conteudo {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.chat {
+    margin-top: 0px;
+    flex-direction: row;
+    justify-content: center;
+    background: #B2BBC2;
+    width: 90%;
+    height: 40em;
+    border-radius: 25px;
+}
+
+.policial1{
+    position: absolute;
+    width: 50px;
+    height: 18px;
+    left: 139px;
+    top: 330px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    color: #000000;
+}
+
+.user1{
+    position: absolute;
+    left: 115px;
+    top: 367px;
+}
+
+.balao1{
+    position: absolute;
+    width: 349px;
+    height: 79px;
+    left: 258px;
+    top: 367px;
+    background: #FFFFFF;
+    border-radius: 30px;
+}
+
+.text1{
+    position: absolute;
+    width: 311px;
+    height: 29px;
+    left: 277px;
+    top: 392px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 29px;
+    text-align: center;
+    color: #000000;
+}
+
+.policial2{
+    position: absolute;
+    width: 50px;
+    height: 18px;
+    left: 139px;
+    top: 504px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    color: #000000;
+}
+
+.user2{
+    position: absolute;
+    left: 115px;
+    top: 532px;
+}
+
+.balao2 {
+    position: absolute;
+    width: 441px;
+    height: 70px;
+    left: 258px;
+    top: 532px;
+    background: #FFFFFF;
+    border-radius: 30px;
+}
+
+.text2 {
+    position: absolute;
+    width: 380px;
+    height: 29px;
+    left: 280px;
+    top: 552px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 29px;
+    text-align: center;
+    color: #000000;
+}
+
+.searchbox{
+    width: 800px;
+    height: 45px;
+    background-color: white;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    padding: 7px;
+    margin-left: 25em;
+     margin-top: 35em;
+ }
+
+.searchbox > i {
+    font-size: 20px;
+    color: #978888;
+
+}
+
+.searchbox > input {
+    flex: 1;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 24px;
+}
+
+.enviar{
+    position: absolute;
+    width: 42px;
+    height: 18px;
+    left: 1238px;
+    top: 885px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    color: #000000;
+}
+
+.local{
+    position: absolute;
+    width: 156px;
+    height: 18px;
+    left: 1400px;
+    top: 815px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    color: #000000;
+}
+
+.localimg{
+    position: absolute;
+    left: 1410px;
+    top: 850px;
+    
+}
+
