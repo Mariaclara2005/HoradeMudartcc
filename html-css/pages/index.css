@@ -20,15 +20,25 @@ a{
 .cabecalho-inicio{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     
+    
+}
+
+.cabecalho-img{
+    margin-top: 1em;
+    margin-left: 2em;
+}
+
+.cabecalho-botoes a {
+    margin: 0em .4em;
     
 }
 
 .cabecalho-botoes{
     margin-top: 4em;
-    margin-left: 22em;
-    justify-content: space-between;
+    margin-right: 2em;
+    
 }
 
 
@@ -97,27 +107,29 @@ a{
 .faixa2-botao{
     border-radius: 10em;
     width: 14em;
-    height: 5em;
+    height: 3em;
     font-style: italic;
     font-size: 1em;
     background-color: #9A9A9A;
     color: white;
+    border-color: #0C0716;
 }
 
 .botao-faixa3{
     border-radius: 10em;
     width: 14em;
-    height: 5em;
+    height: 3em;
     font-style: italic;
     font-size: 1em;
     background-color: #9A9A9A;
     color: white;
+    border-color: #0C0716;
 }
 
 
 
 .autoestima{
-    background-color: #9A9A9A;    
+    background-color: #DCDCDC;    
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -164,6 +176,7 @@ a{
 
 .faixa4-conteudo{
     padding-top: 15em;
+    padding-left: 4em;
 }
 
 .faixa4-texto1{
@@ -176,21 +189,24 @@ a{
 
 .faixa4-texto2{
     text-align: center;
-    
+    margin-top: 3em;
     font-size: 2.2em;
     color: #0C0716;
     font-style: italic;
 } 
+
+
  
  
 .botao-faixa4{
     border-radius: 10em;
     width: 14em;
-    height: 5em;
+    height: 3em;
     font-style: italic;
     font-size: 1em;
     background-color: #9A9A9A;
     color: white;
+    border-color: #0C0716;
    
 }
 
@@ -201,6 +217,7 @@ a{
 
 .faixa4-botao{
     text-align: center;
+    padding-top: 7em;
 }
 
 .pagina-mapa{
@@ -208,25 +225,154 @@ a{
     display: flex;
     flex-direction: row;
     background-color: whitesmoke;
-    justify-content: center;
-    
+    justify-content: space-between;   
+    align-items: center;
+}
+
+.faixa5-conteudo{
+    align-items: center;
+    ;
+}
+
+.faixa5-image{
+    padding-left: 5em ;    
+}
+
+.faixa5-texto{
+    text-align: center;
+    font-style: italic;
+    font-size: 2.2em;
+    color: #1A284D;
+}
+
+.botao-faixa5{
+    border-radius: 10em;
+    width: 14em;
+    height: 3em;
+    font-style: italic;
+    font-size: 1em;
+    background-color: #9A9A9A;
+    color: white;
+    border-color: #0C0716;
+}
+
+.faixa5-botao{
+    padding-top: 5em;
+    align-items: center;
 }
 
 .pagina-chat{
     height: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
+
+.faixa6-texto{
+    text-align: center;
+    font-style: italic;
+    font-size: 2.2em;
+    color: #1A284D;
+}
+
+.faixa6-conteudo{
+    align-items: center;
+}
+
+.botao-faixa6{
+    border-radius: 10em;
+    width: 14em;
+    height: 3em;
+    font-style: italic;
+    font-size: 1em;
+    background-color: #9A9A9A;
+    color: white;
+    border-color: #0C0716;
+}
+
+
 
 .pagina-denuncia{
     height: 100%;
     display: flex;
     flex-direction: row;
     background-color: whitesmoke;
+    justify-content: center;
+    align-items: center;
 }
+
+.faixa7-conteudo{
+    text-align: center;
+}
+
+.faixa7-texto1{
+    text-align: center;
+    font-style: italic;
+    font-size: 2.2em;
+    color: #1A284D;
+}
+
+.faixa7-texto2{
+    text-align: center;
+    font-size: 2.2em;
+    margin-top: 3em;
+}
+
+.faixa7-botao{
+    padding-top: 6em;
+}
+
+.botao-faixa7{
+    border-radius: 10em;
+    width: 14em;
+    height: 3em;
+    font-style: italic;
+    font-size: 1em;
+    background-color: #9A9A9A;
+    color: white;
+    border-color: #0C0716;
+}
+
+
 
 .pagina-quem-somos{
     height: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 3em;
+}
+
+.faixa8-conteudo{
+    text-align: center;
+}
+
+.faixa8-texto1{
+    text-align: center;
+    font-style: italic;
+    font-size: 2.2em;
+    color: #1A284D;
+}
+
+.faixa8-texto2{
+    text-align: center;
+    font-size: 2.2em;
+    margin-top: 3em;
+}
+
+.faixa8-botao{
+    padding-top: 6em;
+}
+
+.botao-faixa8{
+    border-radius: 10em;
+    width: 14em;
+    height: 3em;
+    font-style: italic;
+    font-size: 1em;
+    background-color: #9A9A9A;
+    color: white;
+    border-color: #0C0716;
 }
