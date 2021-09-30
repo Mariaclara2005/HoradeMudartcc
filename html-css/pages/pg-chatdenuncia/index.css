@@ -1,42 +1,39 @@
-.site{
+.body {
     margin: 0px;
-}   
+  }
+
+  a{
+      color: white;
+  }
+  
+  .faixa1{
+      background-color: #445D75 ;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+  }
+
+  .cabecalho{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+  }
 
 
-
-.container {
-    background-color: #445D75;
-    width: 100%;
-    height: 220px;
-    margin: 0px;
+  .menu a {
+    margin: 0em .5em;
+    
 }
 
-.cabecalho{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
+  .menu{
+      display: flex;
+      flex-direction: row;
+      padding-right: 1em;
+      padding-top: 0em;     
+  }
 
-.logo{
-    margin-right: 62em;
-}
-
-.cabecalho-botoes {
-    position: absolute;
-    width: 705px;
-    height: 16px;
-    left: 1200px;
-    top: 33px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    text-align: center;
-    color: #FFFFFF;
-}
-
-.titulo {
+  .texto{
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
@@ -44,18 +41,18 @@
     line-height: 59px;
     text-align: center;
     color: #FFFFFF;
-}
+  }
 
 .conteudo {
     background-color: white;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 60px;
 }
 
 .chat {
-    margin-top: 0px;
+    margin-top: 40px;
     flex-direction: row;
     justify-content: center;
     background: #B2BBC2;
@@ -65,11 +62,8 @@
 }
 
 .policial1{
-    position: absolute;
-    width: 50px;
-    height: 18px;
-    left: 139px;
-    top: 330px;
+    padding-top: 2em;
+    padding-right: 90em;
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
@@ -80,27 +74,23 @@
 }
 
 .user1{
-    position: absolute;
-    left: 115px;
-    top: 367px;
+    padding-top: 1em;
+    padding-left: 6.5em;
 }
 
 .balao1{
-    position: absolute;
+    
     width: 349px;
-    height: 79px;
-    left: 258px;
-    top: 367px;
+    height: 60px;
+    margin-top: -5.5em;
+    margin-left: 14em;
     background: #FFFFFF;
     border-radius: 30px;
 }
 
 .text1{
-    position: absolute;
-    width: 311px;
-    height: 29px;
-    left: 277px;
-    top: 392px;
+    padding-right: 35em;
+    margin-top: -1.9em;
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
@@ -111,11 +101,8 @@
 }
 
 .policial2{
-    position: absolute;
-    width: 50px;
-    height: 18px;
-    left: 139px;
-    top: 504px;
+    padding-top: 7em;
+    padding-right: 90em;
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
@@ -126,31 +113,26 @@
 }
 
 .user2{
-    position: absolute;
-    left: 115px;
-    top: 532px;
+    padding-top: 1em;
+    padding-left: 6.5em;
 }
 
 .balao2 {
-    position: absolute;
-    width: 441px;
-    height: 70px;
-    left: 258px;
-    top: 532px;
+    width: 349px;
+    height: 60px;
+    margin-left: 14em;
+    margin-top: -5.5em;
     background: #FFFFFF;
     border-radius: 30px;
 }
 
 .text2 {
-    position: absolute;
-    width: 380px;
-    height: 29px;
-    left: 280px;
-    top: 552px;
+    padding-right: 38em;
+    margin-top: -2em;
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
-    font-size: 25px;
+    font-size: 23px;
     line-height: 29px;
     text-align: center;
     color: #000000;
@@ -165,7 +147,7 @@
     align-items: center;
     padding: 7px;
     margin-left: 25em;
-     margin-top: 35em;
+     margin-top: 15em;
  }
 
 .searchbox > i {
@@ -183,11 +165,8 @@
 }
 
 .enviar{
-    position: absolute;
-    width: 42px;
-    height: 18px;
-    left: 1238px;
-    top: 885px;
+    padding-left: 40em;
+    margin-top: -2.5em;
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
@@ -198,11 +177,8 @@
 }
 
 .local{
-    position: absolute;
-    width: 156px;
-    height: 18px;
-    left: 1400px;
-    top: 815px;
+    padding-left: 71em;
+    margin-top: -5em;
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
@@ -213,9 +189,8 @@
 }
 
 .localimg{
-    position: absolute;
-    left: 1410px;
-    top: 850px;
+    padding-left: 81.6em;
+    margin-top: 1em;
     
 }
 

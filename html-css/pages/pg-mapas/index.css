@@ -24,12 +24,12 @@ body {
 }
 
 .logo{
-    margin-right: 62em;
+    padding-right: 62em;
 }
 
 .encaminha{
-    margin-top: 2em;
-    margin-left: 3.4em;
+    padding-top: 2em;
+    padding-left: 3.4em;
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
@@ -55,9 +55,9 @@ body {
 }
 
 .research{
-    margin-right: 5em;
+    padding-right: 5em;
     margin-left: -8em;
-    margin-top: 0em;
+    padding-top: 0em;
 }
 
 .searchbox{
@@ -87,8 +87,8 @@ body {
 }
 
 .mapa{
-    margin-left: 28em;
-    margin-top: 1em;
+   padding-left: 28em;
+    padding-top: 1em;
 }
 
 .conteudo2{
@@ -97,57 +97,47 @@ body {
     flex-direction: row;
     justify-content: center;
     margin-bottom: 150px;
+    
 }
 
 .mulher{
-    margin-right: 65em;
-    margin-top: 07em;
+   
+    padding-top: 07em;
 }
 
 .text2{
-    position: absolute;
-    left: 30.81%;
-    right: 4.51%;
-    top: 95%;
-    bottom: 34.53%;
+    margin-left: 6.5em;
+    padding-top: 1em;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 65px;
-    line-height: 76px;
+    line-height: 65px;
     text-align: center;
 
     color: #090808;
 }
 
 .text3{
-
-    position: absolute;
-    left: 44.9%;
-    right: 17.67%;
-    top: 105%;
-    bottom: 32.65%;
+    margin-left: -21em;
+    padding-top: 7em;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
-    line-height: 35px;
+    line-height: 25px;
     text-align: center;
 
     color: #0A344A;
 }
 
 .text4{
-    position: absolute;
-    left: 47%;
-    right: 20%;
-    top: 124%;
-    bottom: 19.06%;
-    
+    padding-top: 8em;
+    margin-left: -20em;
     
     font-family: Roboto;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 50px;
     line-height: 59px;
     text-align: center;
@@ -155,6 +145,9 @@ body {
     color: #0A344A;
 }
 
+.config{
+    align-items: center;
+}
 .btn2{
     width: 200px;
     height: 50px;
@@ -166,14 +159,8 @@ body {
     transition: ease-out 0.3s;
     font-size: 2rem;
     outline: none;
-
-    position: absolute;
-    left: 57.23%;
-    right: 27.66%;
-    top: 150%;
-    bottom: 10%;
-    margin-bottom: 100px;
-
+    margin-left: -22em;
+    margin-top: 17em;
 }
 
 .btn2:hover {
