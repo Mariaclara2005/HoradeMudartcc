@@ -103,6 +103,7 @@ body {
   margin: 3em;
   margin-right: 5em;
   margin-left: 5em;
+  border-radius: 25px;
 }
 
 .faixa3 {
@@ -122,6 +123,7 @@ body {
 .mensagem1 {
   background: #fcefef;
   width: 700px;
+  font-family: Roboto-Medium;
 }
 
 .usuario1 {
@@ -159,10 +161,9 @@ body {
 }
 
 .mensagem2 {
-  background: #fcefef;
-  width: 700px;
-  margin-left: 15em;
-  margin-right: 15em;
+    background: #fcefef;
+    width: 700px;
+    font-family: Roboto-Medium;
 }
 
 .reagir_msg2 {
@@ -215,7 +216,7 @@ body {
 .coracao3 img {
   width: 17px;
   height: 18px;
-  margin-left: 10px;
+  margin-right: 20px;
 }
 
 .comentario {
@@ -231,4 +232,16 @@ body {
 
 .digitar {
   position: absolute;
+}
+
+.reponder1{
+    margin-left: 30em;;
+}
+
+.reponder2{
+    margin-left: 30em;;
+}
+
+.reponder3{
+    margin-left: 30em;;
 }
