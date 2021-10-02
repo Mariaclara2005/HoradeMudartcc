@@ -1,5 +1,6 @@
 .body {
     margin: 0px;
+    border: 0px;
   }
 
   a{
@@ -93,8 +94,7 @@
 .faixa2-texto2{
     padding-top: 3em;
     font-family: Roboto-medium;
-    padding-right: ;
-    font-size: em;
+    
 }
 
 .faixa3{

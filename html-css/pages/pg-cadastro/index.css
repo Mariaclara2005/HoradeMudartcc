@@ -1,0 +1,43 @@
+.container{
+    background-color: #7DA074;
+    margin: 0px ;
+}
+
+
+a{
+    color: white;
+}
+
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.menu a {
+  margin: 0em .5em;
+  
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    padding-right: 3em;    
+    font-family: Roboto-medium; 
+}
+
+.logo{
+    padding: 1em;
+}
+
+.input{
+    display: flex ;
+    flex-direction: row;
+}
+
+.container2{
+    box-sizing: border-box;
+}
