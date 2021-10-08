@@ -1,0 +1,164 @@
+body {
+    margin: 0px;
+  }
+  
+  a {
+    color: white;
+  }
+  
+  .faixa1 {
+    background-color: #9a9a9a;
+    height: 100%;
+  }
+  
+  .cabecalho-inicio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .conteudo-faixa1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10em;
+  }
+  
+  .faixa1-titulo {
+    text-align: center;
+    color: white;
+    font-size: 4em;
+  }
+  
+  .faixa1-textos {
+    padding-right: 5em;
+  }
+  
+  .faixa1-txt {
+    text-align: center;
+    color: white;
+    padding-top: 4em;
+  }
+  
+  .cabecalho-botoes a {
+    margin: 0em 0.5em;
+  }
+  
+  .cabecalho-botoes {
+    margin-top: 3em;
+  }
+  
+  .img-tpdeviolencia {
+    height: 30em;
+    width: 30em;
+    padding-right: 8em;
+  }
+  
+  .faixa-2 {
+    background-color: #dae0dd;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+  }
+  
+  .faixa2-img {
+    height: 35em;
+    width: 35em;
+  }
+  
+  .texto1-faixa2 {
+    text-align: center;
+    color: #105f67;
+    font-size: 4em;
+  }
+  
+  .texto2-faixa2 {
+    text-align: center;
+    font-size: 1em;
+    padding-top: 5em;
+  }
+  
+  .faixa3 {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+    background-color: #f8faff;
+  }
+  
+  .faixa3-texto1 {
+    text-align: center;
+    color: #632b50;
+    font-size: 5em;
+  }
+  
+  .faixa3-texto2 {
+    text-align: center;
+    padding-top: 15em 17em;
+  }
+  
+  .img-faixa3 {
+    height: 37em;
+    width: 35em;
+  }
+  
+  .faixa4 {
+    background-color: #eff1f5;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .img-faixa4 {
+    height: 35em;
+    width: 35em;
+  }
+  
+  .faixa4-texto1 {
+    color: #392457;
+    text-align: center;
+    font-size: 4em;
+  }
+  
+  .faixa4-texto2 {
+    padding-top: 5em;
+  }
+  
+  .faixa5 {
+    background-color: #f8faff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .faixa5-conteudo {
+    align-items: center;
+  }
+  
+  .faixa5-texto1 {
+    color: #0e34ee;
+    font-size: 4em;
+    text-align: center;
+  }
+  
+  .faixa5-texto2 {
+    padding-top: 5em;
+  }
+  
+  .img-faixa5 {
+    height: 40em;
+    width: 40em;
+  }
+  
+  .faixa6 {
+    background-color: #eff1f5;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+  }
+  
