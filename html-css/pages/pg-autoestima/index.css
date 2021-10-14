@@ -1,4 +1,4 @@
-.body {
+body {
     margin: 0px;
     border: 0px;
   }
@@ -55,7 +55,7 @@
   }
 
   .titulo{
-    color: #8D857D ;
+    color: #8D857D ; 
     font-size: 5em;
     text-align: center;
     font-family: Roboto-medium;
@@ -89,12 +89,30 @@
     font-family:Roboto-medium ;
     font-size: 3em;
     padding:0.2em;
+    margin-right: auto;
+
+}
+
+.faixa2-img img {
+    width: 655px;
+}
+.faixa2-img {
+    position: relative;
+    animation-name: imagemFx2;
+    animation-duration: 7s ;    
+    animation-iteration-count: infinite;
+}
+ @keyframes imagemFx2{
+    0%{top: 50px}
+    50%{top: -80px}
+    100%{top: 50px}
+
 }
 
 .faixa2-texto2{
     padding-top: 3em;
     font-family: Roboto-medium;
-    
+    margin-right: 5em;    
 }
 
 .faixa3{

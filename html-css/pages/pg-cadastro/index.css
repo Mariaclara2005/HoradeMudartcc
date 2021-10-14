@@ -2,32 +2,48 @@ body {
     margin: 0;
 }
 
+a{
+    text-align: right;
+    color: white;
+
+}
 .container {
     background: #7DA074;
-    padding: 3.5em;
+    padding: 1em 3.5em;
+    height:  100vh;
 }
 
-.logo-1 {
-    width: 150px;
-    height: 90px;
-    margin-right: 30em;
-    margin-top: 6em;
+.imagem {
+    width: 8em;
+    height: 8em;
+
+}
+
+.faixa1{
+    margin-top: 1em ;
 }
 
 .menu {
     font-family: Roboto-Medium;
     font-size: 14px;
-    margin-top: -6em;
+    /* margin-top: -6em; */
     margin-left: 1em;
     height: -30px;
+    display: flex;
+    align-items: center;
+
+}
+
+.menu a {
+    margin: .5em;
 }
 
 .cabecalho {
     display: flex;
     flex-direction: row;
     margin-left: 1em;
-    margin-top: 40px;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .cadastro {
@@ -37,27 +53,23 @@ body {
     border-radius: 20px;
     height: 590,30px;
     width: 504px;
-    
+    padding-top: 7px;
+
+        
 }
 .conteudo {
     display: flex;
     flex-direction: row;
 }
 
-.imagem img {
-    width: 35em;
-    height: 35em;
-    margin-left: 3em;
-    margin-right: 1em;
-    align-items: center;
-}
+
 
 .titulo{
-    margin: 20px;
+    text-align: center;
     font-family: Roboto-Medium;
     font-size: 40px;
     margin-top: 1em;
-    margin-left: 2.5em;
+   
 }
 
 .indentificacao {
@@ -103,7 +115,8 @@ body {
 
 input {
     background: #C4C4C4;
-    border-radius: 15px;
+    border-radius: 10px;
+    border-color:transparent;
 }
 
 button {
@@ -116,4 +129,6 @@ button {
     font-family: Roboto-Medium;
     font-size: 20px;
     margin-top: 2em;
+    border-color: transparentP;
 }
+
