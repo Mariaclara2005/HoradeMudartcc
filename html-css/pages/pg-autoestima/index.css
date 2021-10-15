@@ -8,7 +8,7 @@ body {
   }
   
   .faixa1{
-      background-color: #C2DCB6;
+      background-color: #7DA074;
       height: 100%;
       display: flex;
       flex-direction: column;
@@ -38,7 +38,7 @@ body {
   .conteudo{
       display: flex;
       flex-direction: row;
-      background-color: #C2DCB6;
+      background-color: #7DA074;
       align-items: center;
       justify-content: center;
   }
@@ -112,7 +112,10 @@ body {
 .faixa2-texto2{
     padding-top: 3em;
     font-family: Roboto-medium;
-    margin-right: 5em;    
+    font-size: 1.3em;
+    margin-right: 5em; 
+    text-align: justify;   
+    
 }
 
 .faixa3{

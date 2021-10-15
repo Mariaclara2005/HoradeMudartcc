@@ -72,6 +72,8 @@ a{
    
 }
 
+
+
 .indentificacao {
     display: flex;
     flex-direction: row;
@@ -107,6 +109,7 @@ a{
 .senha {
     margin: 10px;
     margin-right: 10px;
+
 }
 
 .confirmar-senha {
@@ -115,8 +118,10 @@ a{
 
 input {
     background: #C4C4C4;
-    border-radius: 10px;
+    border-radius: 15px;
     border-color:transparent;
+    height: 2em;
+    padding-left: 5px;
 }
 
 button {
@@ -129,6 +134,6 @@ button {
     font-family: Roboto-Medium;
     font-size: 20px;
     margin-top: 2em;
-    border-color: transparentP;
+    border-color: transparent;
 }
 
