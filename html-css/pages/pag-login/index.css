@@ -1,65 +1,83 @@
-.container{
-    background-color: #7DA074;
-    margin: 0px ;
+body {
+    margin: 0;
 }
-
 
 a{
+    text-align: right;
     color: white;
+    text-shadow: #000000;
+
+}
+.container {
+    background: #7DA074;
+    padding: 1em 3.5em;
+    height:  100%;
+    
 }
 
 
-.cabecalho{
+
+.imagem {
+    width: 8em;
+    height: 8em;
+    margin-top: -1em ;
+
+}
+
+.faixa1{
+    margin-top: 1em ;
+}
+
+.menu {
+    font-family: Roboto-Medium;
+    font-size: 15px;
+    margin-top: -2em; 
+    margin-left: 1em;
+    height: -30px;
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-}
 
+}
 
 .menu a {
-  margin: 0em .5em;
-  
+    margin: .5em;
 }
 
-.menu{
+.cabecalho {
     display: flex;
     flex-direction: row;
-    padding-right: 3em;    
-    font-family: Roboto-medium; 
+    margin-left: 1em;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.logo{
-    padding: 1em;
-}
-
-.login {
+.Login {
     display: flex;
     flex-direction: column;
     background: #FDFDFD;
     border-radius: 20px;
     height: 590,30px;
     width: 504px;
-    
+    padding-top: 7px;
+
+        
 }
 .conteudo {
     display: flex;
     flex-direction: row;
 }
 
-.imagem img {
-    width: 746px;
-    height: 515px;
-    margin-left: 6em;
-}
+
 
 .titulo{
-    margin: 20px;
+    text-align: center;
     font-family: Roboto-Medium;
     font-size: 40px;
     margin-top: 1em;
-    margin-left: 2.5em;
+   
 }
+
+
 
 .indentificacao {
     display: flex;
@@ -96,6 +114,7 @@ a{
 .senha {
     margin: 10px;
     margin-right: 10px;
+
 }
 
 .confirmar-senha {
@@ -105,6 +124,9 @@ a{
 input {
     background: #C4C4C4;
     border-radius: 15px;
+    border-color:transparent;
+    height: 2em;
+    padding-left: 5px;
 }
 
 button {
@@ -117,4 +139,14 @@ button {
     font-family: Roboto-Medium;
     font-size: 20px;
     margin-top: 2em;
+    border-color: transparent;
+    
+  
+
 }
+
+.entrar :hover{
+    background-color: #57833a;
+    transition: 0.1s;
+}
+
