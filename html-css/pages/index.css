@@ -1,4 +1,4 @@
-.Container{
+].Container{
     
 }
 
@@ -101,7 +101,7 @@ a{
 .botao-faixa2{
     padding-top: 15em;
     text-align: center;
-   
+       
 }
 
 .faixa2-botao{
@@ -112,7 +112,7 @@ a{
     font-size: 1em;
     background-color: #9A9A9A;
     color: white;
-    border-color: #0C0716;
+    border: none;
 }
 
 .botao-faixa3{
@@ -159,7 +159,13 @@ a{
 .faixa3-botao{
     text-align: center;
     padding-top: 10em;
+    
 }
+
+.botao-faixa3{
+    border: none;
+}
+
 
 
 
@@ -206,7 +212,7 @@ a{
     font-size: 1em;
     background-color: #9A9A9A;
     color: white;
-    border-color: #0C0716;
+    border: none;
    
 }
 
@@ -253,7 +259,7 @@ a{
     font-size: 1em;
     background-color: #9A9A9A;
     color: white;
-    border-color: #0C0716;
+    border: none;
 }
 
 .faixa5-botao{
@@ -288,7 +294,7 @@ a{
     font-size: 1em;
     background-color: #9A9A9A;
     color: white;
-    border-color: #0C0716;
+    border: none;
 }
 
 
@@ -331,7 +337,7 @@ a{
     font-size: 1em;
     background-color: #9A9A9A;
     color: white;
-    border-color: #0C0716;
+    border: none;
 }
 
 
@@ -374,5 +380,5 @@ a{
     font-size: 1em;
     background-color: #9A9A9A;
     color: white;
-    border-color: #0C0716;
+    border: none;
 }
