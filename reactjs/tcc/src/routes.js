@@ -1,8 +1,8 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
-import TelaInicio from './pages/TelaInicial'
+//import TelaInicio from './pages/TelaInicial'
 import AutoEstima from './pages/AutoEstima'
-import TipoViolencia from './pages/TiposDeViolencia'
+//import TipoViolencia from './pages/TiposDeViolencia'
 import Chat from './pages/Chat'
 import Cadastro from './pages/Cadastro'
 import CadastroADM from './pages/CadastroADM'

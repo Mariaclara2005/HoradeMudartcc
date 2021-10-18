@@ -1,4 +1,4 @@
-import { Container } from "./styled";
+import { Container } from "../../styled";
 
 export default function index() {
     return(
