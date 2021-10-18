@@ -5,17 +5,22 @@ body {
 a{
     text-align: right;
     color: white;
+    text-shadow: #000000;
 
 }
 .container {
     background: #7DA074;
     padding: 1em 3.5em;
-    height:  100vh;
+    height:  100%;
+    
 }
+
+
 
 .imagem {
     width: 8em;
     height: 8em;
+    margin-top: -1em ;
 
 }
 
@@ -25,8 +30,8 @@ a{
 
 .menu {
     font-family: Roboto-Medium;
-    font-size: 14px;
-    /* margin-top: -6em; */
+    font-size: 15px;
+    margin-top: -2em; 
     margin-left: 1em;
     height: -30px;
     display: flex;
@@ -72,6 +77,8 @@ a{
    
 }
 
+
+
 .indentificacao {
     display: flex;
     flex-direction: row;
@@ -107,6 +114,7 @@ a{
 .senha {
     margin: 10px;
     margin-right: 10px;
+
 }
 
 .confirmar-senha {
@@ -115,8 +123,10 @@ a{
 
 input {
     background: #C4C4C4;
-    border-radius: 10px;
+    border-radius: 15px;
     border-color:transparent;
+    height: 2em;
+    padding-left: 5px;
 }
 
 button {
@@ -129,6 +139,14 @@ button {
     font-family: Roboto-Medium;
     font-size: 20px;
     margin-top: 2em;
-    border-color: transparentP;
+    border-color: transparent;
+    
+  
+
+}
+
+.entrar :hover{
+    background-color: #57833a;
+    transition: 0.1s;
 }
 
