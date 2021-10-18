@@ -5,25 +5,26 @@ const cabecalho = styled.div`{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-}
-`
-const menu  = styled.div` {
-    margin: 0em .5em;
-    
-}
-`
+    color: #fff;
 
-  const menu = styled.div`{
+   .menu {
+        margin: 0em .5em;
+        color: #fff;
+    }
+
+
+   .menuu{
       display: flex;
       flex-direction: row;
       padding-right: 3em;    
       font-family: Roboto-medium; 
+      color: #fff;
   }
-  `
 
-  const imagem = styled.div`{
+  .imagem {
     margin-left: 2em;
     margin-top: 1em;
-}
-`
-export { Container }
+  }
+}`
+
+export { cabecalho }

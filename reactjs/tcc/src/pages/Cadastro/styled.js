@@ -1,13 +1,13 @@
-body {
-    margin: 0;
-}
+import styled from 'styled-components'
 
-.container {
+
+const Container =  styled.div`
     background: #7DA074;
     padding: 1em 3.5em;
     height:  100%;
+    min-height: 100vh;
     
-}
+
 
 
 
@@ -18,6 +18,10 @@ body {
     color: white;
     text-shadow: 
 
+}
+
+.barra {
+    margin-left: -5em;
 }
 
 .faixa1{
@@ -61,6 +65,7 @@ body {
 .conteudo {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 
@@ -146,3 +151,6 @@ button {
     transition: 0.1s;
 }
 
+`
+
+export {Container}

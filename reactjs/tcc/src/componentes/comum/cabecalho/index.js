@@ -1,12 +1,14 @@
-import { Container } from "./styled";
+import { cabecalho, Container } from "./styled";
+
+import Img from '../../../assets/images/logo-claro.png'
 
 export default function index() {
     return(
-      <Container>
+      <cabecalho>
           <div class="cabecalho">
 
 <div class="imagem">
-    <img class="logo" src="../../src/images/logo-claro.png" />
+    <img class="logo" src={Img} />
  </div>
 
     <div class="menu">
@@ -21,6 +23,6 @@ export default function index() {
 
 
 </div>
-      </Container>
+      </cabecalho>
     )  
 }
