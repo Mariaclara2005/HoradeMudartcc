@@ -5,9 +5,7 @@ import AutoEstima from './pages/AutoEstima'
 //import TipoViolencia from './pages/TiposDeViolencia'
 
 import TelaInicio from './pages/TelaInicial'
-import AutoEstima from './pages/pg-autoestima'
 import TipoViolencia from './pages/TiposDeViolencia'
-
 import Chat from './pages/Chat'
 import Cadastro from './pages/Cadastro'
 import CadastroADM from './pages/CadastroADM'
