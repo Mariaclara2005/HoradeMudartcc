@@ -5,22 +5,22 @@ export default function index() {
       <Container>
           <div class="cabecalho">
 
-<div class="imagem">
-    <img class="logo" src="../../src/images/logo-claro.png" />
- </div>
+            <div class="imagem">
+                <img class="logo" src="../../src/images/logo-claro.png" />
+            </div>
 
-    <div class="menu">
-     <a href=" ">Inicio</a>
-     <a href=" ">Denúncie</a>
-     <a href=" ">Tipos de violência</a>
-     <a href=" ">Tipos de assédio</a>
-     <a href=" ">Mapa das Delegacias</a>
-     <a href=" ">Chat</a>
-     <a href=" ">Cadastro</a>
-    </div>
+                <div class="menu">
+                <a href=" ">Inicio</a>
+                <a href=" ">Denúncie</a>
+                <a href=" ">Tipos de violência</a>
+                <a href=" ">Tipos de assédio</a>
+                <a href=" ">Mapa das Delegacias</a>
+                <a href=" ">Chat</a>
+                <a href=" ">Cadastro</a>
+                </div>
 
 
-</div>
+            </div>
       </Container>
     )  
 }
