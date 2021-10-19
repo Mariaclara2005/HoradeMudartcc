@@ -1,17 +1,14 @@
-.Container{
-    
-}
+import styled from 'styled-components'; 
 
-body {
-    margin: 0px;
-}
+const Container= styled.div`
+
 
 a{
     color: cornsilk;
 }
 
 .pagina-principal{
-    background-image: url(../src/images/mulheres1.png);
+    background-image: url(/assets/imagens/mulheres1.png);
     height: 100%;
     margin: -5px;
     background-size: 100% 100%;
@@ -382,3 +379,7 @@ a{
     color: white;
     border: none;
 }
+
+`;
+
+export {Container}

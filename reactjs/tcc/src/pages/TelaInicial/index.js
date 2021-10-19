@@ -1,4 +1,4 @@
-
+import {Container} from './styled'
 
 export default function TelaInicial () {
     return(
@@ -10,7 +10,7 @@ export default function TelaInicial () {
             <div class="cabecalho-inicio">
 
                 <div class="cabecalho-img">
-                    <img src="../src/images/logo-claro.png"/>
+                    <img src="/assets/imagens/logo-claro.png" alt=""/>
                 </div>
                 
 
@@ -59,7 +59,7 @@ export default function TelaInicial () {
             </div>
 
             <div class="faixa2-img">
-                <img src="../src/images/tipos-de-violencia.png" class="animate__animated animate__bounce" />
+                <img src="/assets/imagens/tipos-de-violencia.png" class="animate__animated animate__bounce" alt="" />
             </div>
             
         </div>
@@ -67,7 +67,7 @@ export default function TelaInicial () {
         <div class="autoestima">
 
             <div class="faixa3-image">
-                <img class="img-faixa3" src="../src/images/autoestima.png" alt=""/>
+                <img class="img-faixa3" src="/assets/imagens/autoestima.png" alt=""/>
             </div>
 
             <div class="faixa3-conteudo">
@@ -99,7 +99,7 @@ export default function TelaInicial () {
             </div>
 
             <div class="faixa4-image">
-                <img src="../src/images/tipos-de-assedio.png"/>
+                <img src="/assets/imagens/tipos-de-assedio.png" alt=""/>
             </div>
 
         </div>
@@ -107,7 +107,7 @@ export default function TelaInicial () {
         <div class="pagina-mapa">
 
             <div class="faixa5-image">
-                <img src="../src/images/pg-inicio-denuncia.png"/>
+                <img src="/assets/imagens/pg-inicio-denuncia.png" alt=""/>
             </div>
 
             <div class="faixa5-conteudo">
@@ -137,7 +137,7 @@ export default function TelaInicial () {
             </div>
 
             <div class="faixa6-image">
-                <img src="../src/images/pg-inicio-chat.png"/>
+                <img src="/assets/imagens/pg-inicio-chat.png" alt=""/>
             </div>
 
         </div>
@@ -145,7 +145,7 @@ export default function TelaInicial () {
         <div class="pagina-denuncia">
 
             <div class="faixa7-image">
-                <img src="../src/images/pg-inicio-denunciaF.png" alt=""/>
+                <img src="/assets/imagens/pg-inicio-denunciaF.png" alt=""/>
             </div>
 
             <div class="faixa7-conteudo">
@@ -177,7 +177,7 @@ export default function TelaInicial () {
             </div>
 
             <div class="faixa8-image">
-                <img src="../src/images/pg-inicio-quemsomos.png"/ >
+                <img src="/assets/imagens/pg-inicio-quemsomos.png" alt=""/>
             </div>
 
         </div>
