@@ -1,0 +1,90 @@
+
+
+body {
+    margin: 0;
+}
+
+.container {
+    background: #7DA074;
+    padding: 3.5em;
+}
+
+.logo {
+    width: 150px;
+    height: 90px;
+    margin-right: 30em;
+    margin-top: -6em;
+}
+
+.menu {
+    font-family: Roboto-Medium;
+    font-size: 14px;
+    margin-top: -6em;
+    margin-left: 1em;
+    height: -30px;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    margin-left: 1em;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+.conteudo {
+    background: #FDFDFD;
+    border-radius: 20px;
+    width: 657.89px;
+    height: 391.77px;
+    margin-left: 15em;
+}
+
+.titulo {
+    font-family: Roboto-Medium;
+    font-size: 40px;
+    margin-top: 1em;
+    padding: 1em;
+    margin-left: 3.5em;
+}
+
+input {
+    background: #C4C4C4;
+    border-radius: 15px;
+    width: 320.95px;
+    height: 31.03px;
+    margin-left: 2em;
+}
+
+.nova-senha {
+    padding: 1em;
+}
+
+.confirmar-senha {
+    padding: 1em;
+}
+
+.botoes {
+    margin-left: 21em;
+    display: flex;
+    flex-direction: row;
+}
+
+.alterar {
+    margin: 0.5em;
+}
+
+.cancelar {
+    margin: 0.5em;
+}
+
+button {
+    border-radius: 15px;
+    background: #C4C4C4;
+    color: #000000;
+    width: 132.71px;
+    height: 33.94px;
+    font-family: Roboto-Medium;
+    font-size: 20px;
+    margin-top: 2.5em;
+}
