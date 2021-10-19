@@ -3,7 +3,7 @@
 import {link} from 'react-router-dom';
 import {container} from './styled';
 import Cabecalho from '../../componentes/comum/cabecalho'
-import cadastro from '../../../../../html-css/src/images/pg-cadastro-adm.png'
+import cadastro from '../../assets/images/pg-cadastro-adm.png';
 
 export default function CadastroADM () 
 {

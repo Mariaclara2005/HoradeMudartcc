@@ -25,6 +25,7 @@ const cabecalho = styled.div`{
     margin-left: 2em;
     margin-top: 1em;
   }
-}`
+}
+`
 
 export { cabecalho }

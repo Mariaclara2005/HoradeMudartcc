@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const container = styled.div`
+const Container = styled.div`
 .site{
     margin: 0px;
 }
