@@ -27,8 +27,9 @@ export default function Routes() {
         <BrowserRouter>
             <Switch> 
                 <Route path="/" exact={true} component={TelaInicio}/>
-                {/* <Route path="/AutoEstima" exact={true} component={AutoEstima}/> */}
-                {/* <Route path="/TipoViolencia" exact={true} component={TipoViolencia}/>
+                
+                <Route path="/AutoEstima" exact={true} component={AutoEstima}/>
+                <Route path="/TipoViolencia" exact={true} component={TipoViolencia}/>
                 <Route path="/Chat" exact= {true} component={Chat}/>
                 <Route path="/Cadastro" exact={true} component={Cadastro}/>
                 <Route path="/CadastroADM" exact={true} component={CadastroADM} />
@@ -44,7 +45,7 @@ export default function Routes() {
                 <Route path="/ChatDenuncia" exact={true} component={ChatDenuncia}/>
                 <Route path="/InformaçoesLocalizacao" exact={true} component={InformaçoesLocalizacao}/>
                 <Route path="InformaçoesDenuncia" exact={true} component={InformaçoesDenuncia}/>
-                <Route path="RedefinirSenhaADM" exact={true} component={RedefinirSenhaADM}/> */}
+                <Route path="RedefinirSenhaADM" exact={true} component={RedefinirSenhaADM}/>
          
              </Switch>
         </BrowserRouter>

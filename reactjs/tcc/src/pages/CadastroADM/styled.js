@@ -1,50 +1,37 @@
+
+import styled from 'styled-components';
+
+const container = styled.div`
 body {
     margin: 0;
 }
 
 .container {
     background: #7DA074;
-    padding: 1em 3.5em;
-    height:  100%;
-    
+    padding: 3.5em;
 }
 
-
-
-.imagem {
-    width: 8em;
-    height: 8em;
-    margin-top: -1em ;n: right;
-    color: white;
-    text-shadow: 
-
-}
-
-.faixa1{
-    margin-top: 1em ;
+.logo {
+    width: 150px;
+    height: 90px;
+    margin-right: 30em;
+    margin-top: -6em;
 }
 
 .menu {
     font-family: Roboto-Medium;
-    font-size: 15px;
-    margin-top: -2em; 
+    font-size: 14px;
+    margin-top: -6em;
     margin-left: 1em;
     height: -30px;
-    display: flex;
-    align-items: center;
-
-}
-
-.menu a {
-    margin: .5em;
 }
 
 .cabecalho {
     display: flex;
     flex-direction: row;
     margin-left: 1em;
-    justify-content: space-between;
-    align-items: center;
+    margin-top: 40px;
+    justify-content: center;
 }
 
 .cadastro {
@@ -54,26 +41,26 @@ body {
     border-radius: 20px;
     height: 590,30px;
     width: 504px;
-    padding-top: 7px;
-
-        
+    
 }
 .conteudo {
     display: flex;
     flex-direction: row;
 }
 
-
+.imagem img {
+    width: 746px;
+    height: 515px;
+    margin-left: 6em;
+}
 
 .titulo{
-    text-align: center;
+    margin: 20px;
     font-family: Roboto-Medium;
     font-size: 40px;
     margin-top: 1em;
-   
+    margin-left: 2.5em;
 }
-
-
 
 .indentificacao {
     display: flex;
@@ -87,6 +74,7 @@ body {
 
 .sobrenome {
     margin: 10px;
+    background-color: #FFFFFF;
 }
 
 .email{
@@ -110,7 +98,6 @@ body {
 .senha {
     margin: 10px;
     margin-right: 10px;
-
 }
 
 .confirmar-senha {
@@ -120,9 +107,6 @@ body {
 input {
     background: #C4C4C4;
     border-radius: 15px;
-    border-color:transparent;
-    height: 2em;
-    padding-left: 5px;
 }
 
 button {
@@ -135,14 +119,8 @@ button {
     font-family: Roboto-Medium;
     font-size: 20px;
     margin-top: 2em;
-    border-color: transparent;
-    
-  
-
 }
 
-.entrar :hover{
-    background-color: #57833a;
-    transition: 0.1s;
-}
+`;
 
+export {container}
