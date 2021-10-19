@@ -1,0 +1,179 @@
+
+
+import {link} from 'react-router-dom';
+import {container} from './styled';
+import Cabecalho from '../../componentes/comum/cabecalho'
+
+export default function Chat () 
+{
+    return (
+
+    <container>
+      <div class="faixa1">
+        <div class="cabecalho">
+          <div class="logo">
+            <img src="../../src/images/logo-claro.png" />
+          </div>
+
+          <div class="menu">
+            <a href=" ">Inicio</a>
+            <a href=" ">Denúncie</a>
+            <a href=" ">Tipos de violência</a>
+            <a href=" ">Tipos de assédio</a>
+            <a href=" ">Mapa das Delegacias</a>
+            <a href=" ">Autoestima</a>
+            <a href=" ">Chat</a>
+            <a href=" ">Cadastro</a>
+          </div>
+        </div>
+
+        <div class="introducao">
+          <div class="apresentacao">
+            <div class="titulo">Chat</div>
+
+            <div class="texto_chat">
+              No nosso chat você vai encontrar depoimentos de outras mulheres
+              que já tiveram ou tem um relacionamento abusivo. o maior objetivo
+              é mostrar que todas nós conseguimos e devemos sair dessa!
+            </div>
+          </div>
+
+          <div class="imagem1">
+            <img src="../../src/images/pg-chat-fx1.png" />
+          </div>
+        </div>
+      </div>
+
+      <div class="faixa2">
+        <div class="imagem2">
+          <img src="../../src/images/pg-chat-fx2.png" />
+        </div>
+
+        <div class="conteudo">
+          <div class="compartilhe">Compartilhe</div>
+
+          <div class="explicacao">
+            Compartilhe a sua esperiencia! Para que outras mulheres se sintam
+            encorajadas a fazerem o mesmo, e sair de um relacionamento abusivo.
+          </div>
+        </div>
+      </div>
+
+      <div class="faixa3">
+        <div class="chat1">
+          <div class="depoimento1">
+            <div class="usuario1">
+              <div class="perfil1">
+                <img src="../../src/images/pg-chat-perfil.png" />
+              </div>
+
+              <div class="nome1">Juliana Santos</div>
+            </div>
+
+            <div class="mensagem1">
+              Eu vivi um relacionamento abusivo duas vezes. Na primeira, eu era
+              agredida fisicamente. Na segunda, psicologicamente. Nenhum dos
+              relacionamentos me fez bem. E sair foi a parte mais difícil.
+              Depois de negar o que eu passava, finalmente enxerguei o que
+              acontecia. Duas vezes. Em ambas, eu era colocada como a louca,
+              desequilibrada. E pior, eu defendia a pessoa.
+            </div>
+
+            <div class="reagir_msg1">
+              <div class="curtidas1">
+                <div class="coracao1">
+                    <img src="../../src/images/pg-chat-coracao.png" />
+                </div>
+
+                <div class="quantidade1">74</div>
+              </div>
+              <div class="reponder1">Responder</div>
+            </div>
+          </div>
+
+          <div class="depoimento2">
+            <div class="usuario2">
+              <div class="perfil2">
+                <img src="../../src/images/pg-chat-perfil.png" />
+              </div>
+
+              <div class="nome2">Giovanna Andrade</div>
+            </div>
+
+            <div class="mensagem2">
+              @Juliana Santos Eu passei pela mesma coisa. Primeiro negava até o
+              fim, não conseguia enxergar a verdade. E quando finalmete
+              enxerguei, eu que sai como a louca da história.
+            </div>
+
+            <div class="reagir_msg2">
+              <div class="curtidas2">
+                <div class="coracao2">
+                  <img src="../../src/images/pg-chat-coracao.png" />
+                </div>
+
+                <div class="quantidade2">16</div>
+              </div>
+
+              <div class="reponder2">Responder</div>
+            </div>
+          </div>
+
+          <div class="depoimento3">
+            <div class="usuario3">
+              <div class="perfil3">
+                <img src="../../src/images/pg-chat-perfil.png" />
+              </div>
+
+              <div class="nome3">Manuela Nunes</div>
+            </div>
+
+            <div class="mensagem3">
+              Eu tinha uns 13 anos quando comecei a sair sozinha. Mas eu era
+              bastante inocente, já que meus pais nunca tiveram uma conversa
+              sobre sexo comigo. Um dia me envolvi com um cara de uns 30 anos,
+              que sempre foi muito simpático comigo. Certa vez ele me levou a
+              uma sala e me colocou contra a parede, falou que dali eu não
+              escapava dele. Eu não queria transar, não tinha vontade alguma,
+              até porque eu era virgem e não sabia o que estava acontecendo. Ele
+              me pegou e me colocou em cima de uma mesa e acabamos transando
+              contra a minha vontade. Quis muito contar para os meus pais, mas
+              tinha medo da reação deles. Já aos 14 anos resolvi contar para
+              minha mãe. Ela contou pra o meu pai. Ele quis processar o cara que
+              fez isso comigo, mais eu estava com medo de virar uma confusão
+              ainda maior e ele querer fazer alguma coisa conosco. Hoje tenho 18
+              anos e vejo que isso que ele fez comigo é imperdoável, e quando
+              meu pai queria denunciar, eu deveria ter deixado.
+            </div>
+
+            <div class="reagir_msg3">
+              <div class="curtidas3">
+                <div class="coracao3">
+                    <img src="../../src/images/pg-chat-coracao.png" />
+                </div>
+
+                <div class="quantidade3">23</div>
+              </div>
+
+              <div class="reponder3">Responder</div>
+            </div>
+          </div>
+
+          <div class="comentario">
+            <div class="meu_perfil">
+                <img src="../../src/images/pg-chat-perfil.png" />
+            </div>
+
+            <div clss="digitar">
+              <input type="text" name="" placeholder="Faça um comentário"></input>
+            </div>
+            <div class="publicar">
+              <a href=" ">Publicar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </container>
+
+    )
+}
