@@ -18,7 +18,7 @@ export default function TelaInicial () {
 
                     
                      <a href=" ">Denúncie</a>
-                     <a href="pg-tiposdeviolencia/index.html">Tipos de violência</a>
+                     <a href="">Tipos de violência</a>
                      <a href=" ">Tipos de assédio</a>
                      <a href=" ">Mapa das Delegacia</a>
                      <a href=" ">Autoestima</a>
