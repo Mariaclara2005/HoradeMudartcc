@@ -2,10 +2,9 @@
 
 import styled from 'styled-components';
 
-const container = styled.div`
+const Container = styled.div`
   display: column;
   flex-direction: column;
-
 
 .logo {
   display: flex;
@@ -33,6 +32,7 @@ const container = styled.div`
   display: flex;
   flex-direction: column;
   background: #8fb482;
+  height: 100vh;
 }
 
 .imagem1 {
@@ -69,6 +69,7 @@ const container = styled.div`
   display: flex;
   flex-direction: row;
   background: #b8cace;
+  height: 100vh;
 }
 
 .compartilhe {
@@ -109,6 +110,7 @@ const container = styled.div`
   display: flex;
   flex-direction: column;
   background: #9a9a9a;
+  height: 100vh;
 }
 
 .depoimento1 {
@@ -247,4 +249,4 @@ const container = styled.div`
 
 `;
 
-export {container}
+export {Container}  

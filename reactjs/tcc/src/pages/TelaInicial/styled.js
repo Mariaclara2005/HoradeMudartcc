@@ -10,7 +10,7 @@ a{
 
 .pagina-principal{
     background-image: url(/assets/imagens/mulheres1.png);
-    height: 100%;
+    height: 100vh;
     margin: -5px;
     background-size: 100% 100%;
 }
@@ -66,7 +66,7 @@ a{
 }
 
 .tipo-de-violencia{
-    height: 100%;
+    height: 100vh;
     background-color: white;
     display: flex;
     flex-direction: row;
@@ -128,7 +128,7 @@ a{
 
 .autoestima{
     background-color: #DCDCDC;    
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: row;
 }
@@ -174,7 +174,7 @@ a{
 .tipos-de-assedio{
     display: flex;
     flex-direction: row;
-    height: 100%;
+    height: 100vh;
     justify-content: center;
 }
 
@@ -225,7 +225,7 @@ a{
 }
 
 .pagina-mapa{
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: row;
     background-color: whitesmoke;
@@ -266,7 +266,7 @@ a{
 }
 
 .pagina-chat{
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -298,7 +298,7 @@ a{
 
 
 .pagina-denuncia{
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: row;
     background-color: whitesmoke;
@@ -341,7 +341,7 @@ a{
 
 
 .pagina-quem-somos{
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: row;
     justify-content: center;

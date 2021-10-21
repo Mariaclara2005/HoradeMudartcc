@@ -1,18 +1,18 @@
 
 
-import {link} from 'react-router-dom';
-import {container} from './styled';
+import {link} from 'react-router-dom'
+import {Container} from './styled'
 import Cabecalho from '../../componentes/comum/cabecalho'
 
 export default function Chat () 
 {
     return (
 
-    <container>
+    <Container>
       <div class="faixa1">
         <div class="cabecalho">
           <div class="logo">
-            <img src="../../src/images/logo-claro.png" />
+            <img src="/assets/imagens/logo-claro.png" alt="" />
           </div>
 
           <div class="menu">
@@ -39,14 +39,14 @@ export default function Chat ()
           </div>
 
           <div class="imagem1">
-            <img src="../../src/images/pg-chat-fx1.png" />
+            <img src="/assets/imagens/pg-chat-fx1.png" alt=""/>
           </div>
         </div>
       </div>
 
       <div class="faixa2">
         <div class="imagem2">
-          <img src="../../src/images/pg-chat-fx2.png" />
+          <img src="/assets/imagens/pg-chat-fx2.png" alt=""/>
         </div>
 
         <div class="conteudo">
@@ -64,7 +64,7 @@ export default function Chat ()
           <div class="depoimento1">
             <div class="usuario1">
               <div class="perfil1">
-                <img src="../../src/images/pg-chat-perfil.png" />
+                <img src="/assets/imagens/pg-chat-perfil.png" alt=""/>
               </div>
 
               <div class="nome1">Juliana Santos</div>
@@ -82,7 +82,7 @@ export default function Chat ()
             <div class="reagir_msg1">
               <div class="curtidas1">
                 <div class="coracao1">
-                    <img src="../../src/images/pg-chat-coracao.png" />
+                    <img src="/assets/imagens/pg-chat-coracao.png" alt=""/>
                 </div>
 
                 <div class="quantidade1">74</div>
@@ -94,7 +94,7 @@ export default function Chat ()
           <div class="depoimento2">
             <div class="usuario2">
               <div class="perfil2">
-                <img src="../../src/images/pg-chat-perfil.png" />
+                <img src="/assets/imagens/pg-chat-perfil.png" alt=""/>
               </div>
 
               <div class="nome2">Giovanna Andrade</div>
@@ -109,7 +109,7 @@ export default function Chat ()
             <div class="reagir_msg2">
               <div class="curtidas2">
                 <div class="coracao2">
-                  <img src="../../src/images/pg-chat-coracao.png" />
+                  <img src="/assets/imagens/pg-chat-coracao.png" alt=""/>
                 </div>
 
                 <div class="quantidade2">16</div>
@@ -122,7 +122,7 @@ export default function Chat ()
           <div class="depoimento3">
             <div class="usuario3">
               <div class="perfil3">
-                <img src="../../src/images/pg-chat-perfil.png" />
+                <img src="/assets/imagens/pg-chat-perfil.png" alt=""/>
               </div>
 
               <div class="nome3">Manuela Nunes</div>
@@ -149,7 +149,7 @@ export default function Chat ()
             <div class="reagir_msg3">
               <div class="curtidas3">
                 <div class="coracao3">
-                    <img src="../../src/images/pg-chat-coracao.png" />
+                    <img src="/assets/imagens/pg-chat-coracao.png" alt=""/>
                 </div>
 
                 <div class="quantidade3">23</div>
@@ -161,7 +161,7 @@ export default function Chat ()
 
           <div class="comentario">
             <div class="meu_perfil">
-                <img src="../../src/images/pg-chat-perfil.png" />
+                <img src="/assets/imagens/pg-chat-perfil.png" alt=""/>
             </div>
 
             <div clss="digitar">
@@ -173,7 +173,7 @@ export default function Chat ()
           </div>
         </div>
       </div>
-    </container>
+    </Container>
 
     )
-}
+} 

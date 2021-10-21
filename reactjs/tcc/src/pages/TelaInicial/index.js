@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import {Container} from './styled'
 
 export default function TelaInicial () {
@@ -17,13 +18,13 @@ export default function TelaInicial () {
                 <div class="cabecalho-botoes">
 
                     
-                     <a href=" ">Denúncie</a>
-                     <a href="">Tipos de violência</a>
-                     <a href=" ">Tipos de assédio</a>
-                     <a href=" ">Mapa das Delegacia</a>
-                     <a href=" ">Autoestima</a>
-                     <a href=" ">Chat</a>
-                     <a href=" ">Cadastro</a>
+                     <Link to="/">Denúncie</Link>
+                     <Link to="/TipoViolencia">Tipos de violência</Link>
+                     <Link to=" ">Tipos de assédio</Link>
+                     <Link to=" ">Mapa das Delegacia</Link>
+                     <Link to=" ">Autoestima</Link>
+                     <Link to=" ">Chat</Link>
+                     <Link to=" ">Cadastro</Link>
 
                                                    
                 </div>
@@ -31,7 +32,7 @@ export default function TelaInicial () {
             </div>
 
             <div class="texto-centro">
-                Central de Atendimento à Mulher – <a href="https://www.gov.br/pt-br/servicos/denunciar-e-buscar-ajuda-a-vitimas-de-violencia-contra-mulheres">Ligue 180 </a> 
+                Central de Atendimento à Mulher – <Link to="https://www.gov.br/pt-br/servicos/denunciar-e-buscar-ajuda-a-vitimas-de-violencia-contra-mulheres">Ligue 180 </Link> 
             </div>
 
             <div class="faixa-meio">
