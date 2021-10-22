@@ -94,6 +94,8 @@ a{
     font-size: 2.0em;
     color: black;
     padding-top: 5em;
+    width: 13em;
+    text-align: center;
 }
 
 .botao-faixa2{
@@ -380,6 +382,57 @@ a{
     color: white;
     border: none;
 }
+
+.faixa2-img img {
+    position: relative;
+    animation: animar 3s infinite;
+}
+
+.faixa3-image img {
+    position: relative;
+    animation: animar 3s infinite;
+}
+
+.faixa4-image img {
+    position: relative;
+    animation: animar 3s infinite;
+}
+
+.faixa5-image img {
+    position: relative;
+    animation: animar 3s infinite;
+}
+
+
+
+.faixa6-image img {
+    position: relative;
+    animation: animar 3s infinite;
+}
+
+.faixa7-image img {
+    position: relative;
+    animation: animar 3s infinite;
+}
+
+.faixa8-image img {
+    position: relative;
+    animation: animar 3s infinite;
+}
+
+
+@keyframes animar {
+    0% {
+        top: -10px;
+    }
+    50% {
+        top: 10px;
+    }
+    100% {
+        top: -10px; 
+    }
+}
+
 
 `;
 

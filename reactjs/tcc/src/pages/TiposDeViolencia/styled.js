@@ -19,6 +19,7 @@ a{
     
     
 }
+    
 
 .conteudo-faixa1{
     display: flex;

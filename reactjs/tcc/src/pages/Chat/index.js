@@ -1,6 +1,6 @@
 
 
-import {link} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 import {Container} from './styled'
 import Cabecalho from '../../componentes/comum/cabecalho'
 
@@ -16,14 +16,14 @@ export default function Chat ()
           </div>
 
           <div class="menu">
-            <a href=" ">Inicio</a>
-            <a href=" ">Denúncie</a>
-            <a href=" ">Tipos de violência</a>
-            <a href=" ">Tipos de assédio</a>
-            <a href=" ">Mapa das Delegacias</a>
-            <a href=" ">Autoestima</a>
-            <a href=" ">Chat</a>
-            <a href=" ">Cadastro</a>
+            <Link to="/">Inicio</Link>
+            <Link to=" ">Denúncie</Link>
+            <Link to=" ">Tipos de violência</Link>
+            <Link to=" ">Tipos de assédio</Link>
+            <Link to=" ">Mapa das Delegacias</Link>
+            <Link to=" ">Autoestima</Link>
+            <Link to=" ">Chat</Link>
+            <Link to=" ">Cadastro</Link>
           </div>
         </div>
 
@@ -168,7 +168,7 @@ export default function Chat ()
               <input type="text" name="" placeholder="Faça um comentário"></input>
             </div>
             <div class="publicar">
-              <a href=" ">Publicar</a>
+              <Link to=" ">Publicar</Link>
             </div>
           </div>
         </div>
