@@ -7,6 +7,7 @@ a{
     color: white;
 }
 
+
 .faixa1{
     background-color: #6482CB;
     height: 100vh;
@@ -19,7 +20,22 @@ a{
     
     
 }
+
+.cabecalho-img{
+    margin-top: 1em;
+    margin-left: 2em;
+}
+
+.cabecalho-botoes a {
+    margin: 0em .4em;
     
+}
+
+.cabecalho-botoes{
+    margin-top: 4em;
+    margin-right: 2em;
+    
+} 
 
 .conteudo-faixa1{
     display: flex;
@@ -41,9 +57,10 @@ a{
 }
 
 .faixa1-txt{
-    text-align: left;
+    text-align: center;
     color: white;
     padding-top: 4em;
+    width: 40em;
 }
 
 .cabecalho-botoes a {
@@ -71,6 +88,7 @@ a{
     flex-direction: row;
     height: 100vh;
     align-items: center;
+    justify-content: center;
 }
 
 .faixa2-img{
@@ -88,6 +106,8 @@ a{
     text-align: left;
     font-size: 1em;
     padding-top: 5em;
+    width: 50em;
+    text-align: center;
 }
 
 .faixa3{
@@ -96,6 +116,7 @@ a{
     height: 100vh;
     align-items: center;
     background-color: #F8FAFF;
+    justify-content: center;
 }
 
 .faixa3-texto1{
@@ -107,6 +128,8 @@ a{
 .faixa3-texto2{
     text-align: left;
     padding-top: 5em;
+    width: 50em;
+    text-align: center;
 }
 
 .img-faixa3{
@@ -120,6 +143,7 @@ a{
     flex-direction: row;
     align-items: center;
     height: 100vh;
+    justify-content: center;
 }
 
 .img-faixa4{
@@ -135,6 +159,8 @@ a{
 
 .faixa4-texto2{
     padding-top: 5em;
+    width: 50em;
+    text-align: center;
 }
 
 
@@ -144,6 +170,7 @@ a{
     flex-direction: row;
     align-items: center;
     height: 100vh;
+    justify-content: center;
 }
 
 .faixa5-conteudo{
@@ -158,6 +185,8 @@ a{
 
 .faixa5-texto2{
     padding-top: 5em;
+    width: 50em;
+    text-align: center;
 }
 
 .img-faixa5{
@@ -171,11 +200,12 @@ a{
     flex-direction: row;
     align-items: center;
     height: 100vh;
+    justify-content: center;
 }
 
 .img-faixa6{
-    height: 37em;
-    width: 37em;
+    height: 35em;
+    width: 35em;
 }
 
 .faixa6-texto1{
@@ -187,6 +217,8 @@ a{
 .faixa6-texto2{
     padding-top: 5em;
     color: #0B0A0A;
+    text-align: center;
+    width: 50em;
 }
 
 .faixa7{
@@ -195,6 +227,7 @@ a{
     flex-direction: row;
     align-items: center;
     height: 100vh;
+    justify-content: center;
 }
 
 .faixa7-conteudo{
@@ -203,12 +236,63 @@ a{
 
 .faixa7-texto{
     color: white;
-    font-size: 6em;
+    font-size: 5em;
 }
 
 .img-faixa7{
-    height: 35em;
-    width: 35em;
+    height: 30em;
+    width: 30em;
+}
+
+.faixa1-img img {
+    position: relative;
+    animation: animar 3s infinite;
+}
+
+.img-faixa2 img {
+    position: relative;
+    animation: animar 3s infinite;
+}
+
+.faixa3-img img {
+    position: relative;
+    animation: animar 3s infinite;
+}
+
+.faixa4-img img {
+    position: relative;
+    animation: animar 3s infinite;
+}
+
+.faixa5-img img {
+    position: relative;
+    animation: animar 3s infinite;
+}
+
+
+.faixa6-img img {
+    position: relative;
+    animation: animar 3s infinite;
+}
+
+.faixa7-img img {
+    position: relative;
+    animation: animar 2s infinite;
+}
+
+
+
+
+@keyframes animar {
+    0% {
+        top: -10px;
+    }
+    50% {
+        top: 10px;
+    }
+    100% {
+        top: -10px; 
+    }
 }
 
 

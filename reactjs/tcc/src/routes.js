@@ -18,7 +18,7 @@ import MapaDelegacias from './pages/MapaDelegacias'
 import ChatDenuncia from './pages/ChatDenuncia'
 //import InformaçoesLocalizacao from './pages/InformaçoesLocalizacao'
 //import InformaçoesDenuncia from './pages/InformacoesDenuncia'
-//import RedefinirSenhaADM from './pages/RedefinirSenhaADM'
+import RedefinirSenhaADM from './pages/RedefinirSenhaADM'
 
 
 
@@ -34,8 +34,11 @@ export default function Routes() {
                 <Route path="/Cadastro" exact={true} component={Cadastro}/>
                  <Route path="/MapaDelegacias" exact={true} component={MapaDelegacias}/>
                   <Route path="/ChatDenuncia" exact={true} component={ChatDenuncia}/>
+
                   <Route path="/Login" exact={true} component={Login}/>
                 {/* 
+          
+
                 <Route path="/CadastroADM" exact={true} component={CadastroADM} />
                 <Route path="/RedefinirSenha" exact={true} component={RedefinirSenha}/>
                 <Route path="/Denuncia" exact={true} component={Denuncia}/>
@@ -44,11 +47,11 @@ export default function Routes() {
                 
                 <Route path="/QuemSomoNos" exact={true} component={QuemSomosNos}/>
                 <Route path="/AutorizaçaoMensagem" exact={true} component={AutorizaçaoMensagem}/>
-                <Route path="/LoginADM" exact={true} component={LoginADM}/>
+                <Route path="/LoginADM" exact={true} component={LoginADM}/> */}
                 <Route path="/ChatDenuncia" exact={true} component={ChatDenuncia}/>
-                <Route path="/InformaçoesLocalizacao" exact={true} component={InformaçoesLocalizacao}/>
-                <Route path="InformaçoesDenuncia" exact={true} component={InformaçoesDenuncia}/>
-                <Route path="RedefinirSenhaADM" exact={true} component={RedefinirSenhaADM}/> */}
+                {/* <Route path="/InformaçoesLocalizacao" exact={true} component={InformaçoesLocalizacao}/>
+                <Route path="/InformaçoesDenuncia" exact={true} component={InformaçoesDenuncia}/> */}
+                <Route path="/RedefinirSenhaADM" exact={true} component={RedefinirSenhaADM}/>
              </Switch>
         </BrowserRouter>
     )}
