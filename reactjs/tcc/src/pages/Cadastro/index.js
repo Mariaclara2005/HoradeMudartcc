@@ -3,6 +3,7 @@ import {Container} from './styled';
 import Cabecalho from '../../componentes/comum/cabecalho';
 // import Img from '../../../public/assets/imagens/logo-claro.png'
 // import Img2 from '../../../public/assets/imagens/pg-cadastro.png'
+
 export default function Cadastro ()
 {
     return(

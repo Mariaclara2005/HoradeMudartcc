@@ -1,7 +1,6 @@
-body {
-    margin: 0;
-}
+import styled from 'styled-components'
 
+const Container =  styled.div`
 .container {
     background: #7DA074;
     padding: 1em 3.5em;
@@ -16,7 +15,7 @@ body {
     height: 8em;
     margin-top: -1em  right;
     color: white;
-   
+ 
 
 }
 
@@ -47,7 +46,7 @@ body {
     align-items: center;
 }
 
-.cadastro {
+.Login {
     display: flex;
     flex-direction: column;
     background: #FDFDFD;
@@ -81,13 +80,7 @@ body {
     margin: 20px;
 }
 
-.nome {
-    margin: 10px;
-}
 
-.sobrenome {
-    margin: 10px;
-}
 
 .email{
     margin: 20px;
@@ -96,10 +89,7 @@ body {
     margin-left: 30px;
 }
 
-.celular {
-    margin: 20px;
-    margin-left: 30px;
-}
+
 
 .senhas {
     display: flex;
@@ -113,9 +103,7 @@ body {
 
 }
 
-.confirmar-senha {
-    margin: 10px;
-}
+
 
 input {
     background: #C4C4C4;
@@ -126,7 +114,7 @@ input {
 }
 
 button {
-    margin-left: 15em;
+    margin-left: 1em; 
     border-radius: 15px;
     background: #81857F;
     color:#FFFFFF;
@@ -136,7 +124,9 @@ button {
     font-size: 20px;
     margin-top: 2em;
     border-color: transparent;
-    
+    display: flex;
+    flex-direction: row;
+
   
 
 }
@@ -146,3 +136,11 @@ button {
     transition: 0.1s;
 }
 
+.Cadastro :hover{
+    background-color: #57833a;
+    transition: 0.1s;
+}
+
+
+`;
+export {Container}
