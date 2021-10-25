@@ -1,15 +1,15 @@
 
 
-import {link} from 'react-router-dom';
-import {container} from './styled';
+// import {link} from 'react-router-dom';
+import {Container} from './styled'
 import Cabecalho from '../../componentes/comum/cabecalho'
-import cadastro from '../../assets/images/pg-cadastro-adm.png';
+import cadastro from '../../../src/assets/imagens/pg-cadastro-adm.png';
 
 export default function CadastroADM () 
 {
     return (
 
-    <container>
+    <Container>
 
         <Cabecalho/>
 
@@ -55,7 +55,7 @@ export default function CadastroADM ()
     
             </div>
         </div>
-    </container>
+    </Container>
   
     )
 

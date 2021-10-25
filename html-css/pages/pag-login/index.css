@@ -2,12 +2,6 @@ body {
     margin: 0;
 }
 
-a{
-    text-align: right;
-    color: white;
-    text-shadow: #000000;
-
-}
 .container {
     background: #7DA074;
     padding: 1em 3.5em;
@@ -20,7 +14,9 @@ a{
 .imagem {
     width: 8em;
     height: 8em;
-    margin-top: -1em ;
+    margin-top: -1em  right;
+    color: white;
+ 
 
 }
 
@@ -85,13 +81,7 @@ a{
     margin: 20px;
 }
 
-.nome {
-    margin: 10px;
-}
 
-.sobrenome {
-    margin: 10px;
-}
 
 .email{
     margin: 20px;
@@ -100,10 +90,7 @@ a{
     margin-left: 30px;
 }
 
-.celular {
-    margin: 20px;
-    margin-left: 30px;
-}
+
 
 .senhas {
     display: flex;
@@ -117,9 +104,7 @@ a{
 
 }
 
-.confirmar-senha {
-    margin: 10px;
-}
+
 
 input {
     background: #C4C4C4;
@@ -130,7 +115,7 @@ input {
 }
 
 button {
-    margin-left: 15em;
+    margin-left: 1em; 
     border-radius: 15px;
     background: #81857F;
     color:#FFFFFF;
@@ -140,7 +125,9 @@ button {
     font-size: 20px;
     margin-top: 2em;
     border-color: transparent;
-    
+    display: flex;
+    flex-direction: row;
+
   
 
 }
@@ -149,4 +136,12 @@ button {
     background-color: #57833a;
     transition: 0.1s;
 }
+
+.Cadastro :hover{
+    background-color: #57833a;
+    transition: 0.1s;
+}
+
+
+
 

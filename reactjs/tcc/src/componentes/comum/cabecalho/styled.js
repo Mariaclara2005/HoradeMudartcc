@@ -1,17 +1,17 @@
 import styled from 'styled-components'
 
-const Container = styled.div`
 
-   .cabecalho-inicio{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    
-    
-}
+const Container = styled.div`
 
 .img-fx1{
     width: 10em;
+  }
+
+    .cabecalho-inicio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+    
 }
 
 .cabecalho-img{
@@ -29,8 +29,9 @@ const Container = styled.div`
     margin-right: 2em;
     
 }
-  
 
-`
+
+`;
+
 
 export { Container }
