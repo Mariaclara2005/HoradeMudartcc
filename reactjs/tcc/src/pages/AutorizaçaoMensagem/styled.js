@@ -47,7 +47,7 @@ const Container= styled.div`
 
 .cabecalho-img img {
     position: relative;
-    animation: animar 3s infinite;
+    animation: animar 4s infinite;
 }
 
 
