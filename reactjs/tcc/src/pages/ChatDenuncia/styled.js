@@ -21,7 +21,7 @@ const Container = styled.div`
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
-  }
+    }
 
 
   .menu a {
@@ -36,6 +36,18 @@ const Container = styled.div`
       padding-top: 0em;     
   }
 
+  .cabecalho-botoes a {
+    margin: 0em 0.4em;
+    
+}
+
+.cabecalho-botoes{
+    margin-top: 0em;
+    margin-right: 1em;
+    color: #FFF;
+}
+
+
   .texto{
     font-family: Roboto;
     font-style: normal;
@@ -43,7 +55,7 @@ const Container = styled.div`
     font-size: 50px;
     line-height: 59px;
     text-align: center;
-    color: #FFFFFF;
+    color: #fff;
   }
 
 .conteudo {
@@ -51,7 +63,8 @@ const Container = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 60px;
+    margin-top: 10px;
+   
 }
 
 .chat {
@@ -62,6 +75,7 @@ const Container = styled.div`
     width: 90%;
     height: 40em;
     border-radius: 25px;
+    margin-left:6em;
 }
 
 .policial1{
@@ -168,8 +182,8 @@ const Container = styled.div`
 }
 
 .enviar{
-    padding-left: 40em;
-    margin-top: -2.5em;
+    padding-left: 30em;
+    margin-top: 0em;
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
@@ -180,7 +194,7 @@ const Container = styled.div`
 }
 
 .local{
-    padding-left: 71em;
+    padding-left: 5.6em;
     margin-top: -5em;
     font-family: Roboto;
     font-style: normal;
@@ -192,7 +206,7 @@ const Container = styled.div`
 }
 
 .localimg{
-    padding-left: 81.6em;
+    margin-right: -2em;
     margin-top: 1em;
     
 }

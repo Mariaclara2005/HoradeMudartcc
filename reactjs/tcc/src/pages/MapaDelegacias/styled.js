@@ -7,6 +7,7 @@ const Container = styled.div`
 
 body {
     margin: 0px;
+    
 }
 
 .a {
@@ -27,22 +28,18 @@ body {
 }
 
 .logo{
-    padding-right: 62em;
+    padding-right: 80em;
 }
 
-.encaminha{
-    padding-top: 2em;
-    padding-left: 3.4em;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 16px;
-    text-align: center;
+.cabecalho-botoes a {
+    margin: 0em 0.4em;
+    
+}
 
-    color: #FFFFFF;
-
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.cabecalho-botoes{
+    margin-top: 1em;
+    margin-right: 1em;
+    color: #FFF;
 }
 
 
@@ -59,8 +56,8 @@ body {
 
 .research{
     padding-right: 5em;
-    margin-left: -8em;
-    padding-top: 0em;
+    margin-left: 33em;
+    margin-bottom: 0em;
 }
 
 .searchbox{
@@ -87,7 +84,10 @@ body {
     border: none;
     outline: none;
     font-size: 24px;
+    margin-top: 23em;
 }
+
+
 
 .mapa{
    padding-left: 28em;
@@ -122,8 +122,8 @@ body {
 }
 
 .text3{
-    margin-left: -21em;
-    padding-top: 7em;
+    margin-left : -21em;
+    padding-top: 5em;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -135,7 +135,7 @@ body {
 }
 
 .text4{
-    padding-top: 8em;
+    padding-top: 6em;
     margin-left: -20em;
     
     font-family: Roboto;
@@ -163,7 +163,7 @@ body {
     font-size: 2rem;
     outline: none;
     margin-left: -22em;
-    margin-top: 17em;
+    margin-top: 12em;
 }
 
 .btn2:hover {

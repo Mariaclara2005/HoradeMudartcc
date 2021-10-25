@@ -6,7 +6,7 @@ export default function index() {
           <div class="cabecalho">
 
 <div class="imagem">
-    <img class="logo" src="../../src/images/logo-claro.png" />
+    <img class="logo" src="/assets/imagens/logo-claro.png" alt=""/>
  </div>
 
     <div class="menu">
