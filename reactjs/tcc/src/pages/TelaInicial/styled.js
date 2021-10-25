@@ -133,6 +133,7 @@ a{
     height: 100vh;
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .img-faixa3{
@@ -154,6 +155,7 @@ a{
     font-size: 1.9em;
     font-style: italic;
     padding-top: 6em;
+    
 }
 
 .faixa3-botao{
@@ -237,7 +239,7 @@ a{
 
 .faixa5-conteudo{
     align-items: center;
-    ;
+
 }
 
 .faixa5-image{
@@ -416,6 +418,11 @@ a{
 }
 
 .faixa8-image img {
+    position: relative;
+    animation: animar 3s infinite;
+}
+
+.cabecalho-img img {
     position: relative;
     animation: animar 3s infinite;
 }
