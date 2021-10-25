@@ -15,7 +15,7 @@ export default function index() {
 <div class="cabecalho-botoes">
 
     
-     <Link to="">Denúncie</Link>
+     <Link to="/">Denúncie</Link>
      <Link to="/TipoViolencia">Tipos de violência</Link>
      <Link to=" ">Tipos de assédio</Link>
      <Link to=" ">Mapa das Delegacia</Link>
