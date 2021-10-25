@@ -1,31 +1,36 @@
 import styled from 'styled-components'
 
-const Container = styled.div`{
+const Container = styled.div`
+
+   .cabecalho-inicio{
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
-    color: #fff;
-
-   .menu {
-        margin: 0em .5em;
-        color: #fff;
-    }
-
-
-   .menuu{
-      display: flex;
-      flex-direction: row;
-      padding-right: 3em;    
-      font-family: Roboto-medium; 
-      color: #fff;
-  }
-
-  .imagem {
-    margin-left: 2em;
-    margin-top: 1em;
-  }
+    
+    
 }
+
+.img-fx1{
+    width: 10em;
+}
+
+.cabecalho-img{
+    margin-top: 1em;
+    margin-left: 2em;
+}
+
+.cabecalho-botoes a {
+    margin: 0em .4em;
+    
+}
+
+.cabecalho-botoes{
+    margin-top: 4em;
+    margin-right: 2em;
+    
+}
+  
+
 `
 
 export { Container }

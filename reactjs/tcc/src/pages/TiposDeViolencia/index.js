@@ -25,10 +25,10 @@ export default function TiposDeViolencia () {
             <Link to="/">Inicio</Link>
             <Link to="">Denuncia</Link>
             <Link to="">Tipos de assédio</Link>
-            <Link to="">Mapa das Delegacia</Link>
-            <Link to="">Autoestima</Link>
+            <Link to="/MapaDelegacias">Mapa das Delegacia</Link>
+            <Link to="/AutoEstima">Autoestima</Link>
             <Link to="/Chat">Chat</Link>
-            <Link to="">Cadastro</Link>
+            <Link to="/Cadastro">Cadastro</Link>
 
                                         
         </div>

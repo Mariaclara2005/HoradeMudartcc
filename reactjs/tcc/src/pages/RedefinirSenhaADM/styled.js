@@ -15,6 +15,10 @@ body{
     height: 100vh;
 }
 
+.img-adm{
+    width: 10em;
+}
+
 
 .cabecalho-inicio{
     display: flex;

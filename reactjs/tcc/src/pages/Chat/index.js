@@ -4,28 +4,15 @@ import {Link} from 'react-router-dom'
 import {Container} from './styled'
 import Cabecalho from '../../componentes/comum/cabecalho'
 
+
 export default function Chat () 
 {
     return (
 
     <Container>
       <div class="faixa1">
-        <div class="cabecalho">
-          <div class="logo">
-            <img src="/assets/imagens/logo-claro.png" alt="" />
-          </div>
-
-          <div class="menu">
-            <Link to="/">Inicio</Link>
-            <Link to=" ">Denúncie</Link>
-            <Link to=" ">Tipos de violência</Link>
-            <Link to=" ">Tipos de assédio</Link>
-            <Link to=" ">Mapa das Delegacias</Link>
-            <Link to=" ">Autoestima</Link>
-            <Link to=" ">Chat</Link>
-            <Link to=" ">Cadastro</Link>
-          </div>
-        </div>
+       
+       <Cabecalho/>
 
         <div class="introducao">
           <div class="apresentacao">

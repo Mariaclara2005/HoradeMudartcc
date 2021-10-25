@@ -13,7 +13,7 @@ export default function RedefinirSenhaADM () {
         <div class="cabecalho-inicio">
     
             <div class="cabecalho-img">
-                <img src="/assets/imagens/logo-claro.png" alt=""/>
+                <img class="img-adm" src="/assets/imagens/logo-claro.png" alt=""/>
             </div>
     
         </div>
