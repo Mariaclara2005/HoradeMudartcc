@@ -1,7 +1,7 @@
 
 import styled from 'styled-components';
 
-const container = styled.div`
+const Container = styled.div`
 body {
     margin: 0;
 }
@@ -123,4 +123,4 @@ button {
 
 `;
 
-export {container}
+export {Container}

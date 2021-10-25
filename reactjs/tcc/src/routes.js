@@ -5,7 +5,7 @@ import AutoEstima from './pages/pg-autoestima'
 import TipoViolencia from './pages/TiposDeViolencia'
 import Chat from './pages/Chat'
 import Cadastro from './pages/Cadastro'
-//import CadastroADM from './pages/CadastroADM'
+import CadastroADM from './pages/CadastroADM'
 //import RedefinirSenha from './pages/RedefinirSenha'
 import Login from './pages/Login'
 //import Denuncia from './pages/Denuncia'
@@ -34,12 +34,10 @@ export default function Routes() {
                 <Route path="/Cadastro" exact={true} component={Cadastro}/>
                  <Route path="/MapaDelegacias" exact={true} component={MapaDelegacias}/>
                   <Route path="/ChatDenuncia" exact={true} component={ChatDenuncia}/>
-
                   <Route path="/Login" exact={true} component={Login}/>
+                  <Route path="/CadastroADM" exact={true} component={CadastroADM} />
                 {/* 
-          
 
-                <Route path="/CadastroADM" exact={true} component={CadastroADM} />
                 <Route path="/RedefinirSenha" exact={true} component={RedefinirSenha}/>
                 <Route path="/Denuncia" exact={true} component={Denuncia}/>
                 <Route path="/CaracteristicasLocalizaçao" exact={true} component={CaracteristicasLocalizaçao}/>
