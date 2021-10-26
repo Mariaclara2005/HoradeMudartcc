@@ -3,9 +3,7 @@ import styled from 'styled-components'
 
 const Container = styled.div`
 
-.img-fx1{
-    width: 10em;
-  }
+
 
     .cabecalho-inicio{
     display: flex;
@@ -21,7 +19,7 @@ const Container = styled.div`
 
 .cabecalho-botoes a {
     margin: 0em .4em;
-    
+    color: white;
 }
 
 .cabecalho-botoes{

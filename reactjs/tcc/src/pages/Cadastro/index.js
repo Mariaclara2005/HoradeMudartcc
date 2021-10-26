@@ -12,7 +12,7 @@ export default function Cadastro ()
 
    <div class="conteudo">
      <div class="imagem1">
-        <img src='/assets/imagens/pg-cadastro.png'/>  
+        <img src='/assets/imagens/pg-cadastro.png' alt=""/>  
 
    </div>
 
