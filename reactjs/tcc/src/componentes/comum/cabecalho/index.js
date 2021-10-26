@@ -18,7 +18,7 @@ export default function index() {
      <Link to="/">Denúncie</Link>
      <Link to="/TipoViolencia">Tipos de violência</Link>
      <Link to=" ">Tipos de assédio</Link>
-     <Link to=" ">Mapa das Delegacia</Link>
+     <Link to="/MapaDelegacias">Mapa das Delegacia</Link>
      <Link to="/AutoEstima">Autoestima</Link>
      <Link to="/Chat">Chat</Link>
      <Link to="/Cadastro">Cadastro</Link>

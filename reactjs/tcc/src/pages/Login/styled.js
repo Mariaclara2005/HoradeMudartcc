@@ -1,50 +1,33 @@
 import styled from 'styled-components'
 
 const Container =  styled.div`
-.container {
+
+.conteudo {
     background: #7DA074;
     padding: 1em 3.5em;
-    height:  100%;
-    
+    height:  100vh;
 }
 
 
 
-.imagem {
+.imagem1 {
     width: 8em;
     height: 8em;
     margin-top: -1em  right;
     color: white;
- 
+    margin-left: 10em;
 
 }
 
-.faixa1{
+.conteudo   {
     margin-top: 1em ;
+   justify-content: center;
+   display: flex;
+   background-color: #7DA074;
+   
 }
 
-.menu {
-    font-family: Roboto-Medium;
-    font-size: 15px;
-    margin-top: -2em; 
-    margin-left: 1em;
-    height: -30px;
-    display: flex;
-    align-items: center;
 
-}
-
-.menu a {
-    margin: .5em;
-}
-
-.cabecalho {
-    display: flex;
-    flex-direction: row;
-    margin-left: 1em;
-    justify-content: space-between;
-    align-items: center;
-}
 
 .Login {
     display: flex;
@@ -54,6 +37,7 @@ const Container =  styled.div`
     height: 590,30px;
     width: 504px;
     padding-top: 7px;
+    heigth: 100vh;
 
         
 }
@@ -109,8 +93,11 @@ input {
     background: #C4C4C4;
     border-radius: 15px;
     border-color:transparent;
-    height: 2em;
-    padding-left: 5px;
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 button {

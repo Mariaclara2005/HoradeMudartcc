@@ -89,7 +89,7 @@ a{
   font-family:Roboto-medium ;
   font-size: 3em;
   padding:0.2em;
-  margin-right: auto;
+  text-aling; center;
 
 }
 
@@ -134,10 +134,13 @@ a{
 }
 
 .faixa3-texto2{
-  padding-top: 3em;
-  text-align: center;
-  font-family: Roboto-medium;
+  font-size: 4em;
+  font-family:Roboto-medium ;
+  font-size: 1.2em;
+  padding: 3em;
+  text-aling; center;
 }
+
 
 .faixa4{
   height: 100vh;
@@ -155,9 +158,24 @@ a{
 }
 
 .faixa4-texto2{
-  padding-top: 3em;
-  text-align: center;
-  font-family: Roboto-medium;
+  font-size: 4em;
+  font-family:Roboto-medium ;
+  font-size: 1.3em;
+  padding: 3em;
+
+}
+
+.faixa4-img {
+  position: relative;
+  animation-name: imagemFx2;
+  animation-duration: 7s ;    
+  animation-iteration-count: infinite;
+}
+@keyframes imagemFx2{
+  0%{top: 50px}
+  50%{top: -80px}
+  100%{top: 50px}
+
 }
 
 .faixa5{
@@ -176,26 +194,29 @@ a{
 }
 
 .faixa5-texto2{
-  text-align: center;
-  padding-top: 3em;
-  font-family: Roboto-medium;
+  font-size: 4em;
+  font-family:Roboto-medium ;
+  font-size: 1.3em;
+  padding: 3em;
 }
 
 .faixa6{
   height: 100vh;
   display: flex;
-  flex-direction: row;
   align-items: center;
 }
 
 .faixa6-img{
-  padding-left: 10em;
+  justify-content: center;
 }
 
 .faixa6-texto{
-  font-size: 5em;
-  font-family: Roboto-medium;
+  font-size: 4em;
+  font-family:Roboto-medium ;
+  font-size: 6em;
+  padding: 3em;
 }
+
 `;
  export {Container}
 

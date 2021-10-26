@@ -28,7 +28,7 @@ export default function TelaInicial () {
                      <Link to="/MapaDelegacias">Mapa das Delegacia</Link>
                      <Link to="/AutoEstima">Autoestima</Link>
                      <Link to="/Chat">Chat</Link>
-                     <Link to=" ">Cadastro</Link>
+                     <Link to="/Cadastro">Cadastro</Link>
 
                                                    
                 </div>
