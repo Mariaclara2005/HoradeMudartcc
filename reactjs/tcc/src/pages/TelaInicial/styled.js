@@ -10,7 +10,7 @@ a{
 
 .pagina-principal{
     background-image: url(/assets/imagens/mulheres1.png);
-    height: 100%;
+    height: 100vh;
     margin: -5px;
     background-size: 100% 100%;
 }
@@ -43,7 +43,7 @@ a{
 
 .texto-centro{
     text-align: center;
-    margin-top: 9em;
+    margin-top: 7em;
     font-size: 2.2em;
     color: cornsilk;
     font-style: italic;
@@ -66,7 +66,7 @@ a{
 }
 
 .tipo-de-violencia{
-    height: 100%;
+    height: 100vh;
     background-color: white;
     display: flex;
     flex-direction: row;
@@ -94,6 +94,8 @@ a{
     font-size: 2.0em;
     color: black;
     padding-top: 5em;
+    width: 13em;
+    text-align: center;
 }
 
 .botao-faixa2{
@@ -128,9 +130,10 @@ a{
 
 .autoestima{
     background-color: #DCDCDC;    
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .img-faixa3{
@@ -152,6 +155,7 @@ a{
     font-size: 1.9em;
     font-style: italic;
     padding-top: 6em;
+    
 }
 
 .faixa3-botao{
@@ -174,7 +178,7 @@ a{
 .tipos-de-assedio{
     display: flex;
     flex-direction: row;
-    height: 100%;
+    height: 100vh;
     justify-content: center;
 }
 
@@ -225,21 +229,21 @@ a{
 }
 
 .pagina-mapa{
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: row;
     background-color: whitesmoke;
-    justify-content: space-between;   
+    justify-content: center;   
     align-items: center;
 }
 
 .faixa5-conteudo{
     align-items: center;
-    ;
 }
 
 .faixa5-image{
-    padding-left: 5em ;    
+    padding-left: 5em ;  
+      
 }
 
 .faixa5-texto{
@@ -247,6 +251,7 @@ a{
     font-style: italic;
     font-size: 2.2em;
     color: #1A284D;
+    width: 28em;
 }
 
 .botao-faixa5{
@@ -263,14 +268,16 @@ a{
 .faixa5-botao{
     padding-top: 5em;
     align-items: center;
+    padding-left: 25em;
 }
 
 .pagina-chat{
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding-top: .1em;
 }
 
 .faixa6-texto{
@@ -278,10 +285,16 @@ a{
     font-style: italic;
     font-size: 2.2em;
     color: #1A284D;
+    width: 18em;
 }
 
 .faixa6-conteudo{
     align-items: center;
+}
+
+.faixa6-botao{
+    padding-top: 4em;
+    padding-left: 11em;
 }
 
 .botao-faixa6{
@@ -298,7 +311,7 @@ a{
 
 
 .pagina-denuncia{
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: row;
     background-color: whitesmoke;
@@ -341,7 +354,7 @@ a{
 
 
 .pagina-quem-somos{
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -380,6 +393,62 @@ a{
     color: white;
     border: none;
 }
+
+.faixa2-img img {
+    position: relative;
+    animation: animar 3s infinite;
+}
+
+.faixa3-image img {
+    position: relative;
+    animation: animar 3s infinite;
+}
+
+.faixa4-image img {
+    position: relative;
+    animation: animar 3s infinite;
+}
+
+.faixa5-image img {
+    position: relative;
+    animation: animar 3s infinite;
+}
+
+
+
+.faixa6-image img {
+    position: relative;
+    animation: animar 3s infinite;
+}
+
+.faixa7-image img {
+    position: relative;
+    animation: animar 3s infinite;
+}
+
+.faixa8-image img {
+    position: relative;
+    animation: animar 3s infinite;
+}
+
+.cabecalho-img img {
+    position: relative;
+    animation: animar 3s infinite;
+}
+
+
+@keyframes animar {
+    0% {
+        top: -10px;
+    }
+    50% {
+        top: 10px;
+    }
+    100% {
+        top: -10px; 
+    }
+}
+
 
 `;
 

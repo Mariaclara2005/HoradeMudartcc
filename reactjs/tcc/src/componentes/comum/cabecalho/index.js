@@ -1,24 +1,30 @@
-import { Container } from "../../styled";
+import { Container } from "./styled";
+import { Link } from "react-router-dom";
+
 
 export default function index() {
     return(
       <Container>
-          <div class="cabecalho">
+   <div class="cabecalho-inicio">
 
-<div class="imagem">
-    <img class="logo" src="../../src/images/logo-claro.png" />
- </div>
+<div class="cabecalho-img">
+    <img class="img-fx1" src="/assets/imagens/logo-claro.png" alt=""/>
+</div>
 
-    <div class="menu">
-     <a href=" ">Inicio</a>
-     <a href=" ">Denúncie</a>
-     <a href=" ">Tipos de violência</a>
-     <a href=" ">Tipos de assédio</a>
-     <a href=" ">Mapa das Delegacias</a>
-     <a href=" ">Chat</a>
-     <a href=" ">Cadastro</a>
-    </div>
 
+<div class="cabecalho-botoes">
+
+    
+     <Link to="/">Denúncie</Link>
+     <Link to="/TipoViolencia">Tipos de violência</Link>
+     <Link to=" ">Tipos de assédio</Link>
+     <Link to="/MapaDelegacias">Mapa das Delegacia</Link>
+     <Link to="/AutoEstima">Autoestima</Link>
+     <Link to="/Chat">Chat</Link>
+     <Link to="/Cadastro">Cadastro</Link>
+
+                                   
+</div>
 
 </div>
       </Container>

@@ -8,20 +8,20 @@ export default function RedefinirSenha ()
     return (
 
         <container>
-        <div class="cabecalho">
+        <div class="Cabecalho">
             <div class="logo">
               <img src="../../src/images/logo-claro.png" />
             </div>
 
             <div class="menu">
-              <a href=" ">Inicio</a>
-              <a href=" ">Denúncie</a>
-              <a href=" ">Tipos de violência</a>
-              <a href=" ">Tipos de assédio</a>
-              <a href=" ">Mapa das Delegacias</a>
-              <a href=" ">Autoestima</a>
-              <a href=" ">Chat</a>
-              <a href=" ">Cadastro</a>
+              <Link to="">Inicio</Link>
+              <Link to="">Denúncie</Link>
+              <Link to="">Tipos de violência</Link>
+              <Link to="">Tipos de assédio</Link>
+              <Link to="">Mapa das Delegacias</Link>
+              <Link to="">Autoestima</Link>
+              <Link to="">Chat</Link>
+              <Link to="">Cadastro</Link>
             </div>
 
         </div>

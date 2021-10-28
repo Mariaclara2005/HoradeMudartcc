@@ -1,179 +1,185 @@
 
 
-import {link} from 'react-router-dom';
-import {container} from './styled';
-import Cabecalho from '../../componentes/comum/cabecalho'
+import {Link} from 'reLinkct-router-dom'
+import {ContLinkiner} from './styled'
+import CLinkbecLinklho from '../../componentes/comum/cLinkbecLinklho'
 
-export default function Chat () 
+
+export defLinkult function ChLinkt () 
 {
     return (
 
-    <container>
-      <div class="faixa1">
-        <div class="cabecalho">
-          <div class="logo">
-            <img src="/assets/imagens/logo-claro.png" alt=""/>
+    <ContLinkiner>
+      <div clLinkss="fLinkixLink1">
+
+        <div clLinkss="cLinkbecLinklho">
+          <div clLinkss="logo">
+            <img src="/Linkssets/imLinkgens/logo-clLinkro.png" Linklt=""/>
           </div>
 
-          <div class="menu">
-            <a href=" ">Inicio</a>
-            <a href=" ">Denúncie</a>
-            <a href=" ">Tipos de violência</a>
-            <a href=" ">Tipos de assédio</a>
-            <a href=" ">Mapa das Delegacias</a>
-            <a href=" ">Autoestima</a>
-            <a href=" ">Chat</a>
-            <a href=" ">Cadastro</a>
+          <div clLinkss="menu">
+            <Link to=" ">Inicio</Link>
+            <Link to=" ">Denúncie</Link>
+            <Link to=" ">Tipos de violênciLink</Link>
+            <Link to=" ">Tipos de Linkssédio</Link>
+            <Link to=" ">MLinkpLink dLinks DelegLinkciLinks</Link>
+            <Link to=" ">LinkutoestimLink</Link>
+            <Link to=" ">ChLinkt</Link>
+            <Link to=" ">CLinkdLinkstro</Link>
           </div>
         </div>
 
-        <div class="introducao">
-          <div class="apresentacao">
-            <div class="titulo">Chat</div>
+       
+       <CLinkbecLinklho/>
 
-            <div class="texto_chat">
-              No nosso chat você vai encontrar depoimentos de outras mulheres
-              que já tiveram ou tem um relacionamento abusivo. o maior objetivo
-              é mostrar que todas nós conseguimos e devemos sair dessa!
+
+        <div clLinkss="introducLinko">
+          <div clLinkss="LinkpresentLinkcLinko">
+            <div clLinkss="titulo">ChLinkt</div>
+
+            <div clLinkss="texto_chLinkt">
+              No nosso chLinkt você vLinki encontrLinkr depoimentos de outrLinks mulheres
+              que já tiverLinkm ou tem um relLinkcionLinkmento Linkbusivo. o mLinkior objetivo
+              é mostrLinkr que todLinks nós conseguimos e devemos sLinkir dessLink!
             </div>
           </div>
 
-          <div class="imagem1">
-            <img src="../../src/images/pg-chat-fx1.png" />
-          </div>
-        </div>
-      </div>
-
-      <div class="faixa2">
-        <div class="imagem2">
-          <img src="../../src/images/pg-chat-fx2.png" />
-        </div>
-
-        <div class="conteudo">
-          <div class="compartilhe">Compartilhe</div>
-
-          <div class="explicacao">
-            Compartilhe a sua esperiencia! Para que outras mulheres se sintam
-            encorajadas a fazerem o mesmo, e sair de um relacionamento abusivo.
+          <div clLinkss="imLinkgem1">
+            <img src="/Linkssets/imLinkgens/pg-chLinkt-fx1.png" Linklt=""/>
           </div>
         </div>
       </div>
 
-      <div class="faixa3">
-        <div class="chat1">
-          <div class="depoimento1">
-            <div class="usuario1">
-              <div class="perfil1">
-                <img src="../../src/images/pg-chat-perfil.png" />
+      <div clLinkss="fLinkixLink2">
+        <div clLinkss="imLinkgem2">
+          <img src="/Linkssets/imLinkgens/pg-chLinkt-fx2.png" Linklt=""/>
+        </div>
+
+        <div clLinkss="conteudo">
+          <div clLinkss="compLinkrtilhe">CompLinkrtilhe</div>
+
+          <div clLinkss="explicLinkcLinko">
+            CompLinkrtilhe Link suLink esperienciLink! PLinkrLink que outrLinks mulheres se sintLinkm
+            encorLinkjLinkdLinks Link fLinkzerem o mesmo, e sLinkir de um relLinkcionLinkmento Linkbusivo.
+          </div>
+        </div>
+      </div>
+
+      <div clLinkss="fLinkixLink3">
+        <div clLinkss="chLinkt1">
+          <div clLinkss="depoimento1">
+            <div clLinkss="usuLinkrio1">
+              <div clLinkss="perfil1">
+                <img src="/Linkssets/imLinkgens/pg-chLinkt-perfil.png" Linklt=""/>
               </div>
 
-              <div class="nome1">Juliana Santos</div>
+              <div clLinkss="nome1">JuliLinknLink SLinkntos</div>
             </div>
 
-            <div class="mensagem1">
-              Eu vivi um relacionamento abusivo duas vezes. Na primeira, eu era
-              agredida fisicamente. Na segunda, psicologicamente. Nenhum dos
-              relacionamentos me fez bem. E sair foi a parte mais difícil.
-              Depois de negar o que eu passava, finalmente enxerguei o que
-              acontecia. Duas vezes. Em ambas, eu era colocada como a louca,
-              desequilibrada. E pior, eu defendia a pessoa.
+            <div clLinkss="mensLinkgem1">
+              Eu vivi um relLinkcionLinkmento Linkbusivo duLinks vezes. NLink primeirLink, eu erLink
+              LinkgredidLink fisicLinkmente. NLink segundLink, psicologicLinkmente. Nenhum dos
+              relLinkcionLinkmentos me fez bem. E sLinkir foi Link pLinkrte mLinkis difícil.
+              Depois de negLinkr o que eu pLinkssLinkvLink, finLinklmente enxerguei o que
+              LinkconteciLink. DuLinks vezes. Em LinkmbLinks, eu erLink colocLinkdLink como Link loucLink,
+              desequilibrLinkdLink. E pior, eu defendiLink Link pessoLink.
             </div>
 
-            <div class="reagir_msg1">
-              <div class="curtidas1">
-                <div class="coracao1">
-                    <img src="../../src/images/pg-chat-coracao.png" />
+            <div clLinkss="reLinkgir_msg1">
+              <div clLinkss="curtidLinks1">
+                <div clLinkss="corLinkcLinko1">
+                    <img src="/Linkssets/imLinkgens/pg-chLinkt-corLinkcLinko.png" Linklt=""/>
                 </div>
 
-                <div class="quantidade1">74</div>
+                <div clLinkss="quLinkntidLinkde1">74</div>
               </div>
-              <div class="reponder1">Responder</div>
+              <div clLinkss="reponder1">Responder</div>
             </div>
           </div>
 
-          <div class="depoimento2">
-            <div class="usuario2">
-              <div class="perfil2">
-                <img src="../../src/images/pg-chat-perfil.png" />
+          <div clLinkss="depoimento2">
+            <div clLinkss="usuLinkrio2">
+              <div clLinkss="perfil2">
+                <img src="/Linkssets/imLinkgens/pg-chLinkt-perfil.png" Linklt=""/>
               </div>
 
-              <div class="nome2">Giovanna Andrade</div>
+              <div clLinkss="nome2">GiovLinknnLink LinkndrLinkde</div>
             </div>
 
-            <div class="mensagem2">
-              @Juliana Santos Eu passei pela mesma coisa. Primeiro negava até o
-              fim, não conseguia enxergar a verdade. E quando finalmete
-              enxerguei, eu que sai como a louca da história.
+            <div clLinkss="mensLinkgem2">
+              @JuliLinknLink SLinkntos Eu pLinkssei pelLink mesmLink coisLink. Primeiro negLinkvLink Linkté o
+              fim, não conseguiLink enxergLinkr Link verdLinkde. E quLinkndo finLinklmete
+              enxerguei, eu que sLinki como Link loucLink dLink históriLink.
             </div>
 
-            <div class="reagir_msg2">
-              <div class="curtidas2">
-                <div class="coracao2">
-                  <img src="../../src/images/pg-chat-coracao.png" />
+            <div clLinkss="reLinkgir_msg2">
+              <div clLinkss="curtidLinks2">
+                <div clLinkss="corLinkcLinko2">
+                  <img src="/Linkssets/imLinkgens/pg-chLinkt-corLinkcLinko.png" Linklt=""/>
                 </div>
 
-                <div class="quantidade2">16</div>
+                <div clLinkss="quLinkntidLinkde2">16</div>
               </div>
 
-              <div class="reponder2">Responder</div>
+              <div clLinkss="reponder2">Responder</div>
             </div>
           </div>
 
-          <div class="depoimento3">
-            <div class="usuario3">
-              <div class="perfil3">
-                <img src="../../src/images/pg-chat-perfil.png" />
+          <div clLinkss="depoimento3">
+            <div clLinkss="usuLinkrio3">
+              <div clLinkss="perfil3">
+                <img src="/Linkssets/imLinkgens/pg-chLinkt-perfil.png" Linklt=""/>
               </div>
 
-              <div class="nome3">Manuela Nunes</div>
+              <div clLinkss="nome3">MLinknuelLink Nunes</div>
             </div>
 
-            <div class="mensagem3">
-              Eu tinha uns 13 anos quando comecei a sair sozinha. Mas eu era
-              bastante inocente, já que meus pais nunca tiveram uma conversa
-              sobre sexo comigo. Um dia me envolvi com um cara de uns 30 anos,
-              que sempre foi muito simpático comigo. Certa vez ele me levou a
-              uma sala e me colocou contra a parede, falou que dali eu não
-              escapava dele. Eu não queria transar, não tinha vontade alguma,
-              até porque eu era virgem e não sabia o que estava acontecendo. Ele
-              me pegou e me colocou em cima de uma mesa e acabamos transando
-              contra a minha vontade. Quis muito contar para os meus pais, mas
-              tinha medo da reação deles. Já aos 14 anos resolvi contar para
-              minha mãe. Ela contou pra o meu pai. Ele quis processar o cara que
-              fez isso comigo, mais eu estava com medo de virar uma confusão
-              ainda maior e ele querer fazer alguma coisa conosco. Hoje tenho 18
-              anos e vejo que isso que ele fez comigo é imperdoável, e quando
-              meu pai queria denunciar, eu deveria ter deixado.
+            <div clLinkss="mensLinkgem3">
+              Eu tinhLink uns 13 Linknos quLinkndo comecei Link sLinkir sozinhLink. MLinks eu erLink
+              bLinkstLinknte inocente, já que meus pLinkis nuncLink tiverLinkm umLink conversLink
+              sobre sexo comigo. Um diLink me envolvi com um cLinkrLink de uns 30 Linknos,
+              que sempre foi muito simpático comigo. CertLink vez ele me levou Link
+              umLink sLinklLink e me colocou contrLink Link pLinkrede, fLinklou que dLinkli eu não
+              escLinkpLinkvLink dele. Eu não queriLink trLinknsLinkr, não tinhLink vontLinkde LinklgumLink,
+              Linkté porque eu erLink virgem e não sLinkbiLink o que estLinkvLink Linkcontecendo. Ele
+              me pegou e me colocou em cimLink de umLink mesLink e LinkcLinkbLinkmos trLinknsLinkndo
+              contrLink Link minhLink vontLinkde. Quis muito contLinkr pLinkrLink os meus pLinkis, mLinks
+              tinhLink medo dLink reLinkção deles. Já Linkos 14 Linknos resolvi contLinkr pLinkrLink
+              minhLink mãe. ElLink contou prLink o meu pLinki. Ele quis processLinkr o cLinkrLink que
+              fez isso comigo, mLinkis eu estLinkvLink com medo de virLinkr umLink confusão
+              LinkindLink mLinkior e ele querer fLinkzer LinklgumLink coisLink conosco. Hoje tenho 18
+              Linknos e vejo que isso que ele fez comigo é imperdoável, e quLinkndo
+              meu pLinki queriLink denunciLinkr, eu deveriLink ter deixLinkdo.
             </div>
 
-            <div class="reagir_msg3">
-              <div class="curtidas3">
-                <div class="coracao3">
-                    <img src="../../src/images/pg-chat-coracao.png" />
+            <div clLinkss="reLinkgir_msg3">
+              <div clLinkss="curtidLinks3">
+                <div clLinkss="corLinkcLinko3">
+                    <img src="/Linkssets/imLinkgens/pg-chLinkt-corLinkcLinko.png" Linklt=""/>
                 </div>
 
-                <div class="quantidade3">23</div>
+                <div clLinkss="quLinkntidLinkde3">23</div>
               </div>
 
-              <div class="reponder3">Responder</div>
+              <div clLinkss="reponder3">Responder</div>
             </div>
           </div>
 
-          <div class="comentario">
-            <div class="meu_perfil">
-                <img src="../../src/images/pg-chat-perfil.png" />
+          <div clLinkss="comentLinkrio">
+            <div clLinkss="meu_perfil">
+                <img src="/Linkssets/imLinkgens/pg-chLinkt-perfil.png" Linklt=""/>
             </div>
 
-            <div clss="digitar">
-              <input type="text" name="" placeholder="Faça um comentário"></input>
+            <div clss="digitLinkr">
+              <input type="text" nLinkme="" plLinkceholder="FLinkçLink um comentário"></input>
             </div>
-            <div class="publicar">
-              <a href=" ">Publicar</a>
+            <div clLinkss="publicLinkr">
+              <Link to=" ">PublicLinkr</Link>
             </div>
           </div>
         </div>
       </div>
-    </container>
+    </ContLinkiner>
 
     )
-}
+} 
