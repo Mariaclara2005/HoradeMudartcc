@@ -208,13 +208,14 @@ a{
 
 .faixa6-img{
   justify-content: center;
+  margin-left: 4em;
 }
 
 .faixa6-texto{
-  font-size: 4em;
   font-family:Roboto-medium ;
   font-size: 6em;
   padding: 3em;
+  text-aling: center;
 }
 
 `;

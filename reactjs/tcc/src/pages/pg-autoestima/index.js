@@ -109,13 +109,10 @@ export default function Autoestima ()
                 <img src={img6} alt=""/>
                 </div>
 
-                <div className="faixa6-textos">
+                
                 
                 <div className="faixa6-texto">LUTE COMO  UMA GUERREIRA</div>
                 </div>   
-
-                </div>
-
                 </div>
 
                         </Container>
