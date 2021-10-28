@@ -12,7 +12,7 @@ export default function Chat ()
       <div class="faixa1">
         <div class="cabecalho">
           <div class="logo">
-            <img src="../../src/images/logo-claro.png" />
+            <img src="/assets/imagens/logo-claro.png" alt=""/>
           </div>
 
           <div class="menu">
