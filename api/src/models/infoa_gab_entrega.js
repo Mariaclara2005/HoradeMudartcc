@@ -1,26 +1,46 @@
 import _sequelize from 'sequelize';
 const { Model, Sequelize } = _sequelize;
 
-export default class infod_ssc_item_venda extends Model {
+export default class infoa_gab_entrega extends Model {
   static init(sequelize, DataTypes) {
   super.init({
-    id_item_venda: {
+    id_entrega: {
       autoIncrement: true,
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true
     },
-    id_produto: {
+    id_endereco: {
       type: DataTypes.INTEGER,
+      allowNull: false,
+      references: {
+        model: 'infoa_gab_endereco',
+        key: 'id_endereco'
+      }
+    },
+    ds_situacao: {
+      type: DataTypes.STRING(255),
+      allowNull: true
+    },
+    dt_saida: {
+      type: DataTypes.DATE,
+      allowNull: true
+    },
+    dt_entrega: {
+      type: DataTypes.DATE,
       allowNull: true
     },
     id_venda: {
       type: DataTypes.INTEGER,
-      allowNull: true
+      allowNull: true,
+      references: {
+        model: 'infoa_gab_venda',
+        key: 'id_venda'
+      }
     }
   }, {
     sequelize,
-    tableName: 'infod_ssc_item_venda',
+    tableName: 'infoa_gab_entrega',
     timestamps: false,
     indexes: [
       {
@@ -28,14 +48,14 @@ export default class infod_ssc_item_venda extends Model {
         unique: true,
         using: "BTREE",
         fields: [
-          { name: "id_item_venda" },
+          { name: "id_entrega" },
         ]
       },
       {
-        name: "id_produto",
+        name: "id_endereco",
         using: "BTREE",
         fields: [
-          { name: "id_produto" },
+          { name: "id_endereco" },
         ]
       },
       {
@@ -47,6 +67,6 @@ export default class infod_ssc_item_venda extends Model {
       },
     ]
   });
-  return infod_ssc_item_venda;
+  return infoa_gab_entrega;
   }
 }
