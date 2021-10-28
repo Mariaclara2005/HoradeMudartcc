@@ -39,6 +39,31 @@ app.get('/cadastro', async (req, resp) => {
     }
 })
 
+app.post('/login', async (req, resp) => {
+    const email = req.body.email;
+    const senha = req.body.senha;
+
+    const cryptoSenha = crypto.SHA256(senha).toString(crypto.enc.Base64)
+
+    let r = await db.infob_hdm_login.findOne(
+        {
+            where: {
+                   nm_HDM_email: email,
+                   nm_HDM_senha: cryptoSenha
+            },
+        raw: true 
+        
+        })
+
+        
+    if (r == null)
+        return resp.send({ erro: 'Credenciais Inválidas!' });
+
+    delete u.nm_HDM_senha;
+    resp.sendStatus(u);
+});
+
+
 
 
 
