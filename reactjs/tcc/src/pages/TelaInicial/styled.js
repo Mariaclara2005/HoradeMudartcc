@@ -43,7 +43,7 @@ a{
 
 .texto-centro{
     text-align: center;
-    margin-top: 7em;
+    margin-top: 5em;
     font-size: 2.2em;
     color: cornsilk;
     font-style: italic;
@@ -251,7 +251,7 @@ a{
     font-style: italic;
     font-size: 2.2em;
     color: #1A284D;
-    width: 28em;
+    
 }
 
 .botao-faixa5{
@@ -268,7 +268,7 @@ a{
 .faixa5-botao{
     padding-top: 5em;
     align-items: center;
-    padding-left: 25em;
+    padding-left: 13em;
 }
 
 .pagina-chat{
