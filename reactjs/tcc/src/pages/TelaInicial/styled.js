@@ -233,7 +233,7 @@ a{
     display: flex;
     flex-direction: row;
     background-color: whitesmoke;
-    justify-content: space-between;   
+    justify-content: center;   
     align-items: center;
 }
 
@@ -242,7 +242,8 @@ a{
 }
 
 .faixa5-image{
-    padding-left: 5em ;    
+    padding-left: 5em ;  
+      
 }
 
 .faixa5-texto{
@@ -250,6 +251,7 @@ a{
     font-style: italic;
     font-size: 2.2em;
     color: #1A284D;
+    width: 28em;
 }
 
 .botao-faixa5{
@@ -266,7 +268,7 @@ a{
 .faixa5-botao{
     padding-top: 5em;
     align-items: center;
-    padding-left: 14em;
+    padding-left: 25em;
 }
 
 .pagina-chat{
@@ -275,6 +277,7 @@ a{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding-top: .1em;
 }
 
 .faixa6-texto{
@@ -282,6 +285,7 @@ a{
     font-style: italic;
     font-size: 2.2em;
     color: #1A284D;
+    width: 18em;
 }
 
 .faixa6-conteudo{

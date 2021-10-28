@@ -33,17 +33,13 @@ export default function Routes() {
                 <Route path="/Chat" exact= {true} component={Chat}/>
                 <Route path="/Cadastro" exact={true} component={Cadastro}/>
                  <Route path="/MapaDelegacias" exact={true} component={MapaDelegacias}/>
-
                   <Route path="/ChatDenuncia" exact={true} component={ChatDenuncia}/>                
                  <Route path="/CadastroADM" exact={true} component={CadastroADM} /> 
-
-                  
                   <Route path="/Login" exact={true} component={Login}/>
                 {/* <Route path="/RedefinirSenha" exact={true} component={RedefinirSenha}/>
                 <Route path="/Denuncia" exact={true} component={Denuncia}/>
                 <Route path="/CaracteristicasLocalizaçao" exact={true} component={CaracteristicasLocalizaçao}/>
                 <Route path="/TipoAssedio" exact={true} component={TipoAssedio}/>
-                
                 <Route path="/QuemSomoNos" exact={true} component={QuemSomosNos}/>  */}
                 <Route path="/AutorizaçaoMensagem" exact={true} component={AutorizaçaoMensagem}/>
                 {/* <Route path="/LoginADM" exact={true} component={LoginADM}/> 
