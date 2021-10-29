@@ -204,6 +204,12 @@ a{
   height: 100vh;
   display: flex;
   align-items: center;
+  
+}
+
+.faixa6 img{
+  width: 29em;
+  height: 25em;
 }
 
 .faixa6-img{
@@ -213,9 +219,10 @@ a{
 
 .faixa6-texto{
   font-family:Roboto-medium ;
-  font-size: 6em;
+  font-size: 3em;
   padding: 3em;
   text-aling: center;
+  
 }
 
 `;

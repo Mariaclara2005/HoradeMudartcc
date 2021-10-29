@@ -59,7 +59,7 @@ export default function  EsqueceuSenha () {
     
     
                 <div class="botao1">
-                    <button>Mandar Codigo</button>
+                    <button>Enviar Codigo</button>
               </div>
 
               <div class="botao2">
