@@ -111,7 +111,7 @@ export default function Autoestima ()
 
                 
                 
-                <div className="faixa6-texto">LUTE COMO  UMA GUERREIRA</div>
+                <div className="faixa6-texto">LUTE COMO  UMA GUERREIRA!!!</div>
                 </div>   
                 </div>
 
