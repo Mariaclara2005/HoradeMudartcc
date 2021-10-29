@@ -101,6 +101,10 @@ const Container =  styled.div`
     margin-left: 30px;
 }
 
+.email input{
+    width: 27em;
+}
+
 .celular {
     margin: 20px;
     margin-left: 30px;
@@ -144,6 +148,10 @@ button {
     
   
 
+}
+
+.entrar button{
+    width: 9em;
 }
 
 .entrar :hover{

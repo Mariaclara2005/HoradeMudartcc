@@ -8,6 +8,7 @@ export default function Cadastro ()
 {
     return(
  <Container>
+     
      <Cabecalho />
 
    <div class="conteudo">
@@ -53,7 +54,7 @@ export default function Cadastro ()
            </div>
 
            <div class="entrar">
-               <button>Entrar</button>
+               <button>Cadastrar-se</button>
              
 
            </div>

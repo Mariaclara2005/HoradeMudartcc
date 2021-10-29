@@ -19,6 +19,8 @@ import ChatDenuncia from './pages/ChatDenuncia'
 //import InformaçoesLocalizacao from './pages/InformaçoesLocalizacao'
 //import InformaçoesDenuncia from './pages/InformacoesDenuncia'
 import RedefinirSenhaADM from './pages/RedefinirSenhaADM'
+import EsqueceuSenha from './pages/EsqueceuSenha'
+import EsqueceuSenhaADM from './pages/EsqueceuSenhaADM'
 
 
 
@@ -46,6 +48,8 @@ export default function Routes() {
                  <Route path="/InformaçoesLocalizacao" exact={true} component={InformaçoesLocalizacao}/>
                 <Route path="/InformaçoesDenuncia" exact={true} component={InformaçoesDenuncia}/> */}
                 <Route path="/RedefinirSenhaADM" exact={true} component={RedefinirSenhaADM}/>
+                <Route path="/EsqueceuSenha" exact={true} component={EsqueceuSenha}/>
+                <Route path="/EsqueceuSenhaADM" exact={true} component={EsqueceuSenhaADM}/>
              </Switch>
         </BrowserRouter>
     )}

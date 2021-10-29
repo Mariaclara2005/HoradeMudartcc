@@ -67,7 +67,9 @@ a{
 
 .tipo-de-violencia{
     height: 100vh;
-    background-color: white;
+    background-image: url(/assets/imagens/teste22.png);
+    margin: -5px;
+    background-size: 100% 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -179,6 +181,9 @@ a{
     display: flex;
     flex-direction: row;
     height: 100vh;
+    background-image: url(/assets/imagens/teste22.png);
+    margin: -5px;
+    background-size: 100% 100%;
     justify-content: center;
 }
 

@@ -15,7 +15,9 @@ export default function TelaInicial () {
             <div class="cabecalho-inicio">
 
                 <div class="cabecalho-img">
+                    <Link to="/LoginADM">
                     <img src="/assets/imagens/logo-claro.png" alt=""/>
+                    </Link>
                 </div>
                 
 
@@ -29,6 +31,7 @@ export default function TelaInicial () {
                      <Link to="/AutoEstima">Autoestima</Link>
                      <Link to="/Chat">Chat</Link>
                      <Link to="/Cadastro">Cadastro</Link>
+                     <Link to="/Login">Login</Link>
 
                                                    
                 </div>

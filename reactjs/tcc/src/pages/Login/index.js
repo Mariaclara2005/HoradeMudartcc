@@ -52,7 +52,7 @@ export default function Login ()
             </div>
 
             <div class="esqueceu-senha">
-            <Link to="">Esqueci a Senha</Link>
+            <Link to="/EsqueceuSenha">Esqueci a Senha</Link>
             </div>
 
             <div class="botoes">
