@@ -3,7 +3,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import TelaInicio from './pages/TelaInicial'
 import AutoEstima from './pages/pg-autoestima'
 import TipoViolencia from './pages/TiposDeViolencia'
-// import Chat from './pages/Chat'
+ import Chat from './pages/Chat'
 import Cadastro from './pages/Cadastro'
 import CadastroADM from './pages/CadastroADM'
 //import RedefinirSenha from './pages/RedefinirSenha'
@@ -32,7 +32,7 @@ export default function Routes() {
                 <Route path="/" exact={true} component={TelaInicio}/> 
                   <Route path="/autoestima" exact={true} component={AutoEstima}/> 
                 <Route path="/TipoViolencia" exact={true} component={TipoViolencia}/>
-                {/* <Route path="/Chat" exact= {true} component={Chat}/> */}
+                 <Route path="/Chat" exact= {true} component={Chat}/> 
                 <Route path="/Cadastro" exact={true} component={Cadastro}/>
                  <Route path="/MapaDelegacias" exact={true} component={MapaDelegacias}/>
                   <Route path="/ChatDenuncia" exact={true} component={ChatDenuncia}/>                

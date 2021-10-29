@@ -6,26 +6,11 @@ const Container = styled.div`
   display: column;
   flex-direction: column;
 
-.logo {
-  display: flex;
-  flex-direction: row;
-  width: 160px;
-  height: 100px;
-  padding: 1.5em;
-  margin-top: -60px;
-}
-
-.menu {
-  margin-left: 24em;
-  margin-top: -20px;
-}
-
 .texto_chat {
-  width: 550px;
-  margin-left: 160px;
   font-family: Roboto-Medium;
-  font-size: 25px;
+  font-size: 2em;
   color: #ffffff;
+  text-aling: center;
 }
 
 .faixa1 {
@@ -35,15 +20,24 @@ const Container = styled.div`
   height: 100vh;
 }
 
-.imagem1 {
-  margin-left: 8em;
+.imagem1 img {
+  margin-left: 2em;
+  width: 480px;
+  height: 550px;
+  margin-top: 4em;
+}
+
+.imagem2 img {
+  height: 600px;
+  width: 680px;
+  margin-top: 7em;
 }
 
 .titulo {
   width: 350px;
   margin-left: 5.2em;
   font-family: Roboto-Medium;
-  font-size: 60px;
+  font-size: 4em;
   font-weight: 500;
   color: #ffffff;
   padding: 30px;
@@ -52,13 +46,9 @@ const Container = styled.div`
 .introducao {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
-.cabecalho {
-  display: flex;
-  flex-direction: row;
-  margin-top: 40px;
-}
 
 .apresentacao {
   display: flex;
@@ -90,12 +80,6 @@ const Container = styled.div`
   font-family: Roboto-Medium;
   font-size: 25px;
   color: #000000;
-}
-
-.menu {
-  display: row;
-  flex-direction: row;
-  font-family: Roboto-Medium;
 }
 
 .chat1 {

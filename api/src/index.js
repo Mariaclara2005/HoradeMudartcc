@@ -11,7 +11,6 @@ app.post('/cadastro',async (req,resp) => {
         let usuParam = req.body;
 
         let u = await db.infob_hdm_cadastro.findOne({ where: { nm_HDM_email: usuParam.email } });
-        // lert u = await db.tb_infob_hdm_cadastro
         if (u != null)
             return resp.send({ erro: 'Usuário já existe!' });
         
@@ -45,26 +44,62 @@ app.post('/login', async (req, resp) => {
 
     const cryptoSenha = crypto.SHA256(senha).toString(crypto.enc.Base64)
 
-    let r = await db.infob_hdm_login.findOne(
+    let r = await db.infob_hdm_login.findAll(
         {
             where: {
-                   nm_HDM_email: email,
-                   nm_HDM_senha: cryptoSenha
+                   nm_HDM_nome: email,
+                   nr_senha: cryptoSenha
             },
         raw: true 
-        
         })
 
         
     if (r == null)
-        return resp.send({ erro: 'Credenciais Inválidas!' });
+        return resp.send({ erro: e.toString()});
 
-    delete u.nm_HDM_senha;
-    resp.sendStatus(u);
+    resp.sendStatus(200);
 });
 
+app.get('/login', async (req, resp) => {
+    try {
+        let login = await db.infob_hdm_login.findAll();
+        resp.send(login);
+    } catch (e) {
+        resp.send({ erro: e.toString()})
+    }
+})
 
 
+app.post('/login_adm', async (req, resp) => {
+    const email_empresa = req.body.email_empresa;
+    const senha = req.body.senha;
+
+    const cryptoSenha = crypto.SHA256(senha).toString(crypto.enc.Base64)
+
+    let r = await db.infob_hdm_login.findAll(
+        {
+            where: {
+                   nm_HDM_nome: email_empresa,
+                   nr_senha: cryptoSenha
+            },
+        raw: true 
+        })
+
+        
+    if (r == null)
+        return resp.send({ erro: e.toString()});
+
+    resp.sendStatus(200);
+});
+
+app.get('/login_adm', async (req, resp) => {
+    try {
+        let login = await db.infob_hdm_login_adm.findAll();
+        resp.send(login);
+    } catch (e) {
+        resp.send({ erro: e.toString()})
+    }
+})
 
 
 
