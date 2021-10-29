@@ -18,7 +18,6 @@ body {
     background-color: #7DA074;
     width: 100%;
     height: 100%;
-    margin: 0px;
 }
 
 .cabecalho{
@@ -57,7 +56,7 @@ body {
 .research{
     padding-right: 5em;
     margin-left: 33em;
-    margin-bottom: 0em;
+    padding-bottom: 5em;
 }
 
 .searchbox{
@@ -68,8 +67,9 @@ body {
    display: flex;
    align-items: center;
    padding: 7px;
-   margin-left: 37em;
+   margin-left: 40em;
     margin-top: 3em;
+    margin-bottom: 3em;
 }
 
 .searchbox > i {
@@ -90,8 +90,8 @@ body {
 
 
 .mapa{
-   padding-left: 28em;
-    padding-top: 1em;
+    margin-left: 27em;
+    margin-bottom: 1em;
 }
 
 .conteudo2{
@@ -109,12 +109,12 @@ body {
 }
 
 .text2{
-    margin-left: 6.5em;
-    padding-top: 1em;
+    margin-left: 10em;
+    padding-top: 0em;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 65px;
+    font-size: 55px;
     line-height: 65px;
     text-align: center;
 
@@ -162,8 +162,8 @@ body {
     transition: ease-out 0.3s;
     font-size: 2rem;
     outline: none;
-    margin-left: -22em;
-    margin-top: 12em;
+    margin-left: -24em;
+    margin-top: 15em;
 }
 
 .btn2:hover {
