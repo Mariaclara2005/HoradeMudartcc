@@ -62,10 +62,12 @@ export default function  EsqueceuSenha () {
                     <button>Mandar Codigo</button>
               </div>
 
+              <Link to="/">
               <div class="botao2">
-                    <button>Cancelar</button>
+                    <button> Cancelar  </button>
               </div>
-
+              </Link>
+              
                 </div>
     
             </div>

@@ -31,8 +31,8 @@ height: 100vh;
     height: 30em;
     width: 53em;
     background-color: white;
-    margin-left: 26em;
-    margin-top: 4em;
+    margin-left: 14em;
+    margin-top: 6em;
     border-radius: 2em;
     display: flex;
     flex-direction: column;
@@ -65,6 +65,7 @@ height: 100vh;
     border-radius: 1em;
     height: 3em;
     background-color: #C4C4C4;
+    border: none;
 }
 
 
@@ -83,6 +84,10 @@ button{
     font-size: 1em;
 }
 
+.botoes button{
+    border: none;
+}
+
 .botao1{
 margin-right: 1em;
 }
@@ -97,6 +102,11 @@ hr{
 
 .linha{
     padding-top: 1em;
+}
+
+.botao2 :hover{
+    background-color: #57833a;
+    transition: 0.1s;
 }
 
 .cabecalho-img img {

@@ -31,8 +31,8 @@ height: 100vh;
     height: 30em;
     width: 64em;
     background-color: white;
-    margin-left: 26em;
-    margin-top: 4em;
+    margin-left: 9em;
+    margin-top: 8em;
     border-radius: 2em;
     display: flex;
     flex-direction: column;
@@ -65,12 +65,13 @@ height: 100vh;
     border-radius: 1em;
     height: 3em;
     background-color: #C4C4C4;
+    border: none;
 }
 
 
 .botoes{
-    padding-top: 5em;
-    padding-left: 20em;
+    padding-top: 9em;
+    padding-left: 29em;
     display: flex;
     flex-direction: row;
 }
@@ -81,6 +82,10 @@ button{
     height: 3em;
     border-radius: 1em;
     font-size: 1em;
+}
+
+.botoes button{
+    border: none;
 }
 
 .botao1{
