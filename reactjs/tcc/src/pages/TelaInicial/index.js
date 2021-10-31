@@ -95,7 +95,7 @@ export default function TelaInicial () {
              </ScrollAnimation>
 
                 <div class="faixa3-botao">
-                    <button class="botao-faixa3">IR</button>
+                    <button class="botao-faixa3"> <Link to="/AutoEstima"> IR </Link> </button>
                 </div>
 
             </div>
@@ -141,7 +141,7 @@ export default function TelaInicial () {
             </ScrollAnimation>
 
                 <div class="faixa5-botao">
-                <button class="botao-faixa5">Ir ao Mapa</button>
+                <button class="botao-faixa5"> <Link to="/MapaDelegacias"> Ir ao Mapa </Link> </button>
                 </div>
 
             </div>

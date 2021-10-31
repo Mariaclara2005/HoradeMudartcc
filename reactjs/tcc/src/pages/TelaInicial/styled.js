@@ -399,6 +399,11 @@ a{
     border: none;
 }
 
+.botao-faixa2 :hover{
+    background-color: #18D1C2;
+    transition: 0.9s;
+}
+
 .faixa2-img img {
     position: relative;
     animation: animar 3s infinite;
