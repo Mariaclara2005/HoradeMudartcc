@@ -401,7 +401,7 @@ a{
 
 .botao-faixa2 :hover{
     background-color: #18D1C2;
-    transition: 0.9s;
+    transition: 0.8s;
 }
 
 .faixa2-img img {
