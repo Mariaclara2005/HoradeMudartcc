@@ -1,38 +1,51 @@
 
 import styled from 'styled-components';
 
-const container = styled.div`
+const Container = styled.div`
+
+height: 100vh;
 
 body {
     margin: 0;
 }
 
-.container {
-    background: #7DA074;
+& {
+    background-color: #7DA074;
     padding: 3.5em;
 }
+
+
+.cabecalho-inicio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    
+}
+
+.cabecalho-img{
+    margin-top: 1em;
+    margin-left: 2em;
+}
+
+.cabecalho-botoes a {
+    margin: 0em .4em;
+    
+}
+
+.cabecalho-botoes{
+    margin-top: 4em;
+    margin-right: 2em;
+    color: white;
+    
+}
+
 
 .logo {
     width: 150px;
     height: 90px;
     margin-right: 30em;
     margin-top: -6em;
-}
-
-.menu {
-    font-family: Roboto-Medium;
-    font-size: 14px;
-    margin-top: -6em;
-    margin-left: 1em;
-    height: -30px;6
-}
-
-.cabecalho {
-    display: flex;
-    flex-direction: row;
-    margin-left: 1em;
-    margin-top: 40px;
-    justify-content: center;
 }
 
 .conteudo {
@@ -92,6 +105,6 @@ button {
     margin-top: 2.5em;
 }
 
-`;
+`
 
-export {container}
+export {Container}
