@@ -119,7 +119,7 @@ a{
 }
 
 .faixa3{
-  background-color: #E2E3DD;
+  background-color: #ccc;
   display: flex;
   flex-direction: row;
   align-items: center;

@@ -101,7 +101,14 @@ app.get('/login_adm', async (req, resp) => {
     }
 })
 
-
+app.post('/chat', async (req, resp) => {
+    try {
+        let login = await db.infob_hdm_login_adm.findAll();
+        resp.send(login);
+    } catch (e) {
+        resp.send({ erro: e.toString()})
+    }
+})
 
 app.listen(process.env.PORT,
 

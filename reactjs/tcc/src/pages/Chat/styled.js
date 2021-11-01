@@ -8,9 +8,11 @@ const Container = styled.div`
 
 .texto_chat {
   font-family: Roboto-Medium;
-  font-size: 2em;
+  font-size: 35px;
   color: #ffffff;
   text-aling: center;
+  width: 700px;
+  margin-left: 3.5em;
 }
 
 .faixa1 {
@@ -35,12 +37,13 @@ const Container = styled.div`
 
 .titulo {
   width: 350px;
-  margin-left: 5.2em;
+  margin-left: 4.5em;
   font-family: Roboto-Medium;
-  font-size: 4em;
+  font-size: 70px;
   font-weight: 500;
   color: #ffffff;
   padding: 30px;
+  margin-top: 1.5em;
 }
 
 .introducao {
@@ -65,20 +68,20 @@ const Container = styled.div`
 .compartilhe {
   color: #205922;
   width: 350px;
-  margin-left: 2em;
-  margin-top: 1em;
+  margin-left: 1em;
+  margin-top: 3em;
   font-family: Roboto-Medium;
-  font-size: 60px;
+  font-size: 70px;
   font-weight: 500;
   padding: 30px;
 }
 
 .explicacao {
-  width: 450px;
-  margin-left: 140px;
-  margin-top: o.5em;
+  width: 560px;
+  margin-left: 1em;
+  margin-top: 2em;
   font-family: Roboto-Medium;
-  font-size: 25px;
+  font-size: 35px;
   color: #000000;
 }
 
