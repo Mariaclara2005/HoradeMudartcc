@@ -1,8 +1,15 @@
-// import {link} from 'react-router-dom';
+import { link } from 'react-router-dom'
 import {Container} from './styled';
 import Cabecalho from '../../componentes/comum/cabecalho';
-// import Img from '../../../public/assets/imagens/logo-claro.png'
-// import Img2 from '../../../public/assets/imagens/pg-cadastro.png'
+import { Route, Router } from 'react-router';
+import { useState, useRef } from 'react';
+import Cookies from 'js-Cookies';
+
+import { useHistory } from 'react-router-dom'
+
+import Api from '../../service/api';
+const api = new Api();
+
 
 export default function Cadastro ()
 {
@@ -14,7 +21,7 @@ export default function Cadastro ()
    <div class="conteudo">
      <div class="imagem1">
         <img src='/assets/imagens/pg-cadastro.png' alt=""/>  
-
+    
    </div>
 
     <div className="barra"><img src='/assets/imagens/line 12.png' alt="" /></div> 

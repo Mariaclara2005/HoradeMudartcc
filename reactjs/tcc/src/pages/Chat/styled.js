@@ -6,11 +6,38 @@ const Container = styled.div`
   display: column;
   flex-direction: column;
 
+
+  .cabecalho-inicio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    
+}
+
+.cabecalho-img{
+    margin-top: 1em;
+    margin-left: 2em;
+}
+
+.cabecalho-botoes a {
+    margin: 0em .4em;
+    
+}
+
+.cabecalho-botoes{
+    margin-top: 4em;
+    margin-right: 2em;
+    color: white;
+    
+}
+
+
 .texto_chat {
   font-family: Roboto-Medium;
   font-size: 35px;
   color: #ffffff;
-  text-aling: center;
+  text-align: center;
   width: 700px;
   margin-left: 3.5em;
 }
@@ -31,7 +58,7 @@ const Container = styled.div`
 
 .imagem2 img {
   height: 600px;
-  width: 680px;
+  width: 650px;
   margin-top: 7em;
 }
 
@@ -77,12 +104,14 @@ const Container = styled.div`
 }
 
 .explicacao {
-  width: 560px;
-  margin-left: 1em;
-  margin-top: 2em;
+  width: 570px;
   font-family: Roboto-Medium;
   font-size: 35px;
   color: #000000;
+}
+
+.conteudo {
+  margin-top: 3em;
 }
 
 .chat1 {
@@ -220,6 +249,8 @@ const Container = styled.div`
 
 .digitar {
   position: absolute;
+  border-color: transparent;
+ 
 }
 
 .reponder1{
@@ -234,6 +265,10 @@ const Container = styled.div`
     margin-left: 30em;;
 }
 
+input {
+  border-radius:25px;
+  width:50em;
+}
 `;
 
 export {Container}  

@@ -101,15 +101,53 @@ app.get('/login_adm', async (req, resp) => {
     }
 })
 
+<<<<<<< HEAD
+app.post('/cadastro_adm',async (req,resp) => {
+    try {
+        let usuParam = req.body;
+
+        let u = await db.infob_hdm_cadastro_adm.findOne({ where: { nm_HDM_email_empresa: usuParam.email_empresa } });
+        if (u != null)
+            return resp.send({ erro: 'Usuário já existe!' });
+        
+        let r = await db.infob_hdm_cadastro_adm.create({
+            nm_HDM_nome: usuParam.nome,
+            nm_HDM_sobrenome: usuParam.sobrenome,
+            nr_HDM_celular: usuParam.celular,
+            nm_HDM_email_empresa: usuParam.email_empresa,
+            nm_HDM_senha: crypto.SHA256(usuParam.senha).toString(crypto.enc.Base64)
+
+        })
+        resp.send(r);
+=======
 app.post('/chat', async (req, resp) => {
     try {
         let login = await db.infob_hdm_login_adm.findAll();
         resp.send(login);
+>>>>>>> 88126e6bb56fcb2b02b0488ded21f23293dcee70
+    } catch (e) {
+        resp.send({ erro: e.toString()})
+    }
+})
+<<<<<<< HEAD
+
+
+app.get('/cadastro_adm', async (req, resp) => {
+    try {
+        let cadastro_adm = await db.infob_hdm_cadastro_adm.findAll();
+        resp.send(cadastro_adm);
     } catch (e) {
         resp.send({ erro: e.toString()})
     }
 })
 
-app.listen(process.env.PORT,
 
+=======
+>>>>>>> 88126e6bb56fcb2b02b0488ded21f23293dcee70
+
+
+<<<<<<< HEAD
+app.listen(process.env.PORT, x => console.log(`Server up at port ${process.env.PORT}`))
+=======
 x => console.log(`Server up at port ${process.env.PORT}`))
+>>>>>>> 88126e6bb56fcb2b02b0488ded21f23293dcee70

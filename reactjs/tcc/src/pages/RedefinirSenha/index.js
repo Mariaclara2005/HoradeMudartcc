@@ -1,30 +1,39 @@
-
-import {link} from 'react-router-dom';
-import {container} from './styled';
+import { Link } from 'react-router-dom'
+import {Container} from './styled';
 import Cabecalho from '../../componentes/comum/cabecalho'
 
 export default function RedefinirSenha () 
 {
     return (
 
-        <container>
-        <div class="Cabecalho">
-            <div class="logo">
-              <img src="../../src/images/logo-claro.png" />
+        <Container>
+
+        
+            <div class="cabecalho-inicio">
+
+            <div class="cabecalho-img">
+                <Link to="/LoginADM">
+                <img src="/assets/imagens/logo-claro.png" alt=""/>
+                </Link>
             </div>
 
-            <div class="menu">
-              <Link to="">Inicio</Link>
-              <Link to="">Denúncie</Link>
-              <Link to="">Tipos de violência</Link>
-              <Link to="">Tipos de assédio</Link>
-              <Link to="">Mapa das Delegacias</Link>
-              <Link to="">Autoestima</Link>
-              <Link to="">Chat</Link>
-              <Link to="">Cadastro</Link>
+
+            <div class="cabecalho-botoes">
+
+                
+                <Link to="/Denuncie">Denúncie</Link>
+                <Link to="/TipoViolencia">Tipos de violência</Link>
+                <Link to=" ">Tipos de assédio</Link>
+                <Link to="/MapaDelegacias">Mapa das Delegacia</Link>
+                <Link to="/AutoEstima">Autoestima</Link>
+                <Link to="/Chat">Chat</Link>
+                <Link to="/Cadastro">Cadastro</Link>
+                <Link to="/Login">Login</Link>
+
+                                              
             </div>
 
-        </div>
+            </div>
 
         <div class="conteudo">
             <div class="titulo">Redefinir Senha</div>
@@ -49,6 +58,6 @@ export default function RedefinirSenha ()
                 </div>
             </div>
         </div>
-    </container>
+    </Container>
     )
 }

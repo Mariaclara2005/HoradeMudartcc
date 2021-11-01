@@ -1,7 +1,7 @@
 import _sequelize from 'sequelize';
 const { Model, Sequelize } = _sequelize;
 
-export default class infob_hdm_cadastro extends Model {
+export default class infob_hdm_cadastro_adm extends Model {
   static init(sequelize, DataTypes) {
   super.init({
     id_HDM_cadastro: {
@@ -26,7 +26,7 @@ export default class infob_hdm_cadastro extends Model {
       type: DataTypes.DECIMAL(10,0),
       allowNull: true
     },
-    nm_HDM_email: {
+    nm_HDM_email_empresa: {
       type: DataTypes.STRING(300),
       allowNull: true
     },
@@ -36,7 +36,7 @@ export default class infob_hdm_cadastro extends Model {
     }
   }, {
     sequelize,
-    tableName: 'infob_hdm_cadastro',
+    tableName: 'infob_hdm_cadastro_adm',
     timestamps: false,
     indexes: [
       {
@@ -49,6 +49,6 @@ export default class infob_hdm_cadastro extends Model {
       },
     ]
   });
-  return infob_hdm_cadastro;
+  return infob_hdm_cadastro_adm;
   }
 }
