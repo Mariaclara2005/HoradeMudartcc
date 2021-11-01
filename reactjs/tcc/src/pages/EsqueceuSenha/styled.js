@@ -70,7 +70,7 @@ height: 100vh;
 
 
 .botoes{
-    padding-top: 5em;
+    padding-top: 9em;
     padding-left: 20em;
     display: flex;
     flex-direction: row;
@@ -106,7 +106,12 @@ hr{
 
 .botao2 :hover{
     background-color: #57833a;
-    transition: 0.1s;
+    transition: 0.8s;
+}
+
+.botao1 :hover{
+    background-color: #57833a;
+    transition: 0.8s;
 }
 
 .cabecalho-img img {

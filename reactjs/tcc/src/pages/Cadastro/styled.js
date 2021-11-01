@@ -156,7 +156,7 @@ button {
 
 .entrar :hover{
     background-color: #57833a;
-    transition: 0.1s;
+    transition: 0.8s;
 }
 
 `

@@ -31,7 +31,7 @@ background-color: #7DA074;
     flex-direction: row;
     justify-content: center;
     padding-top: 5em;
-    padding-left: 1em;
+    padding-right: 3em;
 }
 
     
@@ -98,8 +98,7 @@ hr{
 }
 
 .imagem2{
-    padding-right: 20em;  
-    width: 35em;
+    
     height: 32em;
 }
 

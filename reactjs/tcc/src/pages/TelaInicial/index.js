@@ -39,7 +39,7 @@ export default function TelaInicial () {
             </div>
 
             <div class="texto-centro">
-               <Link to="https://www.gov.br/pt-br/servicos/denunciar-e-buscar-ajuda-a-vitimas-de-violencia-contra-mulheres">   Central de Atendimento à Mulher - Ligue 180 </Link> 
+               <a href="https://www.gov.br/pt-br/servicos/denunciar-e-buscar-ajuda-a-vitimas-de-violencia-contra-mulheres">   Central de Atendimento à Mulher - Ligue 180 </a> 
             </div>
 
             <div class="faixa-meio">
