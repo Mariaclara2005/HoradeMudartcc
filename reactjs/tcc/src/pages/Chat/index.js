@@ -2,7 +2,8 @@
 
 import {Link} from 'react-router-dom'
 import {Container} from './styled'
-import Cabecalho from  '../../componentes/comum/cabecalho'
+
+
 
 
 export default function ChLinkt () {
@@ -11,7 +12,34 @@ export default function ChLinkt () {
     <Container>
         
       <div class="faixa1">
-        <Cabecalho/>
+
+        
+                  <div class="cabecalho-inicio">
+
+            <div class="cabecalho-img">
+                <Link to="/LoginADM">
+                <img src="/assets/imagens/logo-claro.png" alt=""/>
+                </Link>
+            </div>
+
+
+            <div class="cabecalho-botoes">
+
+                
+                <Link to="/">Inicio</Link>
+                <Link to="/TipoViolencia">Tipos de violência</Link>
+                <Link to=" ">Tipos de assédio</Link>
+                <Link to="/MapaDelegacias">Mapa das Delegacia</Link>
+                <Link to="/AutoEstima">Autoestima</Link>
+                <Link to="/Chat">Chat</Link>
+                <Link to="/Cadastro">Cadastro</Link>
+                <Link to="/Login">Login</Link>
+
+                                              
+            </div>
+
+            </div>
+
         <div class="introducao">
           <div class="apresentacao">
             <div class="titulo">Chat</div>
