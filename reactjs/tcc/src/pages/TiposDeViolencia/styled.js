@@ -50,7 +50,8 @@ a{
     text-align: center;
     color: white;
     font-size: 4em;
-    
+    font-family: Roboto-medium;
+    font-style: italic;
 }
 
 .faixa1-textos{
@@ -62,6 +63,8 @@ a{
     color: white;
     padding-top: 4em;
     width: 40em;
+    font-family: Roboto-medium;
+    font-style: italic;
 }
 
 .cabecalho-botoes a {
@@ -101,6 +104,8 @@ a{
     text-align: center;
     color: #298DAB;
     font-size: 4em;
+    font-family: Roboto-medium;
+    font-style: italic;
 }
 
 .texto2-faixa2{
@@ -109,6 +114,8 @@ a{
     padding-top: 5em;
     width: 50em;
     text-align: center;
+    font-family: Roboto-medium;
+    font-style: italic;
 }
 
 .faixa3{
@@ -124,6 +131,8 @@ a{
     text-align: center;
     color: #5164C3;
     font-size: 4em;
+    font-family: Roboto-medium;
+    font-style: italic;
 }
 
 .faixa3-texto2{
@@ -131,6 +140,8 @@ a{
     padding-top: 5em;
     width: 50em;
     text-align: center;
+    font-family: Roboto-medium;
+    font-style: italic;
 }
 
 .img-faixa3{
@@ -156,12 +167,16 @@ a{
     color: #242263;
     text-align: center;
     font-size: 4em;
+    font-family: Roboto-medium;
+    font-style: italic;
 }
 
 .faixa4-texto2{
     padding-top: 5em;
     width: 50em;
     text-align: center;
+    font-family: Roboto-medium;
+    font-style: italic;
 }
 
 
@@ -182,12 +197,16 @@ a{
     color: #0B1731;
     font-size: 4em;
     text-align: center;
+     font-family: Roboto-medium;
+    font-style: italic;
 }
 
 .faixa5-texto2{
     padding-top: 5em;
     width: 50em;
     text-align: center;
+    font-family: Roboto-medium;
+    font-style: italic;
 }
 
 .img-faixa5{
@@ -213,6 +232,8 @@ a{
     color: #7ABEC0;
     text-align: center;
     font-size: 4em;
+    font-family: Roboto-medium;
+    font-style: italic;
 }
 
 .faixa6-texto2{
@@ -220,6 +241,8 @@ a{
     color: #0B0A0A;
     text-align: center;
     width: 50em;
+    font-family: Roboto-medium;
+    font-style: italic;
 }
 
 .faixa7{
@@ -238,6 +261,8 @@ a{
 .faixa7-texto{
     color: white;
     font-size: 5em;
+    font-family: Roboto-medium;
+    font-style: italic;
 }
 
 .img-faixa7{

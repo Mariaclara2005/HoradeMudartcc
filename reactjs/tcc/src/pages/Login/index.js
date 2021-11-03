@@ -1,4 +1,4 @@
-import {link} from 'react-router-dom';
+// import {link} from 'react-router-dom';
 import {Container} from './styled';
 import Cabecalho from '../../componentes/comum/cabecalho';
 import { Link } from 'react-router-dom';
@@ -18,7 +18,7 @@ export default function Login ()
        <div class="conteudo">
 
         <div class="imagem1">
-          <img class ="imagem2"src="/assets/imagens/pg-login.png"/>
+          <img class ="imagem2"src="/assets/imagens/pg-login.png" alt=""/>
         </div>
 
       

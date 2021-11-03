@@ -36,7 +36,6 @@ a{
 .cabecalho-botoes{
     margin-top: 4em;
     margin-right: 2em;
-    
 }
 
 
@@ -54,6 +53,7 @@ a{
     margin-top: 6em;
     font-size: 1.4em;
     color: cornsilk;
+    font-family: Roboto-medium;
     font-style: italic;
 }
 
@@ -61,6 +61,7 @@ a{
     text-align: center;
     margin-top: 10em;
     font-size: 1.2em;
+    font-family: Roboto-medium;
     font-style: italic;
     color: cornsilk;
 }
@@ -86,13 +87,15 @@ a{
 
 .faixa2-texto1{
     text-align: center;
+    font-family: Roboto-medium;
     font-style: italic;
     font-size: 2.2em;
     color: #1A284D;
 }
 
 .faixa2-texto2{
-   font-style: italic;
+    font-family: Roboto-medium;
+    font-style: italic;
     font-size: 2.0em;
     color: black;
     padding-top: 5em;
@@ -149,12 +152,14 @@ a{
     text-align: center;
     color: #854141;
     font-size: 2.2em;
+    font-family: Roboto-medium;
     font-style: italic;
 }
 
 .faixa3-texto2{
     text-align: center;
     font-size: 1.9em;
+    font-family: Roboto-medium;
     font-style: italic;
     padding-top: 6em;
     
@@ -197,6 +202,7 @@ a{
     
     font-size: 2.2em;
     color: #0C0716;
+    font-family: Roboto-medium;
     font-style: italic;
 } 
 
@@ -205,6 +211,7 @@ a{
     margin-top: 3em;
     font-size: 2.2em;
     color: #0C0716;
+    font-family: Roboto-medium;
     font-style: italic;
 } 
 
@@ -253,6 +260,7 @@ a{
 
 .faixa5-texto{
     text-align: center;
+    font-family: Roboto-medium;
     font-style: italic;
     font-size: 2.2em;
     color: #1A284D;
@@ -287,6 +295,7 @@ a{
 
 .faixa6-texto{
     text-align: center;
+    font-family: Roboto-medium;
     font-style: italic;
     font-size: 2.2em;
     color: #1A284D;
@@ -330,6 +339,7 @@ a{
 
 .faixa7-texto1{
     text-align: center;
+    font-family: Roboto-medium;
     font-style: italic;
     font-size: 2.2em;
     color: #1A284D;
@@ -339,6 +349,8 @@ a{
     text-align: center;
     font-size: 2.2em;
     margin-top: 3em;
+    font-family: Roboto-medium;
+    font-style: italic;
 }
 
 .faixa7-botao{
@@ -373,6 +385,7 @@ a{
 
 .faixa8-texto1{
     text-align: center;
+    font-family: Roboto-medium;
     font-style: italic;
     font-size: 2.2em;
     color: #1A284D;
@@ -382,6 +395,8 @@ a{
     text-align: center;
     font-size: 2.2em;
     margin-top: 3em;
+    font-family: Roboto-medium;
+    font-style: italic;
 }
 
 .faixa8-botao{

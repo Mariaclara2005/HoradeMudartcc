@@ -33,7 +33,7 @@ export default function AutorizaçaoMensagem () {
 
                 <div class="texto">
 
-                    <div class="texto-fx1"> Autorização de mensagem - CHAT </div>
+                    <div class="texto-fx1"> Autorização de mensagens - CHAT </div>
 
                 </div>
 

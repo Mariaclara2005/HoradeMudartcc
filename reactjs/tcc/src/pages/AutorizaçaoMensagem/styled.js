@@ -42,6 +42,8 @@ const Container= styled.div`
 
 .texto-fx1{
     font-size: 4em;
+    font-family: Roboto-medium;
+    font-style: italic;
 }
 
 

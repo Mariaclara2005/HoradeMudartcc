@@ -165,7 +165,7 @@ export default function TiposDeViolencia () {
         <ScrollAnimation animateIn="animate__bounceInLeft">
             <div class="faixa7-texto">Você não está sozinha!</div>
 
-       <Link to=""> 
+       <Link to="/"> 
             <img class="" src="/assets/imagens/pg-tpdeviolencia-fx7-180.png" alt=""/>
          </Link>
         </ScrollAnimation>

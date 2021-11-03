@@ -101,7 +101,7 @@ app.get('/login_adm', async (req, resp) => {
     }
 })
 
-<<<<<<< HEAD
+
 app.post('/cadastro_adm',async (req,resp) => {
     try {
         let usuParam = req.body;
@@ -119,17 +119,16 @@ app.post('/cadastro_adm',async (req,resp) => {
 
         })
         resp.send(r);
-=======
+
 app.post('/chat', async (req, resp) => {
     try {
         let login = await db.infob_hdm_login_adm.findAll();
         resp.send(login);
->>>>>>> 88126e6bb56fcb2b02b0488ded21f23293dcee70
     } catch (e) {
         resp.send({ erro: e.toString()})
     }
 })
-<<<<<<< HEAD
+
 
 
 app.get('/cadastro_adm', async (req, resp) => {
@@ -141,13 +140,4 @@ app.get('/cadastro_adm', async (req, resp) => {
     }
 })
 
-
-=======
->>>>>>> 88126e6bb56fcb2b02b0488ded21f23293dcee70
-
-
-<<<<<<< HEAD
 app.listen(process.env.PORT, x => console.log(`Server up at port ${process.env.PORT}`))
-=======
-x => console.log(`Server up at port ${process.env.PORT}`))
->>>>>>> 88126e6bb56fcb2b02b0488ded21f23293dcee70
