@@ -474,6 +474,107 @@ a{
     }
 }
 
+@media (max-width: 1024px) {
+   
+    .cabecalho-inicio, .cabecalho-botoes, .texto-centro, .faixa-meio, .faixa-baixo {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+       
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+    }
+
+    .texto-centro{
+        padding-top: 2em;;
+    }
+
+    .faixa-meio{
+        padding-top: 2em;
+    }
+
+    .faixa-baixo{
+        padding-top: 2em;
+    }
+
+    .cabecalho-botoes{
+        padding-top: 2em;
+    }
+
+    .tipo-de-violencia , .faixa2-conteudo, .faixa2-texto1, .faixa2-texto2, .botao-faixa2  {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+       
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+    }
+
+    .faixa2-img{
+        display: none;
+    }
+
+    .faixa2-texto2{
+        padding-top: 2em;
+    }
+
+    .botao-faixa2{
+        padding-top: 2em;
+    }
+
+    .autoestima , .faixa3-conteudo, .faixa3-texto1, .faixa3-texto2, .faixa3-botao  {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+       
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+    }
+
+    .faixa3-image{
+        display: none;
+    }
+
+    .faixa3-texto2{
+        padding-top: 2em;
+    }
+
+    .faixa3-botao{
+        padding-top: 2em;
+    }
+
+    .tipos-de-assedio , .faixa4-conteudo, .faixa4-texto1, .faixa4-texto2, .faixa4-botao  {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+       
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+    }
+
+    .faixa4-image{
+        display: none;
+    }
+
+    .faixa4-texto2{
+        padding-top: 2em;
+    }
+
+    .faixa4-botao{
+        padding-top: 2em;
+    }
+    
+}
+
+
 
 `;
 
