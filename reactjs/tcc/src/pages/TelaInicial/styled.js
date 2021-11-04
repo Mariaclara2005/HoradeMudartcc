@@ -1,4 +1,4 @@
-import styled from 'styled-components'; 
+ import styled from 'styled-components'; 
 
 
 const Container= styled.div`
@@ -571,7 +571,110 @@ a{
     .faixa4-botao{
         padding-top: 2em;
     }
+
+
+    .pagina-mapa , .faixa5-conteudo, .faixa5-texto1, .faixa5-botao  {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+       
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+    }
+
+    .faixa5-image{
+        display: none;
+    }
+
+    c
     
+
+    .faixa5-botao{
+        padding-top: 2em;
+    }
+
+
+    .pagina-chat , .faixa6-conteudo, .faixa6-texto, .faixa6-botao  {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+       
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+    }
+
+
+    .faixa6-botao{
+        padding-top: 2em;
+    }
+
+    .faixa6-image{
+        display: none;
+    }
+
+
+    .pagina-denuncia , .faixa7-conteudo, .faixa7-texto1, .faixa7-texto2, .faixa7-botao  {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+       
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+    }
+
+    .faixa7-image{
+        display: none;
+    }
+
+    .faixa7-texto1{
+        padding-top: 2em;
+    }
+    
+
+    .faixa7-texto2{
+        padding-top: 2em;
+    }
+
+    .faixa7-botao{
+        padding-top: 2em;
+    }
+
+
+    .pagina-quem-somos , .faixa8-conteudo, .faixa8-texto1, .faixa8-texto2, .faixa8-botao  {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+       
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+    }
+
+
+    .faixa8-image{
+        display: none;
+    }
+
+    .faixa8-texto1{
+        padding-top: 2em;
+    }
+
+    .faixa8-texto2{
+        padding-top: 2em;
+    }
+
+    .faixa8-botao{
+        padding-top: 2em;
+    }
+
+
 }
 
 

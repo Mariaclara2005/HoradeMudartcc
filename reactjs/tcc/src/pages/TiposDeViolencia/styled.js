@@ -81,7 +81,7 @@ a{
 .img-tpdeviolencia{
     height: 30em;
     width: 30em;
-    padding-right: 8em;
+        
     
 }
 
@@ -96,8 +96,8 @@ a{
 }
 
 .faixa2-img{
-    height: 35em;
-    width: 35em;
+    height: 30em;
+    width: 30em;
 }
 
 .texto1-faixa2{
@@ -106,13 +106,14 @@ a{
     font-size: 4em;
     font-family: Roboto-medium;
     font-style: italic;
+    width: 10em;
 }
 
 .texto2-faixa2{
     text-align: left;
     font-size: 1em;
     padding-top: 5em;
-    width: 50em;
+    width: 40em;
     text-align: center;
     font-family: Roboto-medium;
     font-style: italic;
@@ -145,8 +146,8 @@ a{
 }
 
 .img-faixa3{
-    height: 35em;
-    width: 35em;
+    height: 30em;
+    width: 30em;
 }
 
 .faixa4{
@@ -173,7 +174,7 @@ a{
 
 .faixa4-texto2{
     padding-top: 5em;
-    width: 50em;
+    width: 40em;
     text-align: center;
     font-family: Roboto-medium;
     font-style: italic;
@@ -240,7 +241,7 @@ a{
     padding-top: 5em;
     color: #0B0A0A;
     text-align: center;
-    width: 50em;
+    width: 40em;
     font-family: Roboto-medium;
     font-style: italic;
 }
