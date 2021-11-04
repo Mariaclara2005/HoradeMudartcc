@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 const Container = styled.div`
+
+
 .site{
     margin: 0px;
 }
@@ -27,20 +29,19 @@ body {
 }
 
 .logo{
-    padding-right: 80em;
+    padding-right: 30em;
 }
 
 .cabecalho-botoes a {
-    margin: 0em 0.4em;
+    margin: 1em .5em;
     
 }
 
 .cabecalho-botoes{
     margin-top: 1em;
-    margin-right: 1em;
-    color: #FFF;
+    margin-left: 10em;
+    color: #fff;
 }
-
 
 
 .text{
@@ -67,7 +68,7 @@ body {
    display: flex;
    align-items: center;
    padding: 7px;
-   margin-left: 40em;
+   margin-left: 20em;
     margin-top: 3em;
     margin-bottom: 3em;
 }
@@ -90,58 +91,60 @@ body {
 
 
 .mapa{
-    margin-left: 27em;
+    margin-left: 18em;
     margin-bottom: 1em;
 }
 
 .conteudo2{
     background-color: white;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
+}
+
+.conteudoimg{
+  
+}
+.mulher{
+    padding-top: 10em;
+    margin-right: 0em;
+}
+
+.textos{
+    flex-direction: row;
     
 }
-
-.mulher{
-   
-    padding-top: 07em;
-}
-
 .text2{
-    margin-left: 10em;
-    padding-top: 0em;
+    margin-left: 11.5em;
+    padding-bottom: 0.5em;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 55px;
     line-height: 65px;
-    text-align: center;
-
     color: #090808;
 }
 
 .text3{
-    margin-left : -21em;
-    padding-top: 5em;
+    margin-left: 15em;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 30px;
-    line-height: 25px;
+    font-size: 28px;
+    line-height: 15px;
     text-align: center;
 
     color: #0A344A;
 }
 
 .text4{
-    padding-top: 6em;
-    margin-left: -20em;
+    margin-left: 15em;
     
     font-family: Roboto;
     font-style: normal;
     font-weight: 400;
-    font-size: 50px;
+    font-size: 28px;
     line-height: 59px;
     text-align: center;
     
@@ -162,8 +165,8 @@ body {
     transition: ease-out 0.3s;
     font-size: 2rem;
     outline: none;
-    margin-left: -24em;
-    margin-top: 15em;
+    margin-left: 23em;
+    margin-top: 1em;
 }
 
 .btn2:hover {
@@ -171,5 +174,37 @@ body {
     cursor: pointer;
     color: white;
 }
+
+@media (max-width: 1024px) {
+   
+    .container, .cabecalho, .text, .mulher, .mapa. logo, .searchbox, .cabecalho-botoes{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+       
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+    }
+
+    .cabecalho{
+        padding-top: 0em;
+    }
+
+    .conteudo2, .mulher, .text, .text2, .text3, .text4 {
+    flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+       
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+    }
+
+    .mulher{
+        display: none;
+    }
 `;
 export {Container}

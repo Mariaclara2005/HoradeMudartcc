@@ -1,7 +1,11 @@
+import ScrollAnimation from 'react-animate-on-scroll';
+import "animate.css/animate.min.css";
+
 import React, { Component } from 'react';
 import { Loader } from '@googlemaps/js-api-loader';
 import { Link } from 'react-router-dom';
 import { Container } from "./styled";
+
 
 const loader = new Loader({
     apiKey: "AIzaSyDOQ1P-nh88fs2TnDf4SUCcFvXnoxcDLVg",
@@ -43,18 +47,17 @@ export default class DemoComponent extends Component {
                 <div class="cabecalho">
                     <div class="logo"> <img src="/assets/imagens/pg-mapa-logo.png" widht="116" height="132"/> </div>
                     <div class="cabecalho-botoes">
+
+                    <Link to="/Denuncie">Denúncie</Link>
+                     <Link to="/TipoViolencia">Tipos de violência</Link>
+                     <Link to=" ">Tipos de assédio</Link>
+                     <Link to="/MapaDelegacias">Mapa das Delegacia</Link>
+                     <Link to="/AutoEstima">Autoestima</Link>
+                     <Link to="/Chat">Chat</Link>
+                     <Link to="/Cadastro">Cadastro</Link>
+                     <Link to="/Login">Login</Link>
         
-                            
-                             <Link to="/">Denúncie</Link>
-                             <Link to="/TipoViolencia">Tipos de violência</Link>
-                             <Link to=" ">Tipos de assédio</Link>
-                             <Link to=" ">Mapa das Delegacia</Link>
-                             <Link to=" ">Autoestima</Link>
-                             <Link to="/Chat">Chat</Link>
-                             <Link to=" ">Cadastro</Link>
-        
-                                                           
-                        </div>
+                    </div>
                 </div>
                 <div class="conteudo">
                     <div class="text">Localize a delegacia mais próxima:</div>
@@ -68,18 +71,29 @@ export default class DemoComponent extends Component {
                 style={{ height: '50vh', width: '50%', }}>
             </div>
                 </div>
+                
                 <div class="conteudo2">
-                    <div class="mulher"><img src="/assets/imagens/pg-mapa-mulher.png" widht="500" height="500"/></div>
+                <div class="conteudoimg">
+                
+                <div class="mulher"><img src="/assets/imagens/pg-mapa-mulher.png" widht="450px" height="450px"/></div>
+            </div>
+            
+                <div class="textos">
+                <ScrollAnimation animateIn="animate__bounceInLeft">
                     <div class="text2"> Denúncie Conosco</div>
-                    <div class="text3"> Nós da Hora De Mudar incetivamos você a fazer uma denúncia!</div>
-                    <div class="text4"> Clique aqui para ser redicionada ao nosso chat de denúncias</div>
                     
+                    <div class="text3"> Nós da Hora De Mudar incetivamos você a fazer uma denúncia!</div>
+                    
+                    <div class="text4"> Clique aqui para ser redicionada ao nosso chat de denúncias</div>
                     <div class="config">
                     <button class="btn2"> Chat </button>
+                   </div>
+                </ScrollAnimation>
                 </div>
+                
                      </div>
-                </div>
+                    </div> 
         </Container>
         )
-        }
+     }
 }
