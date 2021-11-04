@@ -17,7 +17,6 @@ app.post('/cadastro',async (req,resp) => {
         let r = await db.infob_hdm_cadastro.create({
             nm_HDM_nome: usuParam.nome,
             nm_HDM_sobrenome: usuParam.sobrenome,
-            dt_HDM_data_nascimento: usuParam.data,
             nr_HDM_celular: usuParam.celular,
             nm_HDM_email: usuParam.email,
             nm_HDM_senha: crypto.SHA256(usuParam.senha).toString(crypto.enc.Base64)
@@ -29,14 +28,14 @@ app.post('/cadastro',async (req,resp) => {
     }
 })
 
-app.get('/cadastro', async (req, resp) => {
-    try {
-        let usuarios = await db.infob_hdm_cadastro.findAll();
-        resp.send(usuarios);
-    } catch (e) {
-        resp.send({ erro: e.toString()})
-    }
-})
+// app.get('/cadastro', async (req, resp) => {
+//     try {
+//         let usuarios = await db.infob_hdm_cadastro.findAll();
+//         resp.send(usuarios);
+//     } catch (e) {
+//         resp.send({ erro: e.toString()})
+//     }
+// })
 
 app.post('/login', async (req, resp) => {
     const email = req.body.email;
@@ -119,6 +118,12 @@ app.post('/cadastro_adm',async (req,resp) => {
 
         })
         resp.send(r);
+    } catch (e) {
+            resp.send({ erro: e.toString()})
+        }
+    })
+
+
 
 app.post('/chat', async (req, resp) => {
     try {
@@ -140,4 +145,4 @@ app.get('/cadastro_adm', async (req, resp) => {
     }
 })
 
-app.listen(process.env.PORT, x => console.log(`Server up at port ${process.env.PORT}`))
+app.listen(process.env.PORT, () => console.log(`Server up at port ${process.env.PORT}`))
