@@ -2,33 +2,9 @@ import styled from 'styled-components';
 
 const Container = styled.div`
 
-.container {
-    background: #7DA074;
-    padding: 3.5em;
-}
 
-.logo {
-    width: 150px;
-    height: 90px;
-    margin-right: 30em;
-    margin-top: -6em;
-}
-
-.menu {
-    font-family: Roboto-Medium;
-    font-size: 14px;
-    margin-top: -6em;
-    margin-left: 1em;
-    height: -30px;
-}
-
-.cabecalho {
-    display: flex;
-    flex-direction: row;
-    margin-left: 1em;
-    margin-top: 40px;
-    justify-content: center;
-}
+background: #7DA074;
+height: 100vh;
 
 .cadastro {
     display: flex;
@@ -37,17 +13,19 @@ const Container = styled.div`
     border-radius: 20px;
     height: 590,30px;
     width: 504px;
+    margin-left: 3em;
     
 }
 .conteudo {
     display: flex;
     flex-direction: row;
+    margin-top: 3em;
 }
 
 .imagem img {
     width: 746px;
     height: 515px;
-    margin-left: 6em;
+    margin-left: 1em;
 }
 
 .titulo{
@@ -103,6 +81,7 @@ const Container = styled.div`
 input {
     background: #C4C4C4;
     border-radius: 15px;
+    border-color: transparent;
 }
 
 button {
