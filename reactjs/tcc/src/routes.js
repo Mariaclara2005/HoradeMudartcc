@@ -8,7 +8,7 @@ import Cadastro from './pages/Cadastro'
 import CadastroADM from './pages/CadastroADM'
 import RedefinirSenha from './pages/RedefinirSenha'
 import Login from './pages/Login'
-//import Denuncia from './pages/Denuncia'
+import Denuncia from './pages/Denuncia'
 //import CaracteristicasLocalizaçao from './pages/CaracteristicasLocalizaçao'
 //import TipoAssedio from './pages/TiposAssedio'
 import MapaDelegacias from './pages/MapaDelegacias'
@@ -39,8 +39,8 @@ export default function Routes() {
                  <Route path="/CadastroADM" exact={true} component={CadastroADM} /> 
                   <Route path="/Login" exact={true} component={Login}/>
                   <Route path="/RedefinirSenha" exact={true} component={RedefinirSenha}/>
+                  <Route path="/Denuncia" exact={true} component={Denuncia}/>
                 {/*
-                <Route path="/Denuncia" exact={true} component={Denuncia}/>
                 <Route path="/CaracteristicasLocalizaçao" exact={true} component={CaracteristicasLocalizaçao}/>
                 <Route path="/TipoAssedio" exact={true} component={TipoAssedio}/>
                 <Route path="/QuemSomoNos" exact={true} component={QuemSomosNos}/>  */}
