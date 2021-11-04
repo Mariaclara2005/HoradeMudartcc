@@ -98,7 +98,7 @@ body {
 .conteudo2{
     background-color: white;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     margin-bottom: 100px;
 }
@@ -112,11 +112,11 @@ body {
 }
 
 .textos{
-    flex-direction: row;
+    flex-direction: column;
     
 }
 .text2{
-    margin-left: 11.5em;
+    margin-left: 2.5em;
     padding-bottom: 0.5em;
     font-family: Roboto;
     font-style: normal;
@@ -124,30 +124,31 @@ body {
     font-size: 55px;
     line-height: 65px;
     color: #090808;
+    margin-top: 2em;
 }
 
 .text3{
-    margin-left: 15em;
+    margin-left: 0em;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 28px;
-    line-height: 15px;
+    line-height: 25px;
     text-align: center;
-
+    margin-top: 0em;
     color: #0A344A;
 }
 
 .text4{
-    margin-left: 15em;
+    margin-left: 0em;
     
     font-family: Roboto;
     font-style: normal;
     font-weight: 400;
-    font-size: 28px;
-    line-height: 59px;
+    font-size: 35px;
+    line-height: 40px;
     text-align: center;
-    
+    margin-top: 5em;
     color: #0A344A;
 }
 
@@ -165,7 +166,7 @@ body {
     transition: ease-out 0.3s;
     font-size: 2rem;
     outline: none;
-    margin-left: 23em;
+    margin-left: 8.5em;
     margin-top: 1em;
 }
 
