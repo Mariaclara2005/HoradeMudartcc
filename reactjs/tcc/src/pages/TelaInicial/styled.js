@@ -671,7 +671,7 @@ a{
     }
 
     .faixa8-botao{
-        padding-top: 2em;
+        padding-top: 3em;
     }
 
 
