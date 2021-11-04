@@ -51,6 +51,7 @@ body {
     font-size: 62px;
     line-height: 73px;
     text-align: center;
+    flex-direction: column;
     color: #FDF7F7;
 }
 
@@ -68,7 +69,7 @@ body {
    display: flex;
    align-items: center;
    padding: 7px;
-   margin-left: 20em;
+   margin-left: 36em;
     margin-top: 3em;
     margin-bottom: 3em;
 }
@@ -91,7 +92,7 @@ body {
 
 
 .mapa{
-    margin-left: 18em;
+    margin-left: 25em;
     margin-bottom: 1em;
 }
 
@@ -116,7 +117,7 @@ body {
     
 }
 .text2{
-    margin-left: 2.5em;
+    margin-left: 3.9em;
     padding-bottom: 0.5em;
     font-family: Roboto;
     font-style: normal;
@@ -166,7 +167,7 @@ body {
     transition: ease-out 0.3s;
     font-size: 2rem;
     outline: none;
-    margin-left: 8.5em;
+    margin-left: 10.5em;
     margin-top: 1em;
 }
 
@@ -178,7 +179,7 @@ body {
 
 @media (max-width: 1024px) {
    
-    .container, .cabecalho, .text, .mulher, .mapa. logo, .searchbox, .cabecalho-botoes{
+    .container, .cabecalho, .text, .mulher, .mapa. logo, .searchbox, .cabecalho-botoes .searchbox{
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -193,7 +194,9 @@ body {
         padding-top: 0em;
     }
 
-    .conteudo2, .mulher, .text, .text2, .text3, .text4 {
+   
+
+    .conteudo2, .mulher, .textos, .text, .text2, .text3, .text4 {
     flex-direction: column;
         justify-content: center;
         align-items: center;
