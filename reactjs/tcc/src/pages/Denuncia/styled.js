@@ -1,3 +1,5 @@
+
+
 import styled from 'styled-components'; 
 
 
@@ -20,12 +22,14 @@ height:100vh;
 .informacao {
     display: flex;
     flex-direction: row;
+    margin-left: 4em;
+    margin-top: 6em;
 }
-
 
 .imagem img {
     width: 600px;
     height: 400px;
+    margin-left: 2em;
 }
 
 button {
@@ -35,13 +39,27 @@ button {
 } 
 
 .titulo {
-    margin-left: 2em;
+    margin-left: 0.9em;
+    font-family: Roboto-Medium;
+    font-size: 25px;
+    margin-bottom: 1em;
+}
+}
+
+.chat {
+   font-family: Roboto-Medium;
+   font-size: 25px;
+   margin-left: 0.4em;
+   margin-bottom:1em;
 }
 
 .denuncia {
-    margin-left: 7em;
+    margin-left: 3em;
 }
 
 `;
 
 export {Container}
+
+
+

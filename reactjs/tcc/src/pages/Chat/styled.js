@@ -1,5 +1,6 @@
 
 
+
 import styled from 'styled-components';
 
 const Container = styled.div`
@@ -32,10 +33,9 @@ const Container = styled.div`
     
 }
 
-
 .texto_chat {
   font-family: Roboto-Medium;
-  font-size: 35px;
+  font-size: 30px;
   color: #ffffff;
   text-align: center;
   width: 700px;
@@ -106,7 +106,7 @@ const Container = styled.div`
 .explicacao {
   width: 570px;
   font-family: Roboto-Medium;
-  font-size: 35px;
+  font-size: 30px;
   color: #000000;
 }
 
@@ -133,7 +133,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   margin: 2em;
-  margin-left: 10em;
+  margin-left: 11.5em;
   margin-right: 15em;
 }
 
@@ -141,6 +141,7 @@ const Container = styled.div`
   background: #fcefef;
   width: 700px;
   font-family: Roboto-Medium;
+  border-radius:10px;
 }
 
 .usuario1 {
@@ -158,6 +159,7 @@ const Container = styled.div`
 .curtidas1 {
   display: flex;
   flex-direction: row;
+  margin-left: 1em;
 }
 
 .coracao1 img {
@@ -166,39 +168,10 @@ const Container = styled.div`
   margin-left: 10px;
 }
 
-.depoimento2 {
-  display: flex;
-  flex-direction: column;
-  margin-left: 5em;
+.quantidade1 {
+  margin-left: 5px;
 }
 
-.usuario2 {
-  display: flex;
-  flex-direction: row;
-}
-
-.mensagem2 {
-    background: #fcefef;
-    width: 700px;
-    font-family: Roboto-Medium;
-}
-
-.reagir_msg2 {
-  display: flex;
-  flex-direction: row;
-  margin-left: 5em;
-}
-
-.curtidas2 {
-  display: flex;
-  flex-direction: row;
-}
-
-.coracao2 img {
-  width: 17px;
-  height: 18px;
-  margin-left: 10px;
-}
 
 .depoimento3 {
   display: flex;
@@ -210,6 +183,8 @@ const Container = styled.div`
 
 .mensagem3 {
   background: #fcefef;
+  font-family: Roboto-Medium;
+  border-radius:10px;
   width: 700px;
 }
 
@@ -228,12 +203,13 @@ const Container = styled.div`
 .curtidas3 {
   display: flex;
   flex-direction: row;
+  margin-left: 10px;
 }
 
 .coracao3 img {
   width: 17px;
   height: 18px;
-  margin-right: 20px;
+  margin-right: 15px;
 }
 
 .comentario {
@@ -257,10 +233,6 @@ const Container = styled.div`
     margin-left: 30em;;
 }
 
-.reponder2{
-    margin-left: 30em;;
-}
-
 .reponder3{
     margin-left: 30em;;
 }
@@ -268,6 +240,9 @@ const Container = styled.div`
 input {
   border-radius:25px;
   width:50em;
+  border-right:1em;
+  border-color:transparent;
+  
 }
 `;
 

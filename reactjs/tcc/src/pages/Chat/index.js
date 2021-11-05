@@ -1,5 +1,4 @@
 
-
 import {Link} from 'react-router-dom'
 import {Container} from './styled'
 
@@ -31,7 +30,7 @@ export default function ChLinkt () {
                 <Link to=" ">Tipos de assédio</Link>
                 <Link to="/MapaDelegacias">Mapa das Delegacia</Link>
                 <Link to="/AutoEstima">Autoestima</Link>
-                <Link to="/Chat">Chat</Link>
+                <Link to="/Denuncia">Denuncia</Link>
                 <Link to="/Cadastro">Cadastro</Link>
                 <Link to="/Login">Login</Link>
 
@@ -66,7 +65,7 @@ export default function ChLinkt () {
           <div class="compartilhe">Compartilhe</div>
 
           <div class="explicacao">
-            Compartilhe a sua esperiencia! Para que outras mulheres se sintam
+            Compartilhe a sua experiencia! Para que outras mulheres se sintam
             encorajadas a fazerem o mesmo, e sair de um relacionamento abusivo.
           </div>
         </div>
@@ -100,37 +99,10 @@ export default function ChLinkt () {
 
                 <div class="quantidade1">74</div>
               </div>
-              <div class="reponder1">Responder</div>
             </div>
           </div>
 
-          <div class="depoimento2">
-            <div class="usuario2">
-              <div class="perfil2">
-                <img src="/assets/imagens/pg-chat-perfil.png" alt="" />
-              </div>
-
-              <div class="nome2">Giovanna Andrade</div>
-            </div>
-
-            <div class="mensagem2">
-              @Juliana Santos Eu passei pela mesma coisa. Primeiro negava até o
-              fim, não conseguia enxergar a verdade. E quando finalmete
-              enxerguei, eu que sai como a louca da história.
-            </div>
-
-            <div class="reagir_msg2">
-              <div class="curtidas2">
-                <div class="coracao2">
-                  <img src="/assets/imagens/pg-chat-coracao.png" alt="" />
-                </div>
-
-                <div class="quantidade2">16</div>
-              </div>
-
-              <div class="reponder2">Responder</div>
-            </div>
-          </div>
+          
 
           <div class="depoimento3">
             <div class="usuario3">
@@ -167,8 +139,6 @@ export default function ChLinkt () {
 
                 <div class="quantidade3">23</div>
               </div>
-
-              <div class="reponder3">Responder</div>
             </div>
           </div>
 
@@ -190,3 +160,5 @@ export default function ChLinkt () {
 
     )
 } 
+
+
