@@ -116,19 +116,16 @@ app.get('/login_adm', async (req, resp) => {
 //             nm_HDM_email_empresa: usuParam.email_empresa,
 //             nm_HDM_senha: crypto.SHA256(usuParam.senha).toString(crypto.enc.Base64)
 
-<<<<<<< HEAD
+
 //         })
 //         resp.send(r);
-=======
-        })
-        resp.send(r);
-    } catch (e) {
-            resp.send({ erro: e.toString()})
-        }
-    })
 
-
->>>>>>> f8d600b59fb7f8aae8fd32f064ed3545da0236cc
+    //     })
+    //     resp.send(r);
+    // } catch (e) {
+    //         resp.send({ erro: e.toString()})
+    //     }
+    // })
 
 app.post('/chat', async (req, resp) => {
     try {

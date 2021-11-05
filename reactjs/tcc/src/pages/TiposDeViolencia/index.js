@@ -70,7 +70,7 @@ export default function TiposDeViolencia () {
         <div class="conteudo-faixa2">
 
         <ScrollAnimation animateIn="animate__bounceInRight">
-            <div class="texto1-faixa2"> Violência <br/> Física</div>
+            <div class="texto1-faixa2"> Violência Física</div>
         </ScrollAnimation>
 
             <ScrollAnimation animateIn="animate__bounceInRight">

@@ -588,7 +588,6 @@ a{
         display: none;
     }
 
-    c
     
 
     .faixa5-botao{

@@ -42,8 +42,7 @@ a{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding-left: 10em;
-    padding-top: 7em;
+    padding-top: 1em;
 }
 
 .faixa1-titulo{
@@ -106,7 +105,8 @@ a{
     font-size: 4em;
     font-family: Roboto-medium;
     font-style: italic;
-    width: 10em;
+    width: 4em;
+    padding-left: 3em;
 }
 
 .texto2-faixa2{
@@ -146,8 +146,8 @@ a{
 }
 
 .img-faixa3{
-    height: 30em;
-    width: 30em;
+    height: 28em;
+    width: 28em;
 }
 
 .faixa4{
@@ -160,8 +160,8 @@ a{
 }
 
 .img-faixa4{
-    height: 35em;
-    width: 35em;
+    height: 30em;
+    width: 30em;
 }
 
 .faixa4-texto1{
@@ -204,7 +204,7 @@ a{
 
 .faixa5-texto2{
     padding-top: 5em;
-    width: 50em;
+    width: 40em;
     text-align: center;
     font-family: Roboto-medium;
     font-style: italic;
