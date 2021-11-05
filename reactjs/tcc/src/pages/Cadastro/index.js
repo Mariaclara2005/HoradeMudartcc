@@ -1,15 +1,13 @@
 
 
- import { link } from 'react-router-dom'
 
  import {Container} from './styled';
  import Cabecalho from '../../componentes/comum/cabecalho';
  
- import { Route, Router } from 'react-router';
- import { useState,useEffect, useRef } from 'react';
+
+ import { useState } from 'react';
 //import Cookies from 'js-Cookies';
 
- import { useHistory } from 'react-router-dom'
 
 import Api from '../../service/api';
 const api = new Api()
@@ -25,8 +23,8 @@ const api = new Api()
     const [Email, setEmail] = useState('');
     const [Celular, setCelular] = useState('');
     const [Senha, setSenha] = useState('');
-    const [idAlterando, setIdAlterando] = useState(0)
-    const loading = useRef();
+   //  const [idAlterando, setIdAlterando] = useState(0);
+   //  const loading = useRef();
 
     async function inserir () {
         alert("Caiu")

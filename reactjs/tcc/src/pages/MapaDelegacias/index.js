@@ -45,7 +45,7 @@ export default class DemoComponent extends Component {
                     <div class="site"> 
             <div class="container">
                 <div class="cabecalho">
-                    <div class="logo"> <img src="/assets/imagens/pg-mapa-logo.png" widht="116" height="132"/> </div>
+                    <div class="logo"> <img src="/assets/imagens/pg-mapa-logo.png" widht="116" height="132" alt=""/> </div>
                     <div class="cabecalho-botoes">
 
                     <Link to="/Denuncie">Denúncie</Link>
@@ -76,7 +76,7 @@ export default class DemoComponent extends Component {
                     
                 <div class="conteudoimg">
                 
-                <div class="mulher"><img src="/assets/imagens/pg-mapa-mulher.png" widht="450px" height="450px"/></div>
+                <div class="mulher"><img src="/assets/imagens/pg-mapa-mulher.png" widht="450px" height="450px" alt=""/></div>
             </div>
             
                 <div class="textos">

@@ -1,4 +1,4 @@
-import ScrollAnimation from 'react-animate-on-scroll';
+
 import "animate.css/animate.min.css";
 import { Link } from 'react-router-dom'
 
