@@ -4,7 +4,7 @@ import {Container} from './styled'
 import Cabecalho from  '../../componentes/comum/cabecalho'
 
 
-export default function Denuncia () {
+export default function Denúncia () {
     return (
 
         <Container>
@@ -18,7 +18,7 @@ export default function Denuncia () {
 
               <div class="informacao">
                   <div class="caracteristicas">
-                      <div class="titulo">Caracteristicas</div>
+                      <div class="titulo">Características</div>
                       
                       <div class="imagem1">
                         <button><img src="/assets/imagens/pg-denuncia-img1.png" alt=""/></button>
@@ -26,7 +26,7 @@ export default function Denuncia () {
                   </div>
 
                   <div class="denuncia">
-                      <div class="chat">Chat de Deuncias</div>
+                      <div class="chat">Chat de Deúncias</div>
 
                       <div class="imagem2">
                         <button><img src="/assets/imagens/pg-denuncia-img2.png" alt=""/></button>
@@ -38,5 +38,5 @@ export default function Denuncia () {
 
     )
 }
-
+.
       

@@ -38,6 +38,10 @@ button {
     height: 178px;
 } 
 
+.imagem1 img {
+    marm
+}
+
 .titulo {
     margin-left: 0.9em;
     font-family: Roboto-Medium;

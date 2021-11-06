@@ -48,7 +48,7 @@ export default class DemoComponent extends Component {
                     <div class="logo"> <img src="/assets/imagens/pg-mapa-logo.png" widht="116" height="132" alt=""/> </div>
                     <div class="cabecalho-botoes">
 
-                    <Link to="/Denuncie">Denúncie</Link>
+                    <Link to="/Denúncia">Denúncia</Link>
                      <Link to="/TipoViolencia">Tipos de violência</Link>
                      <Link to=" ">Tipos de assédio</Link>
                      <Link to="/MapaDelegacias">Mapa das Delegacia</Link>

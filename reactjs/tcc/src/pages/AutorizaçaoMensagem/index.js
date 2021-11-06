@@ -18,7 +18,7 @@ export default function AutorizaçaoMensagem () {
 
                     <div class="cabecalho-botoes">
                         
-                        <Link to="/">Denúncie</Link>
+                        <Link to="/Denúncia">Denúncia</Link>
                         <Link to="/TipoViolencia">Tipos de violência</Link>
                         <Link to=" ">Tipos de assédio</Link>
                         <Link to=" ">Mapa das Delegacia</Link>

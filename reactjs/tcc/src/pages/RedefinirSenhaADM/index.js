@@ -32,6 +32,7 @@ export default function RedefinirSenhaADM () {
                         <Link to="/Chat">Chat</Link>
                         <Link to="/Cadastro">Cadastro</Link>
                         <Link to="/Login">Login</Link>
+                        <Link to="/Denúncia">Denúncia</Link>
 
                                                     
                     </div>

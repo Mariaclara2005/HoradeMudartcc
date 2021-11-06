@@ -30,7 +30,7 @@ export default function ChLinkt () {
                 <Link to=" ">Tipos de assédio</Link>
                 <Link to="/MapaDelegacias">Mapa das Delegacia</Link>
                 <Link to="/AutoEstima">Autoestima</Link>
-                <Link to="/Denuncia">Denuncia</Link>
+                <Link to="/Denúncia">Denúncia</Link>
                 <Link to="/Cadastro">Cadastro</Link>
                 <Link to="/Login">Login</Link>
 

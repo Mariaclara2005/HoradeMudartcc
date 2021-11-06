@@ -24,7 +24,7 @@ export default function TelaInicial () {
                 <div class="cabecalho-botoes">
 
                     
-                     <Link to="/Denuncie">Denúncie</Link>
+                     <Link to="/Denúncia">Denúncia</Link>
                      <Link to="/TipoViolencia">Tipos de violência</Link>
                      <Link to=" ">Tipos de assédio</Link>
                      <Link to="/MapaDelegacias">Mapa das Delegacia</Link>
