@@ -1,5 +1,5 @@
 
-import {Link} from 'react-router-dom'
+// import {Link} from 'react-router-dom'
 import {Container} from './styled'
 import Cabecalho from  '../../componentes/comum/cabecalho'
 
@@ -38,5 +38,5 @@ export default function Denúncia () {
 
     )
 }
-.
+
       

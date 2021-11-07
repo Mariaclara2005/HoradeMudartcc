@@ -7,10 +7,12 @@ export default function index() {
       <Container>
    <div class="cabecalho-inicio">
 
+
+<Link to="/"> 
 <div class="cabecalho-img">
     <img class="img-fx1" src="/assets/imagens/logo-claro.png" alt=""/>
 </div>
-
+</Link>
 
 <div class="cabecalho-botoes">
 

@@ -91,6 +91,7 @@ a{
     font-style: italic;
     font-size: 2.2em;
     color: #1A284D;
+    margin-top: 2em;
 }
 
 .faixa2-texto2{
@@ -104,7 +105,7 @@ a{
 }
 
 .botao-faixa2{
-    padding-top: 15em;
+    padding-top: 10em;
     text-align: center;
        
 }
@@ -161,8 +162,8 @@ a{
     font-size: 1.9em;
     font-family: Roboto-medium;
     font-style: italic;
-    padding-top: 6em;
-    
+    padding-top: 5em;
+    width: 20em;
 }
 
 .faixa3-botao{
