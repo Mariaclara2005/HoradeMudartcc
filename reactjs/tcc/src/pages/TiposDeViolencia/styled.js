@@ -50,7 +50,7 @@ a{
     color: white;
     font-size: 4em;
     font-family: Roboto-medium;
-    font-style: italic;
+
 }
 
 .faixa1-textos{
@@ -63,7 +63,7 @@ a{
     padding-top: 4em;
     width: 40em;
     font-family: Roboto-medium;
-    font-style: italic;
+   
 }
 
 .cabecalho-botoes a {
@@ -116,7 +116,7 @@ a{
     width: 40em;
     text-align: center;
     font-family: Roboto-medium;
-    font-style: italic;
+    
 }
 
 .faixa3{
@@ -133,7 +133,7 @@ a{
     color: #5164C3;
     font-size: 4em;
     font-family: Roboto-medium;
-    font-style: italic;
+ 
 }
 
 .faixa3-texto2{
@@ -142,7 +142,7 @@ a{
     width: 50em;
     text-align: center;
     font-family: Roboto-medium;
-    font-style: italic;
+
 }
 
 .img-faixa3{
@@ -169,7 +169,7 @@ a{
     text-align: center;
     font-size: 4em;
     font-family: Roboto-medium;
-    font-style: italic;
+   
 }
 
 .faixa4-texto2{
@@ -177,7 +177,7 @@ a{
     width: 40em;
     text-align: center;
     font-family: Roboto-medium;
-    font-style: italic;
+
 }
 
 
@@ -199,7 +199,7 @@ a{
     font-size: 4em;
     text-align: center;
      font-family: Roboto-medium;
-    font-style: italic;
+ 
 }
 
 .faixa5-texto2{
@@ -207,7 +207,7 @@ a{
     width: 40em;
     text-align: center;
     font-family: Roboto-medium;
-    font-style: italic;
+  
 }
 
 .img-faixa5{
@@ -234,7 +234,7 @@ a{
     text-align: center;
     font-size: 4em;
     font-family: Roboto-medium;
-    font-style: italic;
+    
 }
 
 .faixa6-texto2{
@@ -243,7 +243,7 @@ a{
     text-align: center;
     width: 40em;
     font-family: Roboto-medium;
-    font-style: italic;
+ 
 }
 
 .faixa7{
@@ -263,7 +263,7 @@ a{
     color: white;
     font-size: 5em;
     font-family: Roboto-medium;
-    font-style: italic;
+ 
 }
 
 .img-faixa7{

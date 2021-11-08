@@ -38,7 +38,7 @@ export default function Login ()
             loading.current.complete();
         } else {
             Cookies.set('usuario-logado', JSON.stringify(r));
-            navigation.push('/');
+            navigation.push('/TelaInicial');
         }
 
     }
