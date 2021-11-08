@@ -1,0 +1,32 @@
+.faixa1 {
+    background-color: #7DA074 ;
+}
+
+.faixa2 {
+    background-color: #7DA074;
+    padding: 2em;
+}
+
+.texto1 {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    padding: 1em 13em;
+}
+
+.menu {
+    font-family: Roboto-Medium;
+    font-size: 15px;
+    margin-top: -2em; 
+    margin-left: 1em;
+    height: -30px;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 3em 13em;
+    
+}
+
+.faixa3 {
+    color:yellow;
+}
