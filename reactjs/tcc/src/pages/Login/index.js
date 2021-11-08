@@ -1,13 +1,48 @@
 // import {link} from 'react-router-dom';
 import {Container} from './styled';
 import Cabecalho from '../../componentes/comum/cabecalho';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import "animate.css/animate.min.css";
+import Cookies from 'cookies-js';
+import { ToastContainer, toast } from 'react-toastify';
+import { useRef, useState } from 'react';
+
+import LoadingBar from 'react-top-loading-bar'
+
+
+import Api from '../../service/api';
+const api = new Api()
+
+
+
 
 
 
 export default function Login ()
 {
+
+        const [email, setEmail] = useState('');
+        const [senha, setSenha] = useState('');
+    
+    
+        const navigation = useHistory();
+       const loading = useRef(null);
+
+
+    const Login = async () => {
+        loading.current.continuousStart();
+
+        let r = await api.login(email, senha);
+        if(r.erro) {
+            toast.error(`${r.erro}`)
+            loading.current.complete();
+        } else {
+            Cookies.set('usuario-logado', JSON.stringify(r));
+            navigation.push('/TelaInicial');
+        }
+
+    }
+
     return  (
         <Container> 
        
@@ -41,11 +76,11 @@ export default function Login ()
             <div class="campos">
 
             <div class="caixa-1">
-            <input type="text" name="" placeholder="Email"/>
+            <input type="text" name="" value={email} onChange={e => setEmail(e.target.value)} placeholder="Email"/>
             </div>
 
             <div class="caixa2">
-                <input type="text" name="" placeholder="Senha"/>
+                <input type="text" name=""value={senha} onChange={e => setSenha(e.target.value)} placeholder="Senha"/>
             </div>
 
 
@@ -59,11 +94,11 @@ export default function Login ()
 
 
             <div class="botao1">
-                <button>Cadastro</button>
+                <button   onClick={() => Login()}> Cadastro</button>
           </div>
 
           <div class="botao2">
-                <button>Entrar</button>
+                <button   onClick={() => Login ()}> Entrar </button>
           </div>
 
             </div>

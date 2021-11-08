@@ -36,10 +36,11 @@ button {
     border-radius:25px;
     width: 212px;
     height: 178px;
+    border-color:transparent;
 } 
 
 .imagem1 img {
-    marm
+    mar
 }
 
 .titulo {

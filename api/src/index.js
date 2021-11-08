@@ -28,14 +28,13 @@ app.post('/cadastro',async (req,resp) => {
     }
 })
 
-// app.get('/cadastro', async (req, resp) => {
-//     try {
-//         let usuarios = await db.infob_hdm_cadastro.findAll();
-//         resp.send(usuarios);
-//     } catch (e) {
-//         resp.send({ erro: e.toString()})
-//     }
-// })
+ app.get('/cadastro', async (req, resp) => {
+     try {
+         let usuarios = await db.infob_hdm_cadastro.findAll();
+         resp.send(usuarios);
+   } catch (e) {
+         resp.send({ erro: e.toString()})     }
+})
 
 app.post('/login', async (req, resp) => {
     const email = req.body.email;

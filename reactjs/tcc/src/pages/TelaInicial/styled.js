@@ -45,7 +45,7 @@ a{
     margin-top: 5em;
     font-size: 2.2em;
     color: cornsilk;
-    font-style: italic;
+    font-family: Roboto-medium;
 }
 
 .faixa-meio{
@@ -54,7 +54,7 @@ a{
     font-size: 1.4em;
     color: cornsilk;
     font-family: Roboto-medium;
-    font-style: italic;
+ 
 }
 
 .faixa-baixo{
@@ -62,7 +62,6 @@ a{
     margin-top: 10em;
     font-size: 1.2em;
     font-family: Roboto-medium;
-    font-style: italic;
     color: cornsilk;
 }
 
@@ -88,7 +87,7 @@ a{
 .faixa2-texto1{
     text-align: center;
     font-family: Roboto-medium;
-    font-style: italic;
+   
     font-size: 2.2em;
     color: #1A284D;
     margin-top: 2em;
@@ -96,7 +95,7 @@ a{
 
 .faixa2-texto2{
     font-family: Roboto-medium;
-    font-style: italic;
+    
     font-size: 2.0em;
     color: black;
     padding-top: 5em;
@@ -114,7 +113,7 @@ a{
     border-radius: 10em;
     width: 14em;
     height: 3em;
-    font-style: italic;
+
     font-size: 1em;
     background-color: #9A9A9A;
     color: white;
@@ -125,7 +124,6 @@ a{
     border-radius: 10em;
     width: 14em;
     height: 3em;
-    font-style: italic;
     font-size: 1em;
     background-color: #9A9A9A;
     color: white;
@@ -154,14 +152,13 @@ a{
     color: #854141;
     font-size: 2.2em;
     font-family: Roboto-medium;
-    font-style: italic;
+   
 }
 
 .faixa3-texto2{
     text-align: center;
     font-size: 1.9em;
     font-family: Roboto-medium;
-    font-style: italic;
     padding-top: 5em;
     width: 20em;
 }
@@ -204,7 +201,7 @@ a{
     font-size: 2.2em;
     color: #0C0716;
     font-family: Roboto-medium;
-    font-style: italic;
+  
 } 
 
 .faixa4-texto2{
@@ -213,7 +210,7 @@ a{
     font-size: 2.2em;
     color: #0C0716;
     font-family: Roboto-medium;
-    font-style: italic;
+  
 } 
 
 
@@ -223,7 +220,7 @@ a{
     border-radius: 10em;
     width: 14em;
     height: 3em;
-    font-style: italic;
+   
     font-size: 1em;
     background-color: #9A9A9A;
     color: white;
@@ -262,7 +259,7 @@ a{
 .faixa5-texto{
     text-align: center;
     font-family: Roboto-medium;
-    font-style: italic;
+
     font-size: 2.2em;
     color: #1A284D;
     
@@ -272,7 +269,7 @@ a{
     border-radius: 10em;
     width: 14em;
     height: 3em;
-    font-style: italic;
+ 
     font-size: 1em;
     background-color: #9A9A9A;
     color: white;
@@ -297,7 +294,7 @@ a{
 .faixa6-texto{
     text-align: center;
     font-family: Roboto-medium;
-    font-style: italic;
+
     font-size: 2.2em;
     color: #1A284D;
     width: 18em;
@@ -316,7 +313,7 @@ a{
     border-radius: 10em;
     width: 14em;
     height: 3em;
-    font-style: italic;
+ 
     font-size: 1em;
     background-color: #9A9A9A;
     color: white;
@@ -341,7 +338,6 @@ a{
 .faixa7-texto1{
     text-align: center;
     font-family: Roboto-medium;
-    font-style: italic;
     font-size: 2.2em;
     color: #1A284D;
 }
@@ -351,7 +347,7 @@ a{
     font-size: 2.2em;
     margin-top: 3em;
     font-family: Roboto-medium;
-    font-style: italic;
+ 
 }
 
 .faixa7-botao{
@@ -362,7 +358,7 @@ a{
     border-radius: 10em;
     width: 14em;
     height: 3em;
-    font-style: italic;
+
     font-size: 1em;
     background-color: #9A9A9A;
     color: white;
@@ -387,7 +383,7 @@ a{
 .faixa8-texto1{
     text-align: center;
     font-family: Roboto-medium;
-    font-style: italic;
+    
     font-size: 2.2em;
     color: #1A284D;
 }
@@ -397,7 +393,7 @@ a{
     font-size: 2.2em;
     margin-top: 3em;
     font-family: Roboto-medium;
-    font-style: italic;
+ 
 }
 
 .faixa8-botao{
@@ -408,7 +404,7 @@ a{
     border-radius: 10em;
     width: 14em;
     height: 3em;
-    font-style: italic;
+    
     font-size: 1em;
     background-color: #9A9A9A;
     color: white;
