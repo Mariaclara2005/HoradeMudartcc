@@ -79,81 +79,110 @@ const Container = styled.div`
 }
 
 .policial1{
-    padding-top: 2em;
-    padding-right: 90em;
+    padding-top: 5em;
+   
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
     line-height: 18px;
     text-align: center;
-    color: #000000;
+    color: #black;
 }
 
 .user1{
     padding-top: 1em;
-    padding-left: 6.5em;
+    
+}
+
+.containerbalao{
+    display: flex;
+    flex-direction: row;
+    
 }
 
 .balao1{
-    
-    width: 349px;
-    height: 60px;
-    margin-top: -5.5em;
-    margin-left: 14em;
-    background: #FFFFFF;
+
+    background: #fff;
+    font-family: 'Roboto';
+    font-size: 0.85em;
+    line-height: 1.6em;  
     border-radius: 30px;
+    width: 300px;
+    height: auto;
+    color: #black;
+    padding: 20px;
+    padding-top: 1em;
+    position: relative;
+    margin-top: 0em;
+    margin-left: 20em;
 }
 
-.text1{
-    padding-right: 35em;
-    margin-top: -1.9em;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 25px;
-    line-height: 29px;
-    text-align: center;
-    color: #000000;
+.test{
+    flex-direction: column;
+    display: flex;
+    margin-right: 45em;
+    align-items: center;
+    margin-bottom: 0em;
+}
+
+.test3 {
+    flex-direction: column;
+    display: flex;
+    margin-right: 45em;
+    align-items: center;
+    margin-top: 6em;
+    
+}
+
+.test2 {
+    flex-direction: row;
+   margin-top: -20em;
+    align-items: center;
+   
+}
+
+
+.containerimg{
+   display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .policial2{
-    padding-top: 7em;
-    padding-right: 90em;
+  
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
     line-height: 18px;
     text-align: center;
-    color: #000000;
+    color: #black;
 }
 
 .user2{
     padding-top: 1em;
-    padding-left: 6.5em;
+    
 }
 
 .balao2 {
-    width: 349px;
-    height: 60px;
-    margin-left: 14em;
-    margin-top: -5.5em;
-    background: #FFFFFF;
+    margin: 0 auto; 
+    background: #fff;
+    font-family: 'Roboto';
+    font-size: 1em;
+    line-height: 1.6em;  
     border-radius: 30px;
+    width: 300px;
+    height: auto;
+    color: #black;
+    padding: 15px;
+    position: relative;
+    margin-top: 12em;
+    margin-left: 17em;
+
 }
 
-.text2 {
-    padding-right: 38em;
-    margin-top: -2em;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 23px;
-    line-height: 29px;
-    text-align: center;
-    color: #000000;
-}
+
 
 .searchbox{
     width: 800px;
@@ -163,8 +192,8 @@ const Container = styled.div`
     display: flex;
     align-items: center;
     padding: 7px;
-    margin-left: 25em;
-     margin-top: 15em;
+    margin-left: 10em;
+     margin-top: 8em;
  }
 
 .searchbox > i {
@@ -195,7 +224,7 @@ const Container = styled.div`
 
 .local{
     padding-left: 5.6em;
-    margin-top: -5em;
+    margin-top: -2em;
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
@@ -206,9 +235,37 @@ const Container = styled.div`
 }
 
 .localimg{
-    margin-right: -2em;
+    margin-right: 4em;
     margin-top: 1em;
     
 }
+
+@media (max-width: 1024px) {
+   
+    .container, .cabecalho, .texto, .menu, .conteudo, .cabecalho-botoes{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+       
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+    }
+
+    .cabecalho{
+        padding-top: 0em;
+    }
+
+    .conteudo, .chat, .policial1, .policia2, .user1, .user2, .balao1, .balao2, .text1, .text2, .searchbox, .enviar, .local, .localimg{
+        flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+           
+            padding: 0px;
+            margin: 0px;
+            width: 100%;
+        }
 `;
 export {Container}
