@@ -28,20 +28,21 @@ export default function CadastroADM ()
                 </div>    
 
                 <div class="email">
-                    <input type="text" name="" placeholder="Email da Empresa"></input>
+                    <input type="email" name="" placeholder="Email da Empresa"></input>
                 </div>
 
                 <div class="celular">
-                    <input type="text" name="" placeholder="Celular"></input>
+                <input type="text" placeholder="Telefone" id="telefone" name="telefone" />
+                <input type="text" placeholder="Celular" id="celular" name="celular" />
                 </div>
 
                 <div class="senhas">
                     <div class="senha">
-                        <input type="text" name="" placeholder="Senha"></input>
+                        <input type="password" name="" placeholder="Digite sua senha"></input>
                     </div>
 
                     <div class="confirmar-senha">
-                        <input type="text" name="" placeholder="Confirmar Senha"></input>
+                        <input type="password" name="" placeholder="Confirmar senha"></input>
                     </div>
                 </div>
 
