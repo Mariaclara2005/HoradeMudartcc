@@ -14,7 +14,7 @@ import Denúncia from './pages/Denúncia'
 import MapaDelegacias from './pages/MapaDelegacias'
 //import QuemSomosNos from './pages/QuemSomosNos'
 import AutorizaçaoMensagem from './pages/AutorizaçaoMensagem'
-//import LoginADM from './pages/LoginADM'
+import LoginADM from './pages/LoginADM'
 import ChatDenuncia from './pages/ChatDenuncia'
 //import InformaçoesLocalizacao from './pages/InformaçoesLocalizacao'
 //import InformaçoesDenuncia from './pages/InformacoesDenuncia'
@@ -40,12 +40,13 @@ export default function Routes() {
                   <Route path="/Login" exact={true} component={Login}/>
                   <Route path="/RedefinirSenha" exact={true} component={RedefinirSenha}/>
                   <Route path="/Denúncia" exact={true} component={Denúncia}/>
-                {/*
+               {/*
                 <Route path="/CaracteristicasLocalizaçao" exact={true} component={CaracteristicasLocalizaçao}/>
-                <Route path="/TipoAssedio" exact={true} component={TipoAssedio}/>
-                <Route path="/QuemSomoNos" exact={true} component={QuemSomosNos}/>  */}
+                <Route path="/TipoAssedio" exact={true} component={TipoAssedio}/>  
+                 <Route path="/QuemSomoNos" exact={true} component={QuemSomosNos}/>   */}
+                 <Route path="/LoginADM" exact={true} component={LoginADM}/> 
                 <Route path="/AutorizaçaoMensagem" exact={true} component={AutorizaçaoMensagem}/>
-                {/* <Route path="/LoginADM" exact={true} component={LoginADM}/> 
+                {/*
                  <Route path="/InformaçoesLocalizacao" exact={true} component={InformaçoesLocalizacao}/>
                 <Route path="/InformaçoesDenuncia" exact={true} component={InformaçoesDenuncia}/> */}
                 <Route path="/RedefinirSenhaADM" exact={true} component={RedefinirSenhaADM}/>

@@ -30,7 +30,7 @@ export default function Login ()
 
 
     const Login = async () => {
-        loading.current.continuousStart();
+        //loading.current.continuousStart();
 
         let r = await api.login(email, senha);
         if(r.erro) {
@@ -98,8 +98,10 @@ export default function Login ()
           </div>
 
           <div class="botao2">
-                <button   onClick={() => Login ()}> Entrar </button>
-          </div>
+                <button onClick={Login} style={{ fontSize: '1.0em'}}> Entrar </button>
+
+             </div>
+
 
             </div>
 

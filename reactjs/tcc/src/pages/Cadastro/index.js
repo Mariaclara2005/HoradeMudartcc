@@ -10,6 +10,7 @@
 
 
 import Api from '../../service/api';
+import { toast } from 'react-toastify';
 const api = new Api()
 
 
@@ -28,8 +29,6 @@ const api = new Api()
 
 
     async function inserir () {
-       // alert("foi gatinha")
-
         let r = await api.inserir(Nome, Sobrenome, Celular, Email, Senha );
       
        if(r.erro !== undefined){
@@ -38,7 +37,8 @@ const api = new Api()
            alert("Oioiii lindo, funfou")
        }
 
-    }
+
+      }
 
    
 
