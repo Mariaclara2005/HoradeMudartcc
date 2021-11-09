@@ -9,7 +9,7 @@ a{
 
 
 .faixa1{
-    background-color: #6482CB;
+    background-color: #314B56B;
     height: 100vh;
 }
 
@@ -86,7 +86,7 @@ a{
 
 
 .faixa-2{
-    background-color: #EFF1F5;
+    background-color: #DAD9D9;
     display: flex;
     flex-direction: row;
     height: 100vh;
@@ -124,7 +124,7 @@ a{
     flex-direction: row;
     height: 100vh;
     align-items: center;
-    background-color: #F8FAFF;
+    background-color: #DCD8D8;
     justify-content: center;
 }
 
@@ -150,127 +150,6 @@ a{
     width: 28em;
 }
 
-.faixa4{
-    background-color: #EFF1F5;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 100vh;
-    justify-content: center;
-}
-
-.img-faixa4{
-    height: 30em;
-    width: 30em;
-}
-
-.faixa4-texto1{
-    color: #242263;
-    text-align: center;
-    font-size: 4em;
-    font-family: Roboto-medium;
-    font-style: italic;
-}
-
-.faixa4-texto2{
-    padding-top: 5em;
-    width: 40em;
-    text-align: center;
-    font-family: Roboto-medium;
-    font-style: italic;
-}
-
-
-.faixa5{
-    background-color: #F8FAFF;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 100vh;
-    justify-content: center;
-}
-
-.faixa5-conteudo{
-    align-items: center;
-}
-
-.faixa5-texto1{
-    color: #0B1731;
-    font-size: 4em;
-    text-align: center;
-     font-family: Roboto-medium;
-    font-style: italic;
-}
-
-.faixa5-texto2{
-    padding-top: 5em;
-    width: 40em;
-    text-align: center;
-    font-family: Roboto-medium;
-    font-style: italic;
-}
-
-.img-faixa5{
-    height: 40em;
-    width: 40em;
-}
-
-.faixa6{
-    background-color: #EFF1F5;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 100vh;
-    justify-content: center;
-}
-
-.img-faixa6{
-    height: 35em;
-    width: 35em;
-}
-
-.faixa6-texto1{
-    color: #7ABEC0;
-    text-align: center;
-    font-size: 4em;
-    font-family: Roboto-medium;
-    font-style: italic;
-}
-
-.faixa6-texto2{
-    padding-top: 5em;
-    color: #0B0A0A;
-    text-align: center;
-    width: 40em;
-    font-family: Roboto-medium;
-    font-style: italic;
-}
-
-.faixa7{
-    background-color: #7FB27F;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 100vh;
-    justify-content: center;
-}
-
-.faixa7-conteudo{
-    text-align: center;
-}
-
-.faixa7-texto{
-    color: white;
-    font-size: 5em;
-    font-family: Roboto-medium;
-    font-style: italic;
-}
-
-.img-faixa7{
-    height: 30em;
-    width: 30em;
-}
-
 .faixa1-img img {
     position: relative;
     animation: animar 3s infinite;
@@ -286,30 +165,6 @@ a{
     animation: animar 3s infinite;
 }
 
-.faixa4-img img {
-    position: relative;
-    animation: animar 3s infinite;
-}
-
-.faixa5-img img {
-    position: relative;
-    animation: animar 3s infinite;
-}
-
-
-.faixa6-img img {
-    position: relative;
-    animation: animar 3s infinite;
-}
-
-.faixa7-img img {
-    position: relative;
-    animation: animar 2s infinite;
-}
-
-
-
-
 @keyframes animar {
     0% {
         top: -10px;
@@ -321,6 +176,3 @@ a{
         top: -10px; 
     }
 }
-
-
-
