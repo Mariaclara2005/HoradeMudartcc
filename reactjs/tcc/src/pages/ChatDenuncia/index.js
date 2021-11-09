@@ -3,6 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { Container }  from "./styled";
+import Cabecalho from '../../componentes/comum/cabecalho'
 
  export default function ChatDenuncia ()
  {
@@ -10,22 +11,7 @@ import { Container }  from "./styled";
      <Container>
          <div div class="faixa1">
     
-          <div class="cabecalho">
-          <div class="imagem">
-              <img class="logo" src="/assets/imagens/logo-claro.png" />
-           </div>
-           <div class="cabecalho-botoes">         
-                     <Link to="/Denúncia">Denúncia</Link>
-                     <Link to="/TipoViolencia">Tipos de violência</Link>
-                     <Link to=" ">Tipos de assédio</Link>
-                     <Link to="/MapaDelegacias">Mapa das Delegacia</Link>
-                     <Link to="/AutoEstima">Autoestima</Link>
-                     <Link to="/Chat">Chat</Link>
-                     <Link to="/Cadastro">Cadastro</Link>
-                     <Link to="/Login">Login</Link>
-                               
-                 </div>
-      </div>
+         <Cabecalho/>
          <div class="texto">Chat de denuncia</div>
          </div>  
          <div class="conteudo"/>

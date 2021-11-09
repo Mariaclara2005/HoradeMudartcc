@@ -5,6 +5,7 @@ import React, { Component } from 'react';
 import { Loader } from '@googlemaps/js-api-loader';
 import { Link } from 'react-router-dom';
 import { Container } from "./styled";
+import Cabecalho from '../../componentes/comum/cabecalho'
 
 
 const loader = new Loader({
@@ -44,21 +45,7 @@ export default class DemoComponent extends Component {
             <Container>
                     <div class="site"> 
             <div class="container">
-                <div class="cabecalho">
-                    <div class="logo"> <img src="/assets/imagens/pg-mapa-logo.png" widht="116" height="132" alt=""/> </div>
-                    <div class="cabecalho-botoes">
-
-                    <Link to="/Denúncia">Denúncia</Link>
-                     <Link to="/TipoViolencia">Tipos de violência</Link>
-                     <Link to=" ">Tipos de assédio</Link>
-                     <Link to="/MapaDelegacias">Mapa das Delegacia</Link>
-                     <Link to="/AutoEstima">Autoestima</Link>
-                     <Link to="/Chat">Chat</Link>
-                     <Link to="/Cadastro">Cadastro</Link>
-                     <Link to="/Login">Login</Link>
-        
-                    </div>
-                </div>
+              <Cabecalho/>
                 <div class="conteudo">
                     <div class="text">Localize a delegacia mais próxima:</div>
                     <div class= "searchbox" />
