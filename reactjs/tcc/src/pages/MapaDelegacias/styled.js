@@ -69,7 +69,7 @@ body {
    display: flex;
    align-items: center;
    padding: 7px;
-   margin-left: 36em;
+   margin-left: 23em;
     margin-top: 3em;
     margin-bottom: 3em;
 }
@@ -92,7 +92,7 @@ body {
 
 
 .mapa{
-    margin-left: 25em;
+    margin-left: 21em;
     margin-bottom: 1em;
 }
 
@@ -117,7 +117,7 @@ body {
     
 }
 .text2{
-    margin-left: 3.9em;
+    margin-left: 2.9em;
     padding-bottom: 0.5em;
     font-family: Roboto;
     font-style: normal;
@@ -167,7 +167,7 @@ body {
     transition: ease-out 0.3s;
     font-size: 2rem;
     outline: none;
-    margin-left: 10.5em;
+    margin-left: 8em;
     margin-top: 1em;
 }
 
@@ -179,7 +179,7 @@ body {
 
 @media (max-width: 1024px) {
    
-    .container, .cabecalho, .text, .mulher, .mapa. logo, .searchbox, .cabecalho-botoes, .searchbox{
+    .container, .cabecalho, .text, .mulher, .mapa, .logo, .searchbox, .cabecalho-botoes, .searchbox{
         flex-direction: column;
         justify-content: center;
         align-items: center;

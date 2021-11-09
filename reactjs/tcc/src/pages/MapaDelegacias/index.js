@@ -87,7 +87,7 @@ export default class DemoComponent extends Component {
                     
                     <div class="text4"> Clique aqui para ser redicionada ao nosso chat de denúncias</div>
                     <div class="config">
-                    <button class="btn2"> Chat </button>
+                    <button class="btn2"> <Link to= "/ChatDenuncia"> Chat </Link> </button>
                    </div>
                 </ScrollAnimation>
                 </div>

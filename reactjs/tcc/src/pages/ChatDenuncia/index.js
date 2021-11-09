@@ -15,13 +15,15 @@ import { Container }  from "./styled";
               <img class="logo" src="/assets/imagens/logo-claro.png" />
            </div>
            <div class="cabecalho-botoes">         
-                     <Link to="/">Denúncie</Link>
+                     <Link to="/Denúncia">Denúncia</Link>
                      <Link to="/TipoViolencia">Tipos de violência</Link>
                      <Link to=" ">Tipos de assédio</Link>
-                     <Link to=" ">Mapa das Delegacia</Link>
-                     <Link to=" ">Autoestima</Link>
+                     <Link to="/MapaDelegacias">Mapa das Delegacia</Link>
+                     <Link to="/AutoEstima">Autoestima</Link>
                      <Link to="/Chat">Chat</Link>
-                     <Link to=" ">Cadastro</Link>                         
+                     <Link to="/Cadastro">Cadastro</Link>
+                     <Link to="/Login">Login</Link>
+                               
                  </div>
       </div>
          <div class="texto">Chat de denuncia</div>
