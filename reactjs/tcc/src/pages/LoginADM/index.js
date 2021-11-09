@@ -18,7 +18,7 @@ const api = new Api()
 
 
 
-export default function LoginAdm ()
+export default function Login ()
 {
 
         const [email, setEmail] = useState('');
@@ -29,7 +29,7 @@ export default function LoginAdm ()
        const loading = useRef(null);
 
 
-    const LoginAdm = async () => {
+    const Login = async () => {
         loading.current.continuousStart();
 
         let r = await api.login(email, senha);
