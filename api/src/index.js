@@ -13,6 +13,24 @@ app.post('/cadastro',async (req,resp) => {
         let u = await db.infob_hdm_cadastro.findOne({ where: { nm_HDM_email: usuParam.email } });
         if (u != null)
             return resp.send({ erro: 'Usuário já existe!' });
+
+        if (usuParam.nome == '')
+            return resp.send({ erro: 'Nome é obrigatório'})
+
+        if (usuParam.sobrenome == '')
+            return resp.send({ erro: 'Sobrenome é obrigatório'})
+
+            if (usuParam.celular == '')
+            return resp.send({ erro: 'Celular é obrigatório'})
+
+            if (usuParam.email == '')
+            return resp.send({ erro: 'Email é obrigatório'})
+
+            if (usuParam.senha == '')
+            return resp.send({ erro: 'Senha é obrigatório'})
+        
+        
+        
         
         let r = await db.infob_hdm_cadastro.create({
             nm_HDM_nome: usuParam.nome,

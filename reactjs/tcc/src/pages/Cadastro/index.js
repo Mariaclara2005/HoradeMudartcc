@@ -26,10 +26,11 @@ const api = new Api()
    //  const [idAlterando, setIdAlterando] = useState(0);
    //  const loading = useRef();
 
-    async function inserir () {
-        alert("foi gatinha")
 
-        let r = await Api.inserir(Nome, Sobrenome, Celular, Email, Senha );
+    async function inserir () {
+       // alert("foi gatinha")
+
+        let r = await api.inserir(Nome, Sobrenome, Celular, Email, Senha );
       
        if(r.erro !== undefined){
            alert(r.erro)
@@ -79,11 +80,11 @@ const api = new Api()
 
              <div class="senhas">
                 <div class="senha">
-                    <input type="text" name="" value={Senha} onChange={e => setSenha(e.target.value)}  placeholder="Senha"></input>
+                    <input type="password" name=""  value={Senha} onChange={e => setSenha(e.target.value)}  placeholder="Senha"></input>
                </div>
 
                 <div class="confirmar-senha">
-                    <input type="text" name="" placeholder="Confirmar Senha"></input>
+                    <input type="password" name="" placeholder="Confirmar Senha"></input>
                </div>
             </div>
 
