@@ -10,6 +10,7 @@
 
 
 import Api from '../../service/api';
+import { toast } from 'react-toastify';
 const api = new Api()
 
 
@@ -38,7 +39,8 @@ const api = new Api()
            alert("Oioiii lindo, funfou")
        }
 
-    }
+
+      }
 
    
 

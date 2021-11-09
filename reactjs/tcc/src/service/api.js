@@ -19,10 +19,14 @@ export default class Api {
     }
 
     async Login (email, senha) {
-        let r = await api.post(`/login`, {email: email, senha: senha});
+        let r = await api.post('/login', {email: email, senha: senha});
         return r.data
     }
 
+    async inserirUsuario(nome) {
+        let r = await api.post(`/cadastro/`, { nome: nome });
+        return r.data;
+    }
 
 }
     
