@@ -28,15 +28,13 @@
 }
 
 .texto3 {
-padding: 2em;
+
 color: chartreuse;
 }
 
-.body {
-    color: blue;
-    padding: 2em 1em;
-    direction: flex;
-    flex-direction: column;
+.box {
+    color:black;
+    direction: ;
 }
 
 .opcoes {
