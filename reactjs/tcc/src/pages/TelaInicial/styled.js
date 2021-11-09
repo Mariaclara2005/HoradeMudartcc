@@ -90,7 +90,7 @@ a{
    
     font-size: 2.2em;
     color: #1A284D;
-    margin-top: 2em;
+    margin-top: 1em;
 }
 
 .faixa2-texto2{
@@ -98,13 +98,13 @@ a{
     
     font-size: 2.0em;
     color: black;
-    padding-top: 5em;
+    padding-top: 3em;
     width: 13em;
     text-align: center;
 }
 
 .botao-faixa2{
-    padding-top: 10em;
+    padding-top: 8em;
     text-align: center;
        
 }
@@ -159,13 +159,13 @@ a{
     text-align: center;
     font-size: 1.9em;
     font-family: Roboto-medium;
-    padding-top: 5em;
+    padding-top: 3em;
     width: 20em;
 }
 
 .faixa3-botao{
     text-align: center;
-    padding-top: 10em;
+    padding-top: 8em;
     
 }
 
@@ -184,7 +184,7 @@ a{
     display: flex;
     flex-direction: row;
     height: 100vh;
-    background-image: url(/assets/imagens/teste22.png);
+    background-image: url(/assets/imagens/fita-02.png);
     margin: -5px;
     background-size: 100% 100%;
     justify-content: center;
@@ -229,8 +229,8 @@ a{
 }
 
 .faixa4-image{
-    padding-top: 12em;
-    padding-left: 18em;
+    padding-top: 10em;
+    padding-left: 15em;
 }
 
 .faixa4-botao{
@@ -259,10 +259,10 @@ a{
 .faixa5-texto{
     text-align: center;
     font-family: Roboto-medium;
-
+    width: 12em;
     font-size: 2.2em;
     color: #1A284D;
-    
+    padding-left: 3em;
 }
 
 .botao-faixa5{
@@ -284,6 +284,9 @@ a{
 
 .pagina-chat{
     height: 100vh;
+    background-image: url(/assets/imagens/teste22.png);
+    margin: -5px;
+    background-size: 100% 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -306,7 +309,7 @@ a{
 
 .faixa6-botao{
     padding-top: 4em;
-    padding-left: 11em;
+    padding-left: 13em;
 }
 
 .botao-faixa6{
@@ -369,6 +372,9 @@ a{
 
 .pagina-quem-somos{
     height: 100vh;
+    background-image: url(/assets/imagens/fita-01.png);
+    margin: -5px;
+    background-size: 100% 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -411,10 +417,60 @@ a{
     border: none;
 }
 
+
+
+
+
+
+
+
+
+
+
 .botao-faixa2 :hover{
     background-color: #18D1C2;
     transition: 0.8s;
 }
+
+.faixa3-botao :hover{
+    background-color: #854141;
+    transition: 0.8s;
+}
+
+.faixa4-botao :hover{
+    background-color: #854141;
+    transition: 0.8s;
+}
+
+.faixa5-botao :hover{
+    background-color: #888888;
+    transition: 0.8s;
+}
+
+.faixa6-botao :hover{
+    background-color: #18D1C2;
+    transition: 0.8s;
+}
+
+.faixa7-botao :hover{
+    background-color: #888888;
+    transition: 0.8s;
+}
+
+.faixa8-botao :hover{
+    background-color: #DB7093;
+    transition: 0.8s;
+}
+
+
+
+
+
+
+
+
+
+
 
 .faixa2-img img {
     position: relative;
@@ -511,8 +567,17 @@ a{
         width: 100%;
     }
 
+    .faixa2-img2{
+        height: 15em;
+        width: 15em;
+    }
+
     .faixa2-img{
-        display: none;
+        padding-top: 2em;
+    }
+
+    .faixa2-texto1{
+        padding-top: 4em;
     }
 
     .faixa2-texto2{
@@ -520,7 +585,7 @@ a{
     }
 
     .botao-faixa2{
-        padding-top: 2em;
+        padding-top: 3em;
     }
 
     .autoestima , .faixa3-conteudo, .faixa3-texto1, .faixa3-texto2, .faixa3-botao  {
@@ -535,10 +600,19 @@ a{
     }
 
     .faixa3-image{
-        display: none;
+        
+    }
+
+    .img-faixa3{
+        width: 15em;
+        height: 15em;
     }
 
     .faixa3-texto2{
+        padding-top: 1em;
+    }
+
+    .faixa3-texto1{
         padding-top: 2em;
     }
 
@@ -546,19 +620,23 @@ a{
         padding-top: 2em;
     }
 
-    .tipos-de-assedio , .faixa4-conteudo, .faixa4-texto1, .faixa4-texto2, .faixa4-botao  {
+    .faixa3-conteudo{
+        padding-bottom: 12em;
+    }
+
+    .tipos-de-assedio , .faixa4-conteudo, .faixa4-texto1, .faixa4-texto2, .faixa4-botao, .faixa4-image  {
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
-       
         padding: 0px;
         margin: 0px;
         width: 100%;
     }
 
-    .faixa4-image{
-        display: none;
+    .faixa4-image1{
+        width: 15em;
+        height: 15em;
     }
 
     .faixa4-texto2{
@@ -570,7 +648,7 @@ a{
     }
 
 
-    .pagina-mapa , .faixa5-conteudo, .faixa5-texto1, .faixa5-botao  {
+    .pagina-mapa , .faixa5-conteudo, .faixa5-texto1, .faixa5-botao, .faixa5-image  {
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -581,8 +659,9 @@ a{
         width: 100%;
     }
 
-    .faixa5-image{
-        display: none;
+    .faixa5-image1{
+        height: 15em;
+        width: 15em;
     }
 
     
@@ -592,7 +671,7 @@ a{
     }
 
 
-    .pagina-chat , .faixa6-conteudo, .faixa6-texto, .faixa6-botao  {
+    .pagina-chat , .faixa6-image, .faixa6-conteudo, .faixa6-texto, .faixa6-botao  {
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -608,12 +687,13 @@ a{
         padding-top: 2em;
     }
 
-    .faixa6-image{
-        display: none;
+    .faixa6-image1{
+       height: 15em;
+       width: 15em;
     }
 
 
-    .pagina-denuncia , .faixa7-conteudo, .faixa7-texto1, .faixa7-texto2, .faixa7-botao  {
+    .pagina-denuncia ,  .faixa7-image1, .faixa7-conteudo, .faixa7-texto1, .faixa7-texto2, .faixa7-botao  {
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -624,8 +704,9 @@ a{
         width: 100%;
     }
 
-    .faixa7-image{
-        display: none;
+    .faixa7-image1{
+        height: 15em;
+       width: 15em;
     }
 
     .faixa7-texto1{
@@ -642,7 +723,7 @@ a{
     }
 
 
-    .pagina-quem-somos , .faixa8-conteudo, .faixa8-texto1, .faixa8-texto2, .faixa8-botao  {
+    .pagina-quem-somos , .faixa8-image, .faixa8-conteudo, .faixa8-texto1, .faixa8-texto2, .faixa8-botao  {
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -654,8 +735,9 @@ a{
     }
 
 
-    .faixa8-image{
-        display: none;
+    .faixa8-image1{
+        height: 15em;
+       width: 15em;
     }
 
     .faixa8-texto1{
