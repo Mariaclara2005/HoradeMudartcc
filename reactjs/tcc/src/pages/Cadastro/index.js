@@ -29,8 +29,6 @@ const api = new Api()
 
 
     async function inserir () {
-       // alert("foi gatinha")
-
         let r = await api.inserir(Nome, Sobrenome, Celular, Email, Senha );
       
        if(r.erro !== undefined){
