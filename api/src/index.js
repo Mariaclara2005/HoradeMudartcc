@@ -55,7 +55,8 @@ app.post('/cadastro',async (req,resp) => {
 })
 
 app.post('/login', async (req, resp) => {
-    const email = req.body.email;
+
+        const nome = req.body.nome;
     const senha = req.body.senha;
 
     const cryptoSenha = crypto.SHA256(senha).toString(crypto.enc.Base64)
@@ -63,7 +64,7 @@ app.post('/login', async (req, resp) => {
     let r = await db.infob_hdm_login.findAll(
         {
             where: {
-                   nm_HDM_nome: email,
+                   nm_HDM_nome: nome,
                    nr_senha: cryptoSenha
             },
         raw: true 
@@ -74,7 +75,7 @@ app.post('/login', async (req, resp) => {
         return resp.send({ erro: e.toString()});
 
     resp.sendStatus(200);
-});
+})
 
 app.get('/login', async (req, resp) => {
     try {
@@ -163,5 +164,50 @@ app.get('/cadastro_adm', async (req, resp) => {
         resp.send({ erro: e.toString()})
     }
 })
+
+
+
+
+
+
+
+// app.post('/esqueciASenha', async (req, resp) =>{
+//     const usuarios = await db.infob_hdm_usuario.findOne({
+//         where:{
+//             ds_email: req.body.emaiil
+//         }
+//     });
+
+//     if (!usuarios) {
+//             resp.send({status: 'Erro', mensagem: 'E-mail inválido.'});
+//         }
+    
+//         let codigo = getRudInteger (1000, 9999);
+//         await db.infob_hdm_usuario.update({
+
+//         }, {
+//             where: { id_usuario: user.id_usuario}
+//         })
+
+        
+// } )
+
+
+// app.post('/validarCodigo', async (req, resp) =>{
+    
+// } )
+
+
+// app.put('/resetSenha', async (req, resp) =>{
+    
+// } )
+
+
+// function getRudInteger(min, max){
+//     return Math.floor(Math.random() * (max - min) ) + min;
+// }
+
+
+
 
 app.listen(process.env.PORT, () => console.log(`Server up at port ${process.env.PORT}`))

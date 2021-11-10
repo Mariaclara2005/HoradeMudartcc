@@ -81,7 +81,7 @@ export default function TelaInicial () {
         <div class="autoestima">
 
             <div class="faixa3-image">
-                <img class="img-faixa3" src="/assets/imagens/autoestima.png" alt=""/>
+                <img class="img-faixa3" src="/assets/imagens/autoestima-nov.png" alt=""/>
             </div>
 
             <div class="faixa3-conteudo">

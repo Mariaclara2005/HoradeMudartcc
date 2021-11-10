@@ -67,7 +67,7 @@ a{
 
 .tipo-de-violencia{
     height: 100vh;
-    background-image: url(/assets/imagens/teste22.png);
+    background-image: url(/assets/imagens/fx01.png);
     margin: -5px;
     background-size: 100% 100%;
     display: flex;
@@ -133,8 +133,8 @@ a{
 
 
 .autoestima{
-    background-color: #DCDCDC;    
     height: 100vh;
+    background-color: #888888;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -142,8 +142,8 @@ a{
 
 .img-faixa3{
     padding-top: 11em;
-    width: 30em;
-    height: 30em;
+    width: 35em;
+    height: 35em;
     padding-left: 6em;
 }
 
@@ -178,6 +178,7 @@ a{
 
 .faixa3-conteudo{
     padding-top: 15em;
+    padding-right: 5em;
 }
 
 .tipos-de-assedio{
