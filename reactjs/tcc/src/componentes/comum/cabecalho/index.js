@@ -24,7 +24,7 @@ export default function index() {
      <Link to="/AutoEstima">Autoestima</Link>
      <Link to="/Chat">Chat</Link>
      <Link to="/Cadastro">Cadastro</Link>
-
+     <Link to="/Login">Login</Link>
                                    
 </div>
 

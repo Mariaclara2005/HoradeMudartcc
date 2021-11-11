@@ -9,7 +9,7 @@ a{
 
 
 .faixa1{
-    background-color: #6482CB;
+    background-color: #9A9A9A;
     height: 100vh;
 }
 
@@ -86,7 +86,7 @@ a{
 
 
 .faixa-2{
-    background-color: #EFF1F5;
+    background-color: #DAE0DD;
     display: flex;
     flex-direction: row;
     height: 100vh;
@@ -101,7 +101,7 @@ a{
 
 .texto1-faixa2{
     text-align: center;
-    color: #298DAB;
+    color: #105F67;
     font-size: 4em;
     font-family: Roboto-medium;
     font-style: italic;
@@ -124,13 +124,13 @@ a{
     flex-direction: row;
     height: 100vh;
     align-items: center;
-    background-color: #F8FAFF;
+    background-color: #EFEFEF;
     justify-content: center;
 }
 
 .faixa3-texto1{
     text-align: center;
-    color: #5164C3;
+    color: #632B50;
     font-size: 4em;
     font-family: Roboto-medium;
  
@@ -151,7 +151,7 @@ a{
 }
 
 .faixa4{
-    background-color: #EFF1F5;
+    background-color: #DAE0DD;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -165,7 +165,7 @@ a{
 }
 
 .faixa4-texto1{
-    color: #242263;
+    color: #392457;
     text-align: center;
     font-size: 4em;
     font-family: Roboto-medium;
@@ -182,7 +182,7 @@ a{
 
 
 .faixa5{
-    background-color: #F8FAFF;
+    background-color: #EFEFEF;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -195,7 +195,7 @@ a{
 }
 
 .faixa5-texto1{
-    color: #0B1731;
+    color: #0E34EE;
     font-size: 4em;
     text-align: center;
      font-family: Roboto-medium;

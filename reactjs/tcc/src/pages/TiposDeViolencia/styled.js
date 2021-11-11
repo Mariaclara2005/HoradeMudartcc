@@ -43,6 +43,8 @@ a{
     align-items: center;
     justify-content: center;
     padding-top: 1em;
+  
+    
 }
 
 .faixa1-titulo{
@@ -50,11 +52,13 @@ a{
     color: white;
     font-size: 4em;
     font-family: Roboto-medium;
+    whited
 
 }
 
 .faixa1-textos{
     padding-right: 5em;
+    padding: 2em;
 }
 
 .faixa1-txt{
@@ -104,19 +108,19 @@ a{
     color: #298DAB;
     font-size: 4em;
     font-family: Roboto-medium;
-    font-style: italic;
     width: 4em;
     padding-left: 3em;
 }
 
 .texto2-faixa2{
-    text-align: left;
-    font-size: 1em;
+    text-align: center;
+    font-size: 1.1em;
     padding-top: 5em;
-    width: 40em;
+    width: 30em;
     text-align: center;
     font-family: Roboto-medium;
-    
+  
+
 }
 
 .faixa3{
