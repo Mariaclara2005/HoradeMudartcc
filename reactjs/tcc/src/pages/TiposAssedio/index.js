@@ -1,17 +1,12 @@
 import {Container} from './styled';
  import Cabecalho from '../../componentes/comum/cabecalho';
  
- export default function Cadastro ()
- {
-}
+ export default function Cadastro (){
+   return (
+     <Container>
+          <Cabecalho/>
 
-return(
-}
- <Cabecalho />   
-
-return(
-<Container>
-<div class="faixa1">
+          <div class="faixa1">
         <div class="cabecalho-inicio">
           <div class="cabecalho-img">
             <img src="../../src/images/logo-claro.png" />
@@ -133,5 +128,11 @@ return(
           </div>
         </div>
       </div>
-    </div>
-</Cabecalho>
+    
+
+     </Container>
+   
+   )
+ }
+ 
+

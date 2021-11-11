@@ -35,6 +35,7 @@ const api = new Api()
            alert(r.erro)
        } else {
            alert("Oioiii lindo, funfou")
+           
        }
 
 

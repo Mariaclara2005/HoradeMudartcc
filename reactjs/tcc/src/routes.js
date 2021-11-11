@@ -40,9 +40,10 @@ export default function Routes() {
                   <Route path="/Login" exact={true} component={Login}/>
                   <Route path="/RedefinirSenha" exact={true} component={RedefinirSenha}/>
                   <Route path="/Denúncia" exact={true} component={Denúncia}/>
+                  <Route path="/TipoAssedio" exact={true} component={TipoAssedio}/>  
                {/*
                 <Route path="/CaracteristicasLocalizaçao" exact={true} component={CaracteristicasLocalizaçao}/>
-                <Route path="/TipoAssedio" exact={true} component={TipoAssedio}/>  
+    
                  <Route path="/QuemSomoNos" exact={true} component={QuemSomosNos}/>   */}
                  <Route path="/LoginADM" exact={true} component={LoginADM}/> 
                 <Route path="/AutorizaçaoMensagem" exact={true} component={AutorizaçaoMensagem}/>
