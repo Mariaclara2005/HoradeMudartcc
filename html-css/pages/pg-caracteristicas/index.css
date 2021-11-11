@@ -18,12 +18,13 @@
     font-family: Roboto-Medium;
     font-size: 15px;
     margin-top: -2em; 
-    margin-left: 1em;
-    height: -30px;
+    margin-left: 10em;
+    height: -50px;
     display: flex;
+    flex-direction: row;
     align-items: center;
     color: white;
-    padding: 3em 13em;
+    padding: 1em 7em;
     
 }
 
@@ -32,12 +33,15 @@
 color: chartreuse;
 }
 
-.box {
-    color:black;
-    direction: 
-}
-
 .opcoes {
     direction: flex;
     flex-direction: column;
+}
+
+.logo img {
+    height: 7em;
+    width: 7em;
+  
+    padding: 2em 4em;
+    color: white;
 }
