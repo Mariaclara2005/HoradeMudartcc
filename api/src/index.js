@@ -171,26 +171,32 @@ app.get('/cadastro_adm', async (req, resp) => {
 
 
 
-// app.post('/esqueciASenha', async (req, resp) =>{
-//     const usuarios = await db.infob_hdm_usuario.findOne({
-//         where:{
-//             ds_email: req.body.emaiil
-//         }
-//     });
+app.post('/esqueciASenha', async (req, resp) =>{
+    const usuarios = await db.infob_hdm_usuario.findOne({
+        where:{
+            ds_email: req.body.emaiil
+        }
+    });
 
-//     if (!usuarios) {
-//             resp.send({status: 'Erro', mensagem: 'E-mail inválido.'});
-//         }
+    if (!usuarios) {
+            resp.send({status: 'Erro', mensagem: 'E-mail inválido.'});
+        }
     
-//         let codigo = getRudInteger (1000, 9999);
-//         await db.infob_hdm_usuario.update({
+        let codigo = getRudInteger (1000, 9999);
+        await db.infob_hdm_usuario.update({
+            ds_codigo_rec: codigo
+         }, {
+             where: {id_HDM_usuario: usuario.id_HDM_usuario}
+         })
+            enviarEmail(usuario.nm_HDM_email, 'Recuperação De Senha', `
+            <h3> Recuperação de senha </h3>
+            <p> Sua recuperação de senha da sua conta foi atendida 
+            <p> insira esse código ${codigo} para recuper sua conta
+            
+            `) 
+            resp.send({ status: 'Código Enviado'});
+        })
 
-//         }, {
-//             where: { id_usuario: user.id_usuario}
-//         })
-
-        
-// } )
 
 
 // app.post('/validarCodigo', async (req, resp) =>{

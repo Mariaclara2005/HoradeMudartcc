@@ -178,7 +178,7 @@ a{
 
 .faixa3-conteudo{
     padding-top: 15em;
-    padding-right: 5em;
+    justify-content: center;
 }
 
 .tipos-de-assedio{
