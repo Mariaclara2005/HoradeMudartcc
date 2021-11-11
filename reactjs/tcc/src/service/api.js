@@ -18,15 +18,15 @@ export default class Api {
         return r.data;
     }
 
-    async Login (email, senha) {
+    async login (email, senha) {
         let r = await api.post('/login', {email: email, senha: senha});
         return r.data
     }
 
-    async inserirUsuario(nome) {
-        let r = await api.post(`/cadastro/`, { nome: nome });
-        return r.data;
-    }
+    // async inserirUsuario(nome) {
+    //     let r = await api.post(`/cadastro/`, { nome: nome });
+    //     return r.data;
+    // }
 
 }
     

@@ -90,10 +90,17 @@ body {
 }
 
 
-
+.conteudo{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 100px;
+}
 .mapa{
     margin-left: 21em;
     margin-bottom: 1em;
+  
 }
 
 .conteudo2{
@@ -179,7 +186,7 @@ body {
 
 @media (max-width: 1024px) {
    
-    .container, .cabecalho, .text, .mulher, .mapa, .logo, .searchbox, .cabecalho-botoes, .searchbox{
+    .container, .conteudo, .cabecalho, .text, .mulher, .mapa, .logo, .searchbox, .cabecalho-botoes, .searchbox{
         flex-direction: column;
         justify-content: center;
         align-items: center;

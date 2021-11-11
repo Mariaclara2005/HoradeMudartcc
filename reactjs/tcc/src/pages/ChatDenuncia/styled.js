@@ -92,7 +92,7 @@ const Container = styled.div`
 
 .user1{
     padding-top: 1em;
-    
+    margin-left: 2em;
 }
 
 .containerbalao{
@@ -115,11 +115,11 @@ const Container = styled.div`
     padding-top: 1em;
     position: relative;
     margin-top: 0em;
-    margin-left: 20em;
+    margin-left: 2em;
 }
 
 .test{
-    flex-direction: column;
+    flex-direction: row;
     display: flex;
     margin-right: 45em;
     align-items: center;
@@ -127,18 +127,20 @@ const Container = styled.div`
 }
 
 .test3 {
+    flex-direction: row;
+    display: flex;
+    margin-right: 45em;
+    align-items: center;
+    margin-bottom: 0em;
+    margin-top: 6em;
+}
+
+.test2 {
     flex-direction: column;
     display: flex;
     margin-right: 45em;
     align-items: center;
-    margin-top: 6em;
-    
-}
-
-.test2 {
-    flex-direction: row;
-   margin-top: -20em;
-    align-items: center;
+    margin-bottom: 0em;
    
 }
 
@@ -162,7 +164,7 @@ const Container = styled.div`
 
 .user2{
     padding-top: 1em;
-    
+    margin-left: 2em;
 }
 
 .balao2 {
@@ -177,8 +179,8 @@ const Container = styled.div`
     color: #black;
     padding: 15px;
     position: relative;
-    margin-top: 12em;
-    margin-left: 17em;
+    margin-top: 0em;
+    margin-left: 2em;
 
 }
 
@@ -193,7 +195,7 @@ const Container = styled.div`
     align-items: center;
     padding: 7px;
     margin-left: 10em;
-     margin-top: 8em;
+     margin-top: 15em;
  }
 
 .searchbox > i {

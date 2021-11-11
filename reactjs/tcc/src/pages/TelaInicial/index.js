@@ -32,7 +32,6 @@ export default function TelaInicial () {
                      <Link to="/Chat">Chat</Link>
                      <Link to="/Cadastro">Cadastro</Link>
                      <Link to="/Login">Login</Link>
-
                                                    
                 </div>
 
@@ -64,10 +63,13 @@ export default function TelaInicial () {
                 <div class="faixa2-texto2">Há varios tipos de violência, fique atenta aos sinas!!!</div>
            </ScrollAnimation>
 
-               <div class="botao-faixa2">
-                <button class="faixa2-botao" > <Link to="/TipoViolencia">Tipos De Violência </Link> </button>
-               </div>
 
+           <Link to="/TipoViolencia">
+               <div class="botao-faixa2">
+                <button class="faixa2-botao" > Tipos De Violência  </button>
+               </div>
+               </Link>
+               
             </div>
 
              

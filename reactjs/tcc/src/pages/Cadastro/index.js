@@ -6,11 +6,16 @@
  
 
  import { useState } from 'react';
-//import Cookies from 'js-Cookies';
+ import { useRef } from 'react';
+
+ import { ToastContainer, toast} from 'react-toastify';
+ import Api from '../../service/api';
+ import {useHistory } from 'react-router-dom';
+ import LoadingBar from 'react-top-loading-bar';
+
+ import 'react-toastify/dist/ReactToastify.css';
 
 
-import Api from '../../service/api';
-import { toast } from 'react-toastify';
 const api = new Api()
 
 
@@ -18,23 +23,27 @@ const api = new Api()
 
  export default function Cadastro ()
  {
-
+    const navigation = useHistory();
     const [Nome, setNome] = useState('');
     const [Sobrenome, setSobrenome] = useState('');
     const [Email, setEmail] = useState('');
     const [Celular, setCelular] = useState('');
     const [Senha, setSenha] = useState('');
    //  const [idAlterando, setIdAlterando] = useState(0);
-   //  const loading = useRef();
+    const loading = useRef();
 
 
     async function inserir () {
+        loading.current.continuousStart();
         let r = await api.inserir(Nome, Sobrenome, Celular, Email, Senha );
+
       
-       if(r.erro !== undefined){
-           alert(r.erro)
+        if (r.erro) {
+         toast.error(`${r.erro}`)
+         loading.current.complete();
        } else {
            alert("Oioiii lindo, funfou")
+           navigation.push ('/Login');
        }
 
 
@@ -44,6 +53,8 @@ const api = new Api()
 
      return(
   <Container>
+      <LoadingBar ref={loading}  color="#4CE6AA"/>
+            <ToastContainer />
 
       <Cabecalho />
 

@@ -78,7 +78,7 @@ const Container =  styled.div`
    
 }
 
-
+ 
 
 .indentificacao {
     display: flex;
@@ -158,6 +158,25 @@ button {
     background-color: #57833a;
     transition: 0.8s;
 }
+
+.imagem1 img {
+    position: relative;
+    animation: animar 3s infinite;
+}
+
+
+@keyframes animar {
+    0% {
+        top: -10px;
+    }
+    50% {
+        top: 10px;
+    }
+    100% {
+        top: -10px; 
+    }
+}
+
 
 `
 ;
