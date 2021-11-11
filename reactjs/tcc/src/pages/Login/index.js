@@ -88,7 +88,7 @@ export default function Login() {
                                 </div>
 
                                 <div class="caixa2">
-                                    <input type="text" name="" value={senha} onChange={e => setSenha(e.target.value)} placeholder="Senha" />
+                                    <input type="password" name="" value={senha} onChange={e => setSenha(e.target.value)} placeholder="Senha" />
                                 </div>
 
 
