@@ -180,7 +180,6 @@ app.get('/cadastro_adm', async (req, resp) => {
 
 
 
-<<<<<<< HEAD
 app.post('/esqueciASenha', async (req, resp) =>{
     const usuarios = await db.infob_hdm_usuario.findOne({
         where:{
@@ -207,28 +206,6 @@ app.post('/esqueciASenha', async (req, resp) =>{
             resp.send({ status: 'Código Enviado'});
         })
 
-=======
-// app.post('/esqueciASenha', async (req, resp) =>{
-//     const usuarios = await db.infob_hdm_usuario.findOne({
-//         where:{
-//             ds_email: req.body.emaiil
-//         }
-//     });
-
-//     if (!usuarios) {
-//             resp.send({status: 'Erro', mensagem: 'E-mail inválido.'});
-//         }
-
-//         let codigo = getRudInteger (1000, 9999);
-//         await db.infob_hdm_usuario.update({
-
-//         }, {
-//             where: { id_usuario: user.id_usuario}
-//         })
-
-
-// } )
->>>>>>> da80f4654744f984154a241d5a882beb79dafab0
 
 
 // app.post('/validarCodigo', async (req, resp) =>{
@@ -273,8 +250,44 @@ app.post('/Chat', async (req, resp) => {
         resp.send('Deu erro');
         console.log(e.toString());
     }
+
+
 });
 
+        app.post('/conversa', async (req, resp) => {
+            try{
+                let chatt = req.body;
+                let enviarMensagem = await db.infob_hdm_chat_denuncias.create({
+                     ds_HDM_texto: chatt.texto, 
+                     ds_HDM_localizacao_atual: chatt.textto
+                    });
+                resp.send(enviarMensagem)
+            }
+            catch (e){
+                resp.send(e.toString);
+            }
+        });
 
+        app.get('/conversa', async(req, resp) =>{
+try{
+        let chat = await db.infob_hdm_chat_denuncias.findAll()
+        resp.send(chat)
+    } catch (e){
+        resp.send(e.toString());
+    
+        }
+    });
+
+    app.delete('/conversa', async (req, resp) => {
+        try{
+            let r = await db.infob_hdm_chat_denuncias.destroy({ truncate: true })
+
+            resp.sendStatus(200);
+    
+        } catch (e){
+            resp.send({ erro: e.toString() });
+        }
+    });
+    
 
 app.listen(process.env.PORT, () => console.log(`Server up at port ${process.env.PORT}`))

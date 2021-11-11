@@ -28,6 +28,21 @@ export default class Api {
     //     return r.data;
     // }
 
-}
+    async listarMensagens() {
+        let r = await api.get(`/conversa`);
+        return r.data;
+    }
+    async inserirMensagem(texto) {
+        let conversa = {
+            texto: texto
+        }
+        let r = await api.post(`/conversa`, conversa);
+        return r.data;
+     }
+     async removerMensagem(){
+        let r = await api.delete(`/conversa`);
+        return r.data;
+    }
+    }
     
   

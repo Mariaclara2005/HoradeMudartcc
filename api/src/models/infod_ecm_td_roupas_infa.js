@@ -1,10 +1,10 @@
 import _sequelize from 'sequelize';
 const { Model, Sequelize } = _sequelize;
 
-export default class infoc_tct_produto extends Model {
+export default class infod_ecm_td_roupas_infa extends Model {
   static init(sequelize, DataTypes) {
   super.init({
-    id_produto: {
+    id_roupa_infa: {
       autoIncrement: true,
       type: DataTypes.INTEGER,
       allowNull: false,
@@ -12,47 +12,43 @@ export default class infoc_tct_produto extends Model {
     },
     id_categoria: {
       type: DataTypes.INTEGER,
-      allowNull: true,
-      references: {
-        model: 'infoc_tct_categorias',
-        key: 'id_categoria'
-      }
-    },
-    nm_produto: {
-      type: DataTypes.STRING(100),
       allowNull: true
     },
-    nr_codigo: {
-      type: DataTypes.STRING(15),
-      allowNull: true
+    nm_roupa: {
+      type: DataTypes.STRING(255),
+      allowNull: false
     },
-    vl_preco: {
+    ds_tamanho: {
+      type: DataTypes.STRING(5),
+      allowNull: false
+    },
+    valor: {
       type: DataTypes.DECIMAL(10,2),
+      allowNull: false
+    },
+    nm_fornecedor: {
+      type: DataTypes.INTEGER,
       allowNull: true
     },
-    ds_embalagem: {
-      type: DataTypes.STRING(30),
-      allowNull: true
-    },
-    nm_marca: {
-      type: DataTypes.STRING(20),
-      allowNull: true
-    },
-    ds_peso: {
-      type: DataTypes.STRING(7),
-      allowNull: true
-    },
-    ds_descricao: {
-      type: DataTypes.STRING(150),
-      allowNull: true
-    },
-    bt_promocao: {
+    bt_disponivel: {
       type: DataTypes.BOOLEAN,
+      allowNull: true
+    },
+    qtd_disponivel: {
+      type: DataTypes.INTEGER,
+      allowNull: true
+    },
+    ds_cor: {
+      type: DataTypes.STRING(50),
+      allowNull: true
+    },
+    imagem: {
+      type: DataTypes.STRING(400),
       allowNull: true
     }
   }, {
     sequelize,
-    tableName: 'infoc_tct_produto',
+    tableName: 'infod_ecm_td_roupas_infa',
     timestamps: false,
     indexes: [
       {
@@ -60,7 +56,7 @@ export default class infoc_tct_produto extends Model {
         unique: true,
         using: "BTREE",
         fields: [
-          { name: "id_produto" },
+          { name: "id_roupa_infa" },
         ]
       },
       {
@@ -72,6 +68,6 @@ export default class infoc_tct_produto extends Model {
       },
     ]
   });
-  return infoc_tct_produto;
+  return infod_ecm_td_roupas_infa;
   }
 }

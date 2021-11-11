@@ -1,38 +1,54 @@
 import _sequelize from 'sequelize';
 const { Model, Sequelize } = _sequelize;
 
-export default class infoa_sti_venda_item extends Model {
+export default class infoc_tht_usuario extends Model {
   static init(sequelize, DataTypes) {
   super.init({
-    id_venda_item: {
+    id_usuario: {
       autoIncrement: true,
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true
     },
-    id_venda: {
+    id_login: {
       type: DataTypes.INTEGER,
       allowNull: true,
       references: {
-        model: 'infoa_sti_venda',
-        key: 'id_venda'
+        model: 'infoc_tht_login',
+        key: 'id_login'
       }
     },
-    id_produto: {
+    id_cartao: {
       type: DataTypes.INTEGER,
       allowNull: true,
       references: {
-        model: 'infoa_sti_produto',
-        key: 'id_produto'
+        model: 'infoc_tht_cartao',
+        key: 'id_cartao'
       }
     },
-    qtd_produto: {
+    nm_usuario: {
+      type: DataTypes.STRING(30),
+      allowNull: true
+    },
+    ds_email: {
+      type: DataTypes.STRING(20),
+      allowNull: true
+    },
+    nr_celular: {
       type: DataTypes.INTEGER,
+      allowNull: true
+    },
+    dt_nascimento: {
+      type: DataTypes.DATEONLY,
+      allowNull: true
+    },
+    ds_senha: {
+      type: DataTypes.STRING(255),
       allowNull: true
     }
   }, {
     sequelize,
-    tableName: 'infoa_sti_venda_item',
+    tableName: 'infoc_tht_usuario',
     timestamps: false,
     indexes: [
       {
@@ -40,25 +56,25 @@ export default class infoa_sti_venda_item extends Model {
         unique: true,
         using: "BTREE",
         fields: [
-          { name: "id_venda_item" },
+          { name: "id_usuario" },
         ]
       },
       {
-        name: "id_venda",
+        name: "id_login",
         using: "BTREE",
         fields: [
-          { name: "id_venda" },
+          { name: "id_login" },
         ]
       },
       {
-        name: "id_produto",
+        name: "id_cartao",
         using: "BTREE",
         fields: [
-          { name: "id_produto" },
+          { name: "id_cartao" },
         ]
       },
     ]
   });
-  return infoa_sti_venda_item;
+  return infoc_tht_usuario;
   }
 }

@@ -76,7 +76,28 @@ const Container = styled.div`
     height: 40em;
     border-radius: 25px;
     margin-left:6em;
+    overflow-y: auto;
 }
+.chat::-webkit-scrollbar-track
+    {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        border-radius: 10px;
+        background-color: #3E006F;
+    }
+
+    .chat::-webkit-scrollbar
+    {
+        width: 7px;
+        background-color: #3E006F;
+        border-radius: 10px;
+    }
+
+    .chat::-webkit-scrollbar-thumb
+    {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+        background-color: #CBCBCB;
+    }
 
 .policial1{
     padding-top: 5em;
@@ -132,7 +153,7 @@ const Container = styled.div`
     margin-right: 45em;
     align-items: center;
     margin-bottom: 0em;
-    margin-top: 6em;
+    margin-top: 1em;
 }
 
 .test2 {
@@ -242,9 +263,42 @@ const Container = styled.div`
     
 }
 
+.chatt{
+    
+    margin-left: 5em;
+
+}
+
+
+.chat-message{
+   
+    margin: 0 auto; 
+    background: #fff;
+    font-family: Roboto;
+    font-size: 1em;
+    line-height: 1.6em;  
+    border-radius: 30px;
+    width: 300px;
+    height: auto;
+    color: #black;
+    padding: 15px;
+    position: relative;
+    margin-top: 1em;
+    margin-left: 8.5em;
+}
+.mensagem{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: .9em;
+    margin: .4em .2em;
+    margin-top: 7em;
+    margin-left: 2em;
+}
+
 @media (max-width: 1024px) {
    
-    .container, .cabecalho, .texto, .menu, .conteudo, .cabecalho-botoes{
+    .container, .cabecalho, .texto, .menu, .conteudo, .cabecalho-botoes, .chatt{
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -259,7 +313,7 @@ const Container = styled.div`
         padding-top: 0em;
     }
 
-    .conteudo, .chat, .policial1, .policia2, .user1, .user2, .balao1, .balao2, .text1, .text2, .searchbox, .enviar, .local, .localimg{
+    .conteudo, .chat, .policial1, .policia2, .user1, .user2, .balao1, .balao2, .text1, .text2, .searchbox, .enviar, .local, .localimg, .mensagem, .chat-message, .chatt{
         flex-direction: column;
             justify-content: center;
             align-items: center;
@@ -268,6 +322,6 @@ const Container = styled.div`
             padding: 0px;
             margin: 0px;
             width: 100%;
-        }
-`;
+        },
+`
 export {Container}

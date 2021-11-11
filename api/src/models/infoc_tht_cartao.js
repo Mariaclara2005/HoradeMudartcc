@@ -1,26 +1,38 @@
 import _sequelize from 'sequelize';
 const { Model, Sequelize } = _sequelize;
 
-export default class infob_mw_atores extends Model {
+export default class infoc_tht_cartao extends Model {
   static init(sequelize, DataTypes) {
   super.init({
-    id_ator: {
+    id_cartao: {
       autoIncrement: true,
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true
     },
-    id_filme: {
+    nr_cartao: {
       type: DataTypes.INTEGER,
       allowNull: true
     },
-    nm_ator: {
-      type: DataTypes.STRING(255),
+    nm_cartao: {
+      type: DataTypes.STRING(60),
+      allowNull: true
+    },
+    ds_validade: {
+      type: DataTypes.DATEONLY,
+      allowNull: true
+    },
+    nr_cvv: {
+      type: DataTypes.INTEGER,
+      allowNull: true
+    },
+    nr_parcela: {
+      type: DataTypes.INTEGER,
       allowNull: true
     }
   }, {
     sequelize,
-    tableName: 'infob_mw_atores',
+    tableName: 'infoc_tht_cartao',
     timestamps: false,
     indexes: [
       {
@@ -28,18 +40,11 @@ export default class infob_mw_atores extends Model {
         unique: true,
         using: "BTREE",
         fields: [
-          { name: "id_ator" },
-        ]
-      },
-      {
-        name: "id_filme",
-        using: "BTREE",
-        fields: [
-          { name: "id_filme" },
+          { name: "id_cartao" },
         ]
       },
     ]
   });
-  return infob_mw_atores;
+  return infoc_tht_cartao;
   }
 }
