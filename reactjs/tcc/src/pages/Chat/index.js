@@ -27,7 +27,7 @@ export default function ChLinkt () {
                 
                 <Link to="/">Inicio</Link>
                 <Link to="/TipoViolencia">Tipos de violência</Link>
-                <Link to=" ">Tipos de assédio</Link>
+                <Link to="/TiposDeAssedio">Tipos de assédio</Link>
                 <Link to="/MapaDelegacias">Mapa das Delegacia</Link>
                 <Link to="/AutoEstima">Autoestima</Link>
                 <Link to="/Denúncia">Denúncia</Link>
@@ -151,7 +151,7 @@ export default function ChLinkt () {
               <input type="text" name="" placeholder="Faça um comentário"  />
             </div>
             <div class="publicar">
-              <Link to=" ">Publicar</Link>
+              <button>Publicar</button>
             </div>
           </div>
         </div>

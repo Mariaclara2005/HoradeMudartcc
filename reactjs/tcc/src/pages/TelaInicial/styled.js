@@ -134,7 +134,7 @@ a{
 
 .autoestima{
     height: 100vh;
-    background-color: #888888;
+    background-color: ;
     display: flex;
     flex-direction: row;
     justify-content: center;

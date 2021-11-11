@@ -147,12 +147,15 @@ app.get('/login_adm', async (req, resp) => {
 
 app.post('/chat', async (req, resp) => {
     try {
-        let login = await db.infob_hdm_login_adm.findAll();
+        let login = await db.infob_hdm_chat.findAll();
         resp.send(login);
     } catch (e) {
         resp.send({ erro: e.toString()})
     }
 })
+
+
+
 
 
 
@@ -207,6 +210,35 @@ app.get('/cadastro_adm', async (req, resp) => {
 //     return Math.floor(Math.random() * (max - min) ) + min;
 // }
 
+
+
+app.post('/Chat', async (req, resp) => {
+    try {
+        let chat = req.body;
+
+        let usu = await db.infob_hdm_usuario.findOne({ where: { nm_usuario: chat.usuario.nome } })
+    
+        if (usu == null)
+            return resp.send({ erro: 'Usuário não existe!' });
+        
+        if (!chat.mensagem || chat.mensagem.replace(/\n/g, '') == '')
+            return resp.send({ erro: 'Mensagem é obrigatória!' });
+        
+        
+        let mensagem = {
+            id_usuario: usu.id_usuario,
+            ds_mensagem: chat.mensagem,
+            dt_mensagem: new Date()
+        }
+
+        let r = await db.tb_chat.create(mensagem);
+        resp.send(r);
+        
+    } catch (e) {
+        resp.send('Deu erro');
+        console.log(e.toString());
+    }
+});
 
 
 

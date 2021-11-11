@@ -1,6 +1,6 @@
 
 
-import styled from 'styled-components'; 
+import styled from 'styled-components';
 
 
 const Container= styled.div`
@@ -39,9 +39,7 @@ button {
     border-color:transparent;
 } 
 
-.imagem1 img {
-    mar
-}
+
 
 .titulo {
     margin-left: 0.9em;
