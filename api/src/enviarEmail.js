@@ -4,7 +4,7 @@ const sender = nodemailer.createTransport({
   port: 587,
   secure: false,
   auth: {
-    user: 'horademudarnsf@hotmail.com',
+    user: 'Horademudarnsf@gmail.com',
     pass: 'horademudar123',
   },
 });
@@ -12,7 +12,7 @@ const sender = nodemailer.createTransport({
 
 async function enviarEmail(para, assunto, mensagem) {
     const response = await sender.sendMail({
-      from: '"Hora De Mudar" <horademudarnsf.com>',
+      from: 'Hora De Mudar" <Horademudarnsf@gmail.com>',
       to: para, 
       subject: assunto,
       html: mensagem

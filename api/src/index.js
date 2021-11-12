@@ -2,6 +2,9 @@ import db from './db.js';
 import express from 'express'
 import cors from 'cors'
 import crypto from 'crypto-js'
+import enviarEmail from './enviarEmail';
+
+
 const app = express();
 app.use(cors());
 app.use(express.json());
@@ -183,7 +186,7 @@ app.get('/cadastro_adm', async (req, resp) => {
 app.post('/esqueciASenha', async (req, resp) =>{
     const usuarios = await db.infob_hdm_usuario.findOne({
         where:{
-            ds_email: req.body.emaiil
+            nm_HDM_email: req.body.email
         }
     });
 
@@ -191,15 +194,15 @@ app.post('/esqueciASenha', async (req, resp) =>{
             resp.send({status: 'Erro', mensagem: 'E-mail inválido.'});
         }
     
-        let codigo = getRudInteger (1000, 9999);
+        let codigo = getRandomInteger (1000, 9999);
         await db.infob_hdm_usuario.update({
-            ds_codigo_rec: codigo
+            ds_HDM_cogidoRec: codigo
          }, {
-             where: {id_HDM_usuario: usuario.id_HDM_usuario}
+             where: {id_HDM_usuario: usuarios.id_HDM_usuario}
          })
-            enviarEmail(usuario.nm_HDM_email, 'Recuperação De Senha', `
+            enviarEmail(usuarios.nm_HDM_email, 'Recuperação De Senha', `
             <h3> Recuperação de senha </h3>
-            <p> Sua recuperação de senha da sua conta foi atendida 
+            <p> Sua recuperação de senha da sua conta foi atendida. </p> 
             <p> insira esse código ${codigo} para recuper sua conta
             
             `) 
@@ -218,9 +221,20 @@ app.post('/esqueciASenha', async (req, resp) =>{
 // } )
 
 
-// function getRudInteger(min, max){
-//     return Math.floor(Math.random() * (max - min) ) + min;
-// }
+
+
+
+
+
+function getRandomInteger(min, max){
+    return Math.floor(Math.random() * (max - min) ) + min;
+}
+
+
+
+
+
+
 
 
 
