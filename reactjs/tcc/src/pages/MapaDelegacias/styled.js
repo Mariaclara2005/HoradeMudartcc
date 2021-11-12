@@ -48,9 +48,6 @@ body {
     color: white;
 }
 
-
-
-
 .text{
     font-family: Roboto;
     font-style: normal;
@@ -128,15 +125,22 @@ body {
 
 .textos{
     flex-direction: column;
-    
+    margin-top: 8em;
 }
+
+.text {
+    font-family: Roboto-Medium;
+    font-size: 3em;
+    margin-top: 1em;
+}
+
 .text2{
     margin-left: 2.9em;
     padding-bottom: 0.5em;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 55px;
+    font-size: 3em;
     line-height: 65px;
     color: #090808;
     margin-top: 2em;
@@ -147,7 +151,7 @@ body {
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 28px;
+    font-size: 1.5em;
     line-height: 25px;
     text-align: center;
     margin-top: 0em;
@@ -156,14 +160,13 @@ body {
 
 .text4{
     margin-left: 0em;
-    
     font-family: Roboto;
     font-style: normal;
     font-weight: 400;
-    font-size: 35px;
+    font-size: 1.5em;
     line-height: 40px;
     text-align: center;
-    margin-top: 5em;
+    margin-top: 2em;
     color: #0A344A;
 }
 
