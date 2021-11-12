@@ -35,7 +35,7 @@ const api = new Api();
 
  const carregarMensagens = async () => {
     loading.current.continuousStart();
-    const mensagens = await api.listarMensagens(sala);
+    const mensagens = await api.listarMensagensDENUN(sala);
     if (validarResposta(mensagem))
         setChat(mensagens);
         loading.current.complete();
@@ -46,7 +46,7 @@ const enviarMensagem = async (event) => {
     if(mensagem === '')
     return alert("A caixa de texto precisa ser preenchida!");
 
-    const resp = await api.inserirMensagem(mensagem);
+    const resp = await api.inserirMensagemDENUN(mensagem);
     if (event.type === "keypress" && (!event.ctrlKey || event.charCode !== 13))
         return;
     if (!validarResposta(resp)) 
@@ -60,7 +60,7 @@ const enviarMensagem = async (event) => {
 }
 const remover = async () => {
     loading.current.continuousStart();
-    const r = await api.removerMensagem();
+    const r = await api.removerMensagemDENUN();
     if (!validarResposta(r)) 
         return;
 

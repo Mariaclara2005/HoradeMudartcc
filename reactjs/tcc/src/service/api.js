@@ -2,7 +2,7 @@ import axios from 'axios'
 
 
 const api = axios.create({
-    baseURL: "https://horademudar.herokuapp.com/"
+    baseURL: 'http://localhost:3030/'
     
 })
 
@@ -28,22 +28,28 @@ export default class Api {
         return r.data
     }
 
-    
-    async listarMensagens() {
-        let r = await api.get(`/Chat`);
+
+
+    // API CHAT DENUNCIA
+    async listarMensagensDENUN() {
+        let r = await api.get(`/chatdenu`);
         return r.data;
     }
-    async inserirMensagem(texto) {
+    async inserirMensagemDENUN(texto) {
         let conversa = {
             texto: texto
         }
-        let r = await api.post(`/Chat`, conversa);
+        let r = await api.post(`/chatdenu`, conversa);
         return r.data;
      }
-     async removerMensagem(){
-        let r = await api.delete(`/Chat`);
+     async removerMensagemDENUN(){
+        let r = await api.delete(`/chatdenu`);
         return r.data;
     }
+
+
+
+
     
     async inserirMensagem(  nomeUsuario, mensagem) {
         let chat = {

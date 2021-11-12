@@ -2,7 +2,7 @@ import db from './db.js';
 import express from 'express'
 import cors from 'cors'
 import crypto from 'crypto-js'
-import enviarEmail from './enviarEmail';
+import enviarEmail from './enviarEmail.js'
 
 
 const app = express();
@@ -264,7 +264,13 @@ app.post('/Chat', async (req, resp) => {
 
 });
 
-        app.post('/Chat', async (req, resp) => {
+
+
+
+
+//API CHAT DENUNCIAS
+
+        app.post('/chatdenu', async (req, resp) => {
             try{
                 let chatt = req.body;
                 let enviarMensagem = await db.infob_hdm_chat_denuncias.create({
@@ -278,7 +284,7 @@ app.post('/Chat', async (req, resp) => {
             }
         });
 
-        app.get('/Chat', async(req, resp) =>{
+        app.get('/chatdenu', async(req, resp) =>{
 try{
         let chat = await db.infob_hdm_chat_denuncias.findAll()
         resp.send(chat)
@@ -288,7 +294,7 @@ try{
         }
     });
 
-    app.delete('/Chat', async (req, resp) => {
+    app.delete('/chatdenu', async (req, resp) => {
         try{
             let r = await db.infob_hdm_chat_denuncias.destroy({ truncate: true })
 
