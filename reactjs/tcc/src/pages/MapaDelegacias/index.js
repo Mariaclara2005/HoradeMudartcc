@@ -80,42 +80,7 @@ export default class DemoComponent extends Component {
         
         };
         
-        var markersOnMap = [{
-            placeName: "Australia (Uluru)",
-            LatLng: [{
-                lat: -25.344,
-                lng: 131.036
-            }]
-        },
-        {
-            placeName: "Australia (Melbourne)",
-            LatLng: [{
-                lat: -37.852086,
-                lng: 504.985963
-            }]
-        },
-        {
-            placeName: "Australia (Canberra)",
-            LatLng: [{
-                lat: -35.299085,
-                lng: 509.109615
-            }]
-        },
-        {
-            placeName: "Australia (Gold Coast)",
-            LatLng: [{
-                lat: -28.013044,
-                lng: 513.425586
-            }]
-        },
-        {
-            placeName: "Australia (Perth)",
-            LatLng: [{
-                lat: -31.951994,
-                lng: 475.858081
-            }]
-        }
-    ];
+        
 
         loader.load().then((google) => {
             const map = new google.maps.Map(self.googleMapDiv, mapOptions);
@@ -254,6 +219,38 @@ export default class DemoComponent extends Component {
                       },
                       label: {
                         text: "Delegacia Geral Da Policia",
+                        color: "#black",
+                        fontWeight: "bold",
+                        fontSize: "10px"
+                      },
+                  });
+                  new google.maps.Marker({
+                    position: new google.maps.LatLng(-23.71097690540379, -46.69599180697031),
+                    map: map,
+                    icon: {
+                        url: "http://maps.google.com/mapfiles/ms/icons/red-dot.png",
+                        labelOrigin: new google.maps.Point(75, 32),
+                        size: new google.maps.Size(32,32),
+                        anchor: new google.maps.Point(16,32)
+                      },
+                      label: {
+                        text: "48º Distrito Policial - Cidade Dutra",
+                        color: "#black",
+                        fontWeight: "bold",
+                        fontSize: "10px"
+                      },
+                  });
+                  new google.maps.Marker({
+                    position: new google.maps.LatLng(-23.69738700295106, -46.715781247878525),
+                    map: map,
+                    icon: {
+                        url: "http://maps.google.com/mapfiles/ms/icons/red-dot.png",
+                        labelOrigin: new google.maps.Point(75, 32),
+                        size: new google.maps.Size(32,32),
+                        anchor: new google.maps.Point(16,32)
+                      },
+                      label: {
+                        text: "Decap-Departamento de Polícia Judiciária da Capital",
                         color: "#black",
                         fontWeight: "bold",
                         fontSize: "10px"
