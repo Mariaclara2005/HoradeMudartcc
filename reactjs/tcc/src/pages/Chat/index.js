@@ -1,14 +1,102 @@
 
 import {Link} from 'react-router-dom'
 import {Container} from './styled'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+import { useState } from 'react';
+import Cookies from 'cookies-js'
+import LoadingBar from 'react-top-loading-bar';
+
+import { useHistory } from 'react-router-dom'
+
+
+
+import Api from '../../service/api';
+const api = new Api();
+
+
+ 
+
+
+
+function lerUsuarioLogado (navigation) {
+  let Logado = Cookies.get('usuario-logado');
+   if (Logado == null);
+      navigation.push('/');
+      
+
+  let usuarioLogado = JSON.parse(Logado)
+  return usuarioLogado;
+  
+
+}
+
+
+
+export default function Chat () {
+  
+    const navigation = useHistory();
+    let usuarioLogado = lerUsuarioLogado(navigation);
+  
+    const [idAlterando, setIdAlterando] = useState(0);
+    const [chat, setChat] = useState([]);
+    const [usu, setUsu] = useState(usuarioLogado.nm_usuario);
+    const [msg, setMsg] = useState('');
+
+    const validarResposta = (resp) => {
+      console.log(resp);
+
+      if (!resp.erro)
+          return true;
+      toast.error(`${resp.erro}`);
+      return false;
+  }
+
+
+    const carregarMensagens = async () => {
+      LoadingBar.current.continuousStart();
+
+      const mensagens = await api.listarMensagens(Chat);
+      if (validarResposta(mensagens))
+          setChat(mensagens);
+
+      LoadingBar.current.complete();
+  }
+
+  const enviarMensagem = async (event) => {
+      if (event.type === "keypress" && (!event.ctrlKey || event.charCode !==13))
+          return;
+
+      if (idAlterando > 0) {
+          const resp = await api.alterarMensagem(idAlterando, msg);
+          if (!validarResposta(resp))
+          return;
+
+
+          toast.dark('💕 Mensagem alterada com sucesso!');
+          setIdAlterando(0);
+          setMsg('');
+
+      } else {
+          const resp = await api.inserirMensagem(chat, usu, msg)
+          if (!validarResposta(resp))
+          return;
+
+          toast.dark('💕 Mensagem enviada com sucesso!');
+      }
+
+      await carregarMensagens();
+  }
 
 
 
 
-export default function ChLinkt () {
     return (
-
+  
     <Container>
+      <LoadingBar ref={LoadingBar}  color="#4CE6AA"/>
+      <ToastContainer />
         
       <div class="faixa1">
 
@@ -148,10 +236,10 @@ export default function ChLinkt () {
             </div>
 
             <div clss="digitar">
-              <input type="text" name="" placeholder="Faça um comentário"  />
+              <input type="text" name="" value={msg} onChange={e => setMsg(e.target.value)} onKeyPress={enviarMensagem} placeholder="Faça um comentário"  />
             </div>
             <div class="publicar">
-              <button>Publicar</button>
+              <button onClick={enviarMensagem} className="btn-enviar">Publicar</button>
             </div>
           </div>
         </div>
@@ -160,5 +248,4 @@ export default function ChLinkt () {
 
     )
 } 
-
 

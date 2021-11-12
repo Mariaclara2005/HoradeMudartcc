@@ -7,6 +7,11 @@ const api = axios.create({
 })
 
 export default class Api {
+    async listarMensagens(idSala) {
+        let r = await api.get('/Chat');
+        return r.data;
+    }
+
 
     async listar () {
         let r = await api.get('/cadastro')
@@ -23,26 +28,36 @@ export default class Api {
         return r.data
     }
 
-    // async inserirUsuario(nome) {
-    //     let r = await api.post(`/cadastro/`, { nome: nome });
-    //     return r.data;
-    // }
-
+    
     async listarMensagens() {
-        let r = await api.get(`/conversa`);
+        let r = await api.get(`/Chat`);
         return r.data;
     }
     async inserirMensagem(texto) {
         let conversa = {
             texto: texto
         }
-        let r = await api.post(`/conversa`, conversa);
+        let r = await api.post(`/Chat`, conversa);
         return r.data;
      }
      async removerMensagem(){
-        let r = await api.delete(`/conversa`);
+        let r = await api.delete(`/Chat`);
         return r.data;
     }
+    
+    async inserirMensagem(  nomeUsuario, mensagem) {
+        let chat = {
+            
+            usuario: {
+                nome: nomeUsuario
+            },
+            mensagem: mensagem
+        }
+        let r = await api.post(`/Chat`, chat);
+        return r.data;
+    }
+
+
     }
     
   

@@ -2,6 +2,9 @@ import db from './db.js';
 import express from 'express'
 import cors from 'cors'
 import crypto from 'crypto-js'
+import enviarEmail from './enviarEmail';
+
+
 const app = express();
 app.use(cors());
 app.use(express.json());
@@ -183,7 +186,7 @@ app.get('/cadastro_adm', async (req, resp) => {
 app.post('/esqueciASenha', async (req, resp) =>{
     const usuarios = await db.infob_hdm_usuario.findOne({
         where:{
-            ds_email: req.body.emaiil
+            nm_HDM_email: req.body.email
         }
     });
 
@@ -191,15 +194,15 @@ app.post('/esqueciASenha', async (req, resp) =>{
             resp.send({status: 'Erro', mensagem: 'E-mail inválido.'});
         }
     
-        let codigo = getRudInteger (1000, 9999);
+        let codigo = getRandomInteger (1000, 9999);
         await db.infob_hdm_usuario.update({
-            ds_codigo_rec: codigo
+            ds_HDM_cogidoRec: codigo
          }, {
-             where: {id_HDM_usuario: usuario.id_HDM_usuario}
+             where: {id_HDM_usuario: usuarios.id_HDM_usuario}
          })
-            enviarEmail(usuario.nm_HDM_email, 'Recuperação De Senha', `
+            enviarEmail(usuarios.nm_HDM_email, 'Recuperação De Senha', `
             <h3> Recuperação de senha </h3>
-            <p> Sua recuperação de senha da sua conta foi atendida 
+            <p> Sua recuperação de senha da sua conta foi atendida. </p> 
             <p> insira esse código ${codigo} para recuper sua conta
             
             `) 
@@ -218,9 +221,20 @@ app.post('/esqueciASenha', async (req, resp) =>{
 // } )
 
 
-// function getRudInteger(min, max){
-//     return Math.floor(Math.random() * (max - min) ) + min;
-// }
+
+
+
+
+
+function getRandomInteger(min, max){
+    return Math.floor(Math.random() * (max - min) ) + min;
+}
+
+
+
+
+
+
 
 
 
@@ -228,7 +242,7 @@ app.post('/Chat', async (req, resp) => {
     try {
         let chat = req.body;
 
-        let usu = await db.infob_hdm_usuario.findOne({ where: { nm_usuario: chat.usuario.nome } })
+        let usu = await db.infob_hdm_usuario.findOne({ where: { nm_HDM_usuario: chat.usuario.nome } })
     
         if (usu == null)
             return resp.send({ erro: 'Usuário não existe!' });
@@ -238,12 +252,12 @@ app.post('/Chat', async (req, resp) => {
         
         
         let mensagem = {
-            id_usuario: usu.id_usuario,
-            ds_mensagem: chat.mensagem,
-            dt_mensagem: new Date()
+            id_HDM_usuario: usu.id_usuario,
+            ds_HDM_mensagem: chat.mensagem,
+            dt_HDM_data: new Date()
         }
 
-        let r = await db.tb_chat.create(mensagem);
+        let r = await db.infob_hdm_chat.create(mensagem);
         resp.send(r);
         
     } catch (e) {
@@ -254,7 +268,7 @@ app.post('/Chat', async (req, resp) => {
 
 });
 
-        app.post('/conversa', async (req, resp) => {
+        app.post('/Chat', async (req, resp) => {
             try{
                 let chatt = req.body;
                 let enviarMensagem = await db.infob_hdm_chat_denuncias.create({
@@ -268,7 +282,7 @@ app.post('/Chat', async (req, resp) => {
             }
         });
 
-        app.get('/conversa', async(req, resp) =>{
+        app.get('/Chat', async(req, resp) =>{
 try{
         let chat = await db.infob_hdm_chat_denuncias.findAll()
         resp.send(chat)
@@ -278,7 +292,7 @@ try{
         }
     });
 
-    app.delete('/conversa', async (req, resp) => {
+    app.delete('/Chat', async (req, resp) => {
         try{
             let r = await db.infob_hdm_chat_denuncias.destroy({ truncate: true })
 
