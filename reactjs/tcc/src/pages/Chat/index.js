@@ -41,7 +41,7 @@ export default function Chat () {
   
     const [idAlterando, setIdAlterando] = useState(0);
     const [chat, setChat] = useState([]);
-    const [usu, setUsu] = useState(usuarioLogado.nm_usuario);
+    const [usu] = useState(usuarioLogado.nm_usuario);
     const [msg, setMsg] = useState('');
 
     const validarResposta = (resp) => {
