@@ -59,6 +59,7 @@ body{
 
 .titulo{
     margin-left: 18%;
+    font-family: Roboto-med
     
 }
 

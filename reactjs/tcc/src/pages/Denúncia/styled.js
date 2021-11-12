@@ -44,14 +44,14 @@ button {
 .titulo {
     margin-left: 0.9em;
     font-family: Roboto-Medium;
-    font-size: 25px;
+    font-size: 1.5em;
     margin-bottom: 1em;
 }
 }
 
 .chat {
    font-family: Roboto-Medium;
-   font-size: 25px;
+   font-size: 1.5em;
    margin-left: 0.4em;
    margin-bottom:1em;
 }

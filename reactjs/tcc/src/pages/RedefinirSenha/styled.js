@@ -58,7 +58,7 @@ body {
 
 .titulo {
     font-family: Roboto-Medium;
-    font-size: 40px;
+    font-size: 2.5em;
     margin-top: 1em;
     padding: 1em;
     margin-left: 3.5em;
@@ -101,7 +101,7 @@ button {
     width: 132.71px;
     height: 33.94px;
     font-family: Roboto-Medium;
-    font-size: 20px;
+    font-size: 1.5em;
     margin-top: 2.5em;
 }
 

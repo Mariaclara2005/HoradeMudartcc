@@ -31,9 +31,9 @@ height: 100vh;
 .titulo{
     margin: 20px;
     font-family: Roboto-Medium;
-    font-size: 40px;
+    font-size: 2.5em;
     margin-top: 1em;
-    margin-left: 2.5em;
+    margin-left: 3em;
 }
 
 .indentificacao {
@@ -58,9 +58,20 @@ height: 100vh;
     margin-left: 30px;
 }
 
-.celular {
+.numeros {
+    display: flex;
+    flex-direction: row;
     margin: 20px;
-    margin-left: 30px;
+}
+
+.celular {
+    margin: 10px;
+    margin-left: 10px;
+}
+
+.telefone {
+    margin: 10px;
+    margin-left: 10px;
 }
 
 .senhas {

@@ -31,9 +31,14 @@ export default function CadastroADM ()
                     <input type="email" name="" placeholder="Email da Empresa"></input>
                 </div>
 
-                <div class="celular">
-                <input type="text" placeholder="Telefone" id="telefone" name="telefone" />
-                <input type="text" placeholder="Celular" id="celular" name="celular" />
+                <div class="numeros">
+                    <div class="celular">
+                        <input type="text" placeholder="Celular" id="celular" name="celular" />
+                    </div>
+
+                    <div class="telefone">
+                        <input type="text" placeholder="Telefone" id="telefone" name="telefone" />
+                    </div>
                 </div>
 
                 <div class="senhas">

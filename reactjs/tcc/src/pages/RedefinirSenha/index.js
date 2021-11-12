@@ -40,11 +40,11 @@ export default function RedefinirSenha ()
 
             <div class="senhas">
                 <div class="nova-senha">
-                  <input type="text" name="" placeholder="Nova Senha"></input>
+                  <input type="password" name="" placeholder="Nova Senha"></input>
                 </div>
 
                 <div class="confirmar-senha">
-                  <input type="text" name="" placeholder="Confirmar Senha"></input>
+                  <input type="password" name="" placeholder="Confirmar senha"></input>
                 </div>
             </div>
 

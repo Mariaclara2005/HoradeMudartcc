@@ -35,10 +35,10 @@ const Container = styled.div`
 
 .texto_chat {
   font-family: Roboto-Medium;
-  font-size: 30px;
+  font-size: 1.5em;
   color: #ffffff;
   text-align: center;
-  width: 700px;
+  width: 650px;
   margin-left: 3.5em;
 }
 
@@ -53,7 +53,7 @@ const Container = styled.div`
   margin-left: 2em;
   width: 480px;
   height: 550px;
-  margin-top: 4em;
+  margin-top: -1em;
 }
 
 .imagem2 img {
@@ -64,9 +64,9 @@ const Container = styled.div`
 
 .titulo {
   width: 350px;
-  margin-left: 4.5em;
+  margin-left: 6.5em;
   font-family: Roboto-Medium;
-  font-size: 70px;
+  font-size: 3em;
   font-weight: 500;
   color: #ffffff;
   padding: 30px;
@@ -83,6 +83,7 @@ const Container = styled.div`
 .apresentacao {
   display: flex;
   flex-direction: column;
+  margin-right: 2em;
 }
 
 .faixa2 {
@@ -95,10 +96,10 @@ const Container = styled.div`
 .compartilhe {
   color: #205922;
   width: 350px;
-  margin-left: 1em;
+  margin-left: 2em;
   margin-top: 3em;
   font-family: Roboto-Medium;
-  font-size: 70px;
+  font-size: 3em;
   font-weight: 500;
   padding: 30px;
 }
@@ -106,12 +107,13 @@ const Container = styled.div`
 .explicacao {
   width: 570px;
   font-family: Roboto-Medium;
-  font-size: 30px;
+  font-size: 1.5em;
   color: #000000;
 }
 
 .conteudo {
-  margin-top: 3em;
+  margin-top: 6  kem;
+  margin-left: 3em;
 }
 
 .chat1 {
