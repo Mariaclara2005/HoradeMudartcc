@@ -2,8 +2,8 @@ import axios from 'axios'
 
 
 const api = axios.create({
-    //baseURL: "https://horademudar.herokuapp.com/"
-    baseURL: "http://localhost:3030/"
+    baseURL: "https://horademudar.herokuapp.com/"
+    
 })
 
 export default class Api {
