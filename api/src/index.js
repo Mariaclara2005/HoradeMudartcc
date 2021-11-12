@@ -242,7 +242,7 @@ app.post('/Chat', async (req, resp) => {
     try {
         let chat = req.body;
 
-        let usu = await db.infob_hdm_usuario.findOne({ where: { nm_usuario: chat.usuario.nome } })
+        let usu = await db.infob_hdm_usuario.findOne({ where: { nm_HDM_usuario: chat.usuario.nome } })
     
         if (usu == null)
             return resp.send({ erro: 'Usuário não existe!' });
@@ -252,12 +252,12 @@ app.post('/Chat', async (req, resp) => {
         
         
         let mensagem = {
-            id_usuario: usu.id_usuario,
-            ds_mensagem: chat.mensagem,
-            dt_mensagem: new Date()
+            id_HDM_usuario: usu.id_usuario,
+            ds_HDM_mensagem: chat.mensagem,
+            dt_HDM_data: new Date()
         }
 
-        let r = await db.tb_chat.create(mensagem);
+        let r = await db.infob_hdm_chat.create(mensagem);
         resp.send(r);
         
     } catch (e) {
@@ -268,7 +268,7 @@ app.post('/Chat', async (req, resp) => {
 
 });
 
-        app.post('/conversa', async (req, resp) => {
+        app.post('/Chat', async (req, resp) => {
             try{
                 let chatt = req.body;
                 let enviarMensagem = await db.infob_hdm_chat_denuncias.create({
@@ -282,7 +282,7 @@ app.post('/Chat', async (req, resp) => {
             }
         });
 
-        app.get('/conversa', async(req, resp) =>{
+        app.get('/Chat', async(req, resp) =>{
 try{
         let chat = await db.infob_hdm_chat_denuncias.findAll()
         resp.send(chat)
@@ -292,7 +292,7 @@ try{
         }
     });
 
-    app.delete('/conversa', async (req, resp) => {
+    app.delete('/Chat', async (req, resp) => {
         try{
             let r = await db.infob_hdm_chat_denuncias.destroy({ truncate: true })
 
