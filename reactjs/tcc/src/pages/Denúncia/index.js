@@ -2,6 +2,7 @@
 // import {Link} from 'react-router-dom'
 import {Container} from './styled'
 import Cabecalho from  '../../componentes/comum/cabecalho'
+import { Link } from 'react-router-dom'
 
 
 export default function Denúncia () {
@@ -20,17 +21,17 @@ export default function Denúncia () {
                   <div class="caracteristicas">
                       <div class="titulo">Características</div>
                       
-                      <div class="imagem1">
+                      <Link to="/CaracteristicasLocalizaçao">
                         <button><img src="/assets/imagens/pg-denuncia-img1.png" alt=""/></button>
-                      </div>
+                      </Link>
                   </div>
 
                   <div class="denuncia">
                       <div class="chat">Chat de Deúncias</div>
 
-                      <div class="imagem2">
+                      <Link to="/ChatDenuncia">
                         <button><img src="/assets/imagens/pg-denuncia-img2.png" alt=""/></button>
-                      </div>
+                      </Link>
                   </div>
               </div>
           </div>

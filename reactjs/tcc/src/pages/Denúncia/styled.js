@@ -59,7 +59,6 @@ button {
 .denuncia {
     margin-left: 3em;
 }
-
 `;
 
 export {Container}

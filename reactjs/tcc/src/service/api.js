@@ -48,7 +48,7 @@ export default class Api {
     async inserirMensagem(  nomeUsuario, mensagem) {
         let chat = {
             
-            usuario: {
+            usuario: { 
                 nome: nomeUsuario
             },
             mensagem: mensagem
