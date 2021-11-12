@@ -8,6 +8,30 @@ const Container = styled.div`
   a{
       color: white;
   }
+
+  .cabecalho-inicio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    
+}
+
+.cabecalho-img{
+    margin-top: 1em;
+    margin-left: 2em;
+}
+
+.cabecalho-botoes a {
+    margin: 0em .4em;
+    
+}
+
+.cabecalho-botoes{
+    margin-top: 4em;
+    margin-right: 2em;
+}
+
   
   .faixa1{
       background-color: #445D75 ;
@@ -36,16 +60,6 @@ const Container = styled.div`
       padding-top: 0em;     
   }
 
-  .cabecalho-botoes a {
-    margin: 0em 0.4em;
-    
-}
-
-.cabecalho-botoes{
-    margin-top: 0em;
-    margin-right: 1em;
-    color: #FFF;
-}
 
 
   .texto{

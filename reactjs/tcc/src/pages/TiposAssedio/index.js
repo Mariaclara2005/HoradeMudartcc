@@ -9,7 +9,7 @@ import {Container} from './styled';
           <div class="faixa1">
         <div class="cabecalho-inicio">
           <div class="cabecalho-img">
-            <img src="../../src/images/logo-claro.png" />
+            <img src="../../src/images/logo-claro.png" alt="" />
           </div>
 
           <div class="cabecalho-botoes">
@@ -41,14 +41,14 @@ import {Container} from './styled';
           </div>
 
           <div class="faixa1-img">
-            <img class="img-tpdeviolencia" src="../../src/images/pg-rec22.png" />
+            <img class="img-tpdeviolencia" src="../../src/images/pg-rec22.png" alt="" />
           </div>
         </div>
       </div>
 
       <div class="faixa-2">
         <div class="img-faixa2">
-          <img class="faixa2-img" src="/assets/images/pg-gri.png" />
+          <img class="faixa2-img" src="/assets/images/pg-gri.png" alt=""/>
         </div>
 
         <div class="conteudo-faixa2">
@@ -88,7 +88,7 @@ import {Container} from './styled';
 
       <div class="faixa4">
         <div class="faixa4-img">
-          <img class="img-faixa4" src="../../src/images/pg-se.png" />
+          <img class="img-faixa4" src="../../src/images/pg-se.png" alt=""/>
         </div>
 
         <div class="faixa4-conteudo">

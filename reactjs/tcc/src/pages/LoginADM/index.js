@@ -4,10 +4,10 @@ import Cabecalho from '../../componentes/comum/cabecalho';
 import { Link, useHistory } from 'react-router-dom';
 import "animate.css/animate.min.css";
 import Cookies from 'cookies-js';
-import { ToastContainer, toast } from 'react-toastify';
+import {  toast } from 'react-toastify';
 import { useRef, useState } from 'react';
 
-import LoadingBar from 'react-top-loading-bar'
+// import LoadingBar from 'react-top-loading-bar'
 
 
 import Api from '../../service/api';
