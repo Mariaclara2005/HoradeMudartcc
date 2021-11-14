@@ -16,7 +16,7 @@
  import 'react-toastify/dist/ReactToastify.css';
 
 
-const api = new Api()
+ const api = new Api()
 
 
 

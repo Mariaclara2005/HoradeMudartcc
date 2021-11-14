@@ -4,12 +4,13 @@ const Container =  styled.div`
 height: 100vh;   
 background-color: #7DA074;
 
+
 .bloco{
     height: 28em;
     width: 30em;
     background-color: white;
     margin-left: 26em;
-    margin-top: 4em;
+    margin-top: 1em;
     border-radius: 2em;
     display: flex;
     flex-direction: column;
@@ -37,7 +38,7 @@ background-color: #7DA074;
     
 
 .titulo{
-    margin-left: 38%;
+    margin-left: 28%;
     
 }
 
@@ -107,6 +108,14 @@ hr{
     animation: animar 3s infinite;
 }
 
+
+
+
+
+botao1 :hover{
+    background-color: #57833a;
+    transition: 0.8s;
+}
 
 @keyframes animar {
     0% {

@@ -28,6 +28,11 @@ export default class Api {
         return r.data
     }
 
+    async loginADM (email_empresa, senha) {
+        let r = await api.post('/loginADM', {email_empresa: email_empresa, senha: senha});
+        return r.data
+    }
+
 
 
     // API CHAT DENUNCIA

@@ -52,7 +52,7 @@ export default function Login() {
 
     return (
         <Container>
-            <LoadingBar ref={loading} />
+            <LoadingBar ref={loading}  color="#4CE6AA" />
             <ToastContainer />
             <div class="site">
 
@@ -106,7 +106,7 @@ export default function Login() {
                                 </div>
 
                                 <div class="botao2">
-                                    <button onClick={Login} style={{ fontSize: '1.0em' }}> Entrar </button>
+                                    <button onClick={LoginADM} style={{ fontSize: '1.0em' }}> Entrar </button>
 
                                 </div>
 
