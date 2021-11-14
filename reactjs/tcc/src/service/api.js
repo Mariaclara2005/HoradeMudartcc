@@ -29,7 +29,7 @@ export default class Api {
     }
 
     async loginADM (email_empresa, senha) {
-        let r = await api.post('/loginADM', {email_empresa: email_empresa, senha: senha});
+        let r = await api.post('/login_adm', {email_empresa: email_empresa, senha: senha});
         return r.data
     }
 

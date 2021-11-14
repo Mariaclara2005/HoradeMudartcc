@@ -106,7 +106,7 @@ export default function Login() {
                                 </div>
 
                                 <div class="botao2">
-                                    <button onClick={LoginADM} style={{ fontSize: '1.0em' }}> Entrar </button>
+                                    <button onClick={Login} style={{ fontSize: '1.0em' }}> Entrar </button>
 
                                 </div>
 
