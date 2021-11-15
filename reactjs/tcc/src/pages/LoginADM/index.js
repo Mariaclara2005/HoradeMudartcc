@@ -32,7 +32,7 @@ export default function LoginADM() {
     const loading = useRef(null);
 
 
-    const Login = async () => {
+    const LoginADM = async () => {
         loading.current.continuousStart();
 
         console.log('oiii')

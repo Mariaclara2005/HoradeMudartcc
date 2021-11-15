@@ -97,35 +97,43 @@ app.get('/login', async (req, resp) => {
 
 
 app.post('/login_adm', async (req, resp) => {
-    const email_empresa = req.body.email_empresa;
-    const senha = req.body.senha;
+    try {
+        const email_empresa = req.body.email_empresa;
+        const senha = req.body.senha;
 
-    const cryptoSenha = crypto.SHA256(senha).toString(crypto.enc.Base64)
+        const cryptoSenha = crypto.SHA256(senha).toString(crypto.enc.Base64)
 
-    let r = await db.infob_hdm_login.findAll(
-        {
-            where: {
-                nm_HDM_nome: email_empresa,
-                nr_senha: cryptoSenha
-            },
-            raw: true
-        })
+        let r = await db.infob_hdm_cadastro_adm.findOne(
+            {
+                where: {
+                    nm_HDM_email_empresa: email_empresa,
+                    nm_HDM_senha: cryptoSenha
+                },
+                raw: true
+            })
 
+        console.log(r);
 
-    if (r == null)
-        return resp.send({ erro: e.toString() });
+        if (r == null)
+            return resp.send({ erro: 'Credenciais inválidas!' });
 
-    resp.sendStatus(200);
-});
+        resp.sendStatus(200);
+    } catch (e) {
+        console.log(e);
+        resp.send({ erro: 'Ocorreu um erro ao realizar o login.' })
+    }
+})
 
 app.get('/login_adm', async (req, resp) => {
     try {
-        let login = await db.infob_hdm_login_adm.findAll();
-        resp.send(login);
+        let login_adm = await db.infob_hdm_login_adm.findAll();
+        resp.send(login_adm);
     } catch (e) {
         resp.send({ erro: e.toString() })
     }
 })
+
+
 
 
 // app.post('/cadastro_adm',async (req,resp) => {
