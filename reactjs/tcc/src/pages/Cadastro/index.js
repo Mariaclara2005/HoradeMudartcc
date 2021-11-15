@@ -29,13 +29,13 @@
     const [Email, setEmail] = useState('');
     const [Celular, setCelular] = useState('');
     const [Senha, setSenha] = useState('');
-   //  const [idAlterando, setIdAlterando] = useState(0);
+    const [Confirmar, setConfirmar] = useState(0);
     const loading = useRef();
 
 
     async function inserir () {
         loading.current.continuousStart();
-        let r = await api.inserir(Nome, Sobrenome, Celular, Email, Senha );
+        let r = await api.inserir(Nome, Sobrenome, Celular, Email, Senha, Confirmar );
 
       
         if (r.erro) {
@@ -45,9 +45,19 @@
            alert("Oioiii lindo, funfou")
            navigation.push ('/Login');
        }
+        
+      
+        function validarSenha(){
+         Confirmar = document.Senha.Confirmar.value;
+         if (Senha != Confirmar){ 
+              toast.dark("SENHAS DIFERENTES!\\nFAVOR DIGITAR SENHAS IGUAIS");
 
-
+              return false
+         
+         }
       }
+
+}
 
    
 
@@ -58,7 +68,10 @@
 
       <Cabecalho />
 
+
+
    <div class="conteudo">
+      
       <div class="imagem1">
          <img src='/assets/imagens/pg-cadastro.png' alt=""/>  
     
@@ -94,8 +107,10 @@
                     <input type="password" name=""  value={Senha} onChange={e => setSenha(e.target.value)}  placeholder="Senha"></input>
                </div>
 
-                <div class="confirmar-senha">
-                    <input type="password" name="" placeholder="Confirmar Senha"></input>
+                <div class="Confirmar senha">
+                  
+                    <input type='password' action="Confirmar" method="POST" id="nm_HDM_senha" name="nm_HDM_senha" onsubmit= "return validarSenha();" placeholder="Confirmar Senha"></input>
+
                </div>
             </div>
 

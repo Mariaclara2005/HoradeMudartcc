@@ -32,6 +32,11 @@ app.post('/cadastro', async (req, resp) => {
         if (usuParam.senha == '')
             return resp.send({ erro: 'Senha é obrigatório' })
 
+        if (usuParam.confirmar == '')
+            return resp.send({ erro: 'Confirmar Senha é obrigatório' })
+
+            
+
 
 
 
@@ -40,6 +45,7 @@ app.post('/cadastro', async (req, resp) => {
             nm_HDM_sobrenome: usuParam.sobrenome,
             nr_HDM_celular: usuParam.celular,
             nm_HDM_email: usuParam.email,
+            nm_HDM_confirmar: usuParam.confirmar,
             nm_HDM_senha: crypto.SHA256(usuParam.senha).toString(crypto.enc.Base64)
 
         })
@@ -57,6 +63,8 @@ app.get('/cadastro', async (req, resp) => {
         resp.send({ erro: e.toString() })
     }
 })
+
+
 
 app.post('/login', async (req, resp) => {
     try {

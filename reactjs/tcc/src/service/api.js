@@ -18,8 +18,8 @@ export default class Api {
         return r.data
     }
 
-    async inserir (nome, sobrenome, celular, email, senha ) {
-        let r = await api.post('/cadastro', {nome, sobrenome, celular, email, senha })
+    async inserir (nome, sobrenome, celular, email, senha, confirmar ) {
+        let r = await api.post('/cadastro', {nome, sobrenome, celular, email, senha, confirmar })
         return r.data;
     }
 
@@ -43,7 +43,8 @@ export default class Api {
         return r.data;
     }
 
-
+  
+       
 
 
     // API CHAT DENUNCIA
