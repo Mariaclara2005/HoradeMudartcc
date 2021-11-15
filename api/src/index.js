@@ -133,43 +133,45 @@ app.get('/login_adm', async (req, resp) => {
     }
 })
 
+app.post('/cadastro_adm', async (req, resp) => {
+    try {
+        let usuParam = req.body;
+
+        let u = await db.infob_hdm_cadastro_adm.findOne({ where: { nm_HDM_email_empresa: usuParam.email_empresa } });
+        if (u != null)
+            return resp.send({ erro: 'Usuário já existe!' });
+
+        if (usuParam.nome == '')
+            return resp.send({ erro: 'Nome é obrigatório' })
+
+        if (usuParam.sobrenome == '')
+            return resp.send({ erro: 'Sobrenome é obrigatório' })
+
+        if (usuParam.celular == '')
+            return resp.send({ erro: 'Celular é obrigatório' })
+
+        if (usuParam.email_empresa == '')
+            return resp.send({ erro: 'Email é obrigatório' })
+
+        if (usuParam.senha == '')
+            return resp.send({ erro: 'Senha é obrigatório' })
 
 
 
-// app.post('/cadastro_adm',async (req,resp) => {
-//     try {
-//         let usuParam = req.body;
 
-//         let u = await db.infob_hdm_cadastro_adm.findOne({ where: { nm_HDM_email_empresa: usuParam.email_empresa } });
-//         if (u != null)
-//             return resp.send({ erro: 'Usuário já existe!' });
+        let r = await db.infob_hdm_cadastro_adm.create({
+            nm_HDM_nome: usuParam.nome,
+            nm_HDM_sobrenome: usuParam.sobrenome,
+            nr_HDM_celular: usuParam.celular,
+            nm_HDM_email_empresa: usuParam.email_empresa,
+            nm_HDM_senha: crypto.SHA256(usuParam.senha).toString(crypto.enc.Base64)
 
-//         let r = await db.infob_hdm_cadastro_adm.create({
-//             nm_HDM_nome: usuParam.nome,
-//             nm_HDM_sobrenome: usuParam.sobrenome,
-//             nr_HDM_celular: usuParam.celular,
-//             nm_HDM_email_empresa: usuParam.email_empresa,
-//             nm_HDM_senha: crypto.SHA256(usuParam.senha).toString(crypto.enc.Base64)
-
-
-//         })
-//         resp.send(r);
-
-//     })
-//     resp.send(r);
-// } catch (e) {
-//         resp.send({ erro: e.toString()})
-//     }
-// })
-
-// app.post('/chat', async (req, resp) => {
-//     try {
-//         let login = await db.infob_hdm_chat.findAll();
-//         resp.send(login);
-//     } catch (e) {
-//         resp.send({ erro: e.toString() })
-//     }
-// })
+        })
+        resp.send(r);
+    } catch (e) {
+        resp.send({ erro: e.toString() })
+    }
+})
 
 
 

@@ -33,6 +33,17 @@ export default class Api {
         return r.data
     }
 
+    async listarcadastroadm () {
+        let r = await api.get('/cadastro_adm')
+        return r.data
+    }
+
+    async inserircadastroadm (nome, sobrenome, celular, email_empresa, senha ) {
+        let r = await api.post('/cadastro_adm', {nome, sobrenome, celular,email_empresa, senha })
+        return r.data;
+    }
+
+
 
 
     // API CHAT DENUNCIA
