@@ -32,6 +32,8 @@ export default function TelaInicial () {
                      <Link to="/Chat">Chat</Link>
                      <Link to="/Cadastro">Cadastro</Link>
                      <Link to="/Login">Login</Link>
+                     <Link to="/QuemSomosNos">Quem Somos Nos </Link>
+
                                                    
                 </div>
 

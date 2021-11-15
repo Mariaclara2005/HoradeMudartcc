@@ -32,9 +32,7 @@ app.post('/cadastro', async (req, resp) => {
         if (usuParam.senha == '')
             return resp.send({ erro: 'Senha é obrigatório' })
 
-        if (usuParam.confirmar == '')
-            return resp.send({ erro: 'Confirmar Senha é obrigatório' })
-
+        
             
 
 
@@ -180,6 +178,79 @@ app.post('/cadastro_adm', async (req, resp) => {
         resp.send({ erro: e.toString() })
     }
 })
+
+app.post('/esqueciASenha', async(req, resp) => {
+    const user = await db.infob_hdm_cadastro.findOne({
+        where: {
+            ds_email: req.body.email
+        }
+    });
+
+    if(!user) {
+        return resp.send({ erro: 'E-mail Inválido'});
+    }
+    let code = getRandomIntereger(1000, 9999);
+    await db.infob_hdm_cadastro.update({
+        ds_codigo_rec: code
+
+    }, {
+        where: {id_HDM_cadastro: user.id_HDM_cadastro}
+    })
+    enviarEmail(user.nm_HDM_email, 'Recuperação de E-mail', `
+        <h3> Recuperação de Senha </h3>
+        <p> Você solicitou a recuperação de sua senha no site Destiny. </p>
+        <p> Entre com o código ${code} para prosseguir com a recuperação.
+    `)
+        resp.send({ status: 'ok'})
+})
+
+
+
+
+function getRandomIntereger(min, max){
+    return Math.floor(Math.random() * (max - min) + min );
+}
+
+
+
+app.post('/validarCodigo', async (req, resp) => {
+    const user = await db.infob_hdm_cadastro.findOne({
+        where: {
+            nm_HDM_email: req.body.email
+        }
+    });
+    if(!user) {
+        resp.send( {status: 'erro', mensagem: 'Email Inválido'});
+    }
+    if(user.ds_codigo_rec !== req.body.codigo) {
+        resp.send({ status: 'erro', mensagem: 'código inválido'})
+    }
+    resp.send({ status: 'ok', mensagem: 'Código Validado'});
+})
+
+
+
+
+app.put('/resetSenha', async (req, resp) => {
+    const user = await db.infob_hdm_cadastro.findOne({
+        where: {
+            nm_HDM_email: req.body.email
+        }
+    });
+    if(!user) {
+        resp.send( {status: 'erro', mensagem: 'Email Inválido'});
+    }
+
+    let r = await db.infoa_dtn_tb_cliente.update({
+        nm_HDM_senha: req.body.novaSenha}, {where: {id_HDM_cadastro: user.id_HDM_cadastro}} )
+        
+    resp.send({ status: 'ok', mensagem: 'A senha foi alterada'})
+    
+})
+    
+
+
+
 
 
 

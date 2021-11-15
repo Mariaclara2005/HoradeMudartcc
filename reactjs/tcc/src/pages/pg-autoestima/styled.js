@@ -72,7 +72,10 @@ a{
     text-align: center;
     margin-top: 2em;
     font-family: Roboto-medium;
-    padding-left: 1em;
+    margin-right: 6em; 
+    margin-left: 6em;
+   
+
 }
 
 .faixa2{
@@ -90,6 +93,7 @@ a{
   font-size: 3em;
   padding:0.2em;
   text-aling; center;
+  margin-left: 3em;
 
 }
 
@@ -113,8 +117,9 @@ a{
   padding-top: 3em;
   font-family: Roboto-medium;
   font-size: 1.3em;
-  margin-right: 5em; 
-  text-align: justify;   
+  margin-right: 5em;
+  margin-left: 3em; 
+  text-align: center;   
   
 }
 
@@ -131,6 +136,7 @@ a{
   font-size: 4em;
   text-align: center;
   font-family: Roboto-medium;
+  margin-left: 1em;
 }
 
 .faixa3-texto2{
@@ -139,6 +145,7 @@ a{
   font-size: 1.2em;
   padding: 3em;
   text-aling; center;
+  margin-left: 4em;
 }
 
 
@@ -162,6 +169,8 @@ a{
   font-family:Roboto-medium ;
   font-size: 1.3em;
   padding: 3em;
+  margin-left: 5em;
+  margin-right: 5em;
 
 }
 
@@ -198,6 +207,8 @@ a{
   font-family:Roboto-medium ;
   font-size: 1.3em;
   padding: 3em;
+  margin-left: 6em;
+  margin-right: 5em;
 }
 
 .faixa6{
@@ -208,7 +219,7 @@ a{
 }
 
 .faixa6 img{
-  width: 29em;
+  width: 31em;
   height: 25em;
 }
 

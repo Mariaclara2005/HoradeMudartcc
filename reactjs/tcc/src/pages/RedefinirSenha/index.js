@@ -4,6 +4,9 @@ import {Container} from './styled';
 
 export default function RedefinirSenha () 
 {
+
+{
+  }
     return (
 
         <Container>

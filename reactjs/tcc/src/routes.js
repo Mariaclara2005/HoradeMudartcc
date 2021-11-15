@@ -12,7 +12,7 @@ import Denúncia from './pages/Denúncia'
 //import CaracteristicasLocalizaçao from './pages/CaracteristicasLocalizaçao'
 import TipoAssedio from './pages/TiposAssedio'
 import MapaDelegacias from './pages/MapaDelegacias'
-// import QuemSomosNos from './pages/QuemSomosNos'
+import QuemSomosNos from './pages/QuemSomosNos'
 import AutorizaçaoMensagem from './pages/AutorizaçaoMensagem'
 import LoginADM from './pages/LoginADM'
 import ChatDenuncia from './pages/ChatDenuncia'
@@ -41,7 +41,7 @@ export default function Routes() {
                   <Route path="/RedefinirSenha" exact={true} component={RedefinirSenha}/>
                   <Route path="/Denúncia" exact={true} component={Denúncia}/>
                   <Route path="/TipoAssedio" exact={true} component={TipoAssedio}/>  
-                  {/* <Route path="/QuemSomoNos" exact={true} component={QuemSomosNos}/> */}
+                  <Route path="/QuemSomoNos" exact={true} component={QuemSomosNos}/> 
                {/*
                 <Route path="/CaracteristicasLocalizaçao" exact={true} component={CaracteristicasLocalizaçao}/>
     

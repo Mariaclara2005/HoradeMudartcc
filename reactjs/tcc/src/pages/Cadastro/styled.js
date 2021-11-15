@@ -105,9 +105,14 @@ const Container =  styled.div`
     width: 27em;
 }
 
+.celular input {
+    width: 27em;
+}
+
 .celular {
     margin: 20px;
     margin-left: 30px;
+    
 }
 
 .senhas {

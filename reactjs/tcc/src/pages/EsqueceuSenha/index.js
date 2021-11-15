@@ -1,11 +1,42 @@
 import {Container} from './styled'
 import { Link } from 'react-router-dom'
+import axios from "axios";
+
+import { useState, useRef } from "react";
+import { useHistory } from "react-router-dom";
+
+
+import { toast, ToastContainer} from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import LoadingBar from "react-top-loading-bar";
+
+
 import "animate.css/animate.min.css";
 
 export default function  EsqueceuSenha () {
+
+    const [email, setEmail] = useState("");
+  
+
+  const loading = useRef(null);
+  const navigation = useHistory();
+
+  async function recuperar() {
+    loading.current.continuousStart();
+    const r = await axios.post(`http://localhost:3030/esqueciASenha` , { email : email});
+    if (r.data.status === 'ok') {
+        navigation.push('/RedefinirSenha', { email: email})
+
+    } else {
+        toast.error('E-mail inválido');
+        loading.current.complete();
+    }
+}
     return (
 
         <Container>
+            <ToastContainer />
+        <LoadingBar color="red" ref={loading} /> 
 
         <div class="cabecalho-inicio">
 
@@ -48,7 +79,7 @@ export default function  EsqueceuSenha () {
                 <div class="campos">
     
                 <div class="caixa-1">
-                <input type="text" name="" placeholder="Ensira o seu email:"/>
+                <input type="text" value={email} onChange={e=> setEmail(e.target.value) }  name="" placeholder="Ensira o seu email:"/>
                 </div>
     
              
@@ -59,7 +90,7 @@ export default function  EsqueceuSenha () {
     
     
                 <div class="botao1">
-                    <button>Mandar Codigo</button>
+                    <button onClick={recuperar}> Mandar Codigo</button>
               </div>
 
               <Link to="/">

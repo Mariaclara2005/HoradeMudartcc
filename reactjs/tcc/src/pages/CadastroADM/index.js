@@ -46,6 +46,20 @@
            navigation.push ('/LoginADM');
        }
 
+       function Confirmacaodesenha(r) {
+        
+         if( r === undefined)
+         {
+             return(
+                 '/login'
+             )
+         } else {
+             return(
+                 '/pedidos'
+             )
+         }
+     }
+
 
       }
 
