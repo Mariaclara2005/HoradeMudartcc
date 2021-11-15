@@ -108,9 +108,9 @@
                </div>
 
                 <div class="Confirmar senha">
-                  
+                   <div class="Confirmar senha">
                     <input type='password' action="Confirmar" method="POST" id="nm_HDM_senha" name="nm_HDM_senha" onsubmit= "return validarSenha();" placeholder="Confirmar Senha"></input>
-
+                   </div>
                </div>
             </div>
 
