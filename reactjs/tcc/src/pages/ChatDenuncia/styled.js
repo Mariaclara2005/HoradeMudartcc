@@ -63,7 +63,7 @@ const Container = styled.div`
 
 
   .texto{
-    font-family: Roboto;
+    
     font-style: normal;
     font-weight: 500;
     font-size: 50px;
@@ -96,7 +96,7 @@ const Container = styled.div`
     {
         -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
         border-radius: 10px;
-        background-color: #3E006F;
+        background-color: #fff;
     }
 
     .chat::-webkit-scrollbar
@@ -116,7 +116,7 @@ const Container = styled.div`
 .policial1{
     padding-top: 5em;
    
-    font-family: Roboto;
+    
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -139,8 +139,8 @@ const Container = styled.div`
 .balao1{
 
     background: #fff;
-    font-family: 'Roboto';
-    font-size: 0.85em;
+    
+    font-size: 1em;
     line-height: 1.6em;  
     border-radius: 30px;
     width: 300px;
@@ -188,7 +188,7 @@ const Container = styled.div`
 
 .policial2{
   
-    font-family: Roboto;
+    
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -205,7 +205,7 @@ const Container = styled.div`
 .balao2 {
     margin: 0 auto; 
     background: #fff;
-    font-family: 'Roboto';
+    
     font-size: 1em;
     line-height: 1.6em;  
     border-radius: 30px;
@@ -283,12 +283,15 @@ const Container = styled.div`
 
 }
 
+.apagar{
+    float: right;
+}
 
 .chat-message{
    
     margin: 0 auto; 
     background: #fff;
-    font-family: Roboto;
+    
     font-size: 1em;
     line-height: 1.6em;  
     border-radius: 30px;
