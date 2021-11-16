@@ -50,24 +50,23 @@ a{
 .faixa1-titulo{
     text-align: center;
     color: white;
-    font-size: 3em;
+    font-size: 4em;
     font-family: Roboto-medium;
    
 }
 
-.faixa1-textos{
-    padding-right: 5em;
-    padding: 2em;
-}
+
+   
 
 .faixa1-txt{
     text-align: center;
     color: white;
     padding-top: 1em;
-    width: 800px;
     font-family: Roboto-medium;
-    font-size: 1.5em;
-    margin-left:1em;
+    font-size: 1.1em;
+    margin-top: 2em;
+    margin-right: 6em; 
+    margin-left: 6em;
    
 }
 
@@ -107,20 +106,22 @@ a{
 .texto1-faixa2{
     text-align: center;
     color: #298DAB;
-    font-size: 3em;
+    font-size: 4em;
     font-family: Roboto-medium;
     width: 4em;
-    padding-left: 6.2em;
+    padding-left: 5em;
 }
 
 .texto2-faixa2{
     text-align: center;
-    font-size: 1.5em;
-    padding-top: 1em;
-    width: 700px;
+    font-size: 1.3em;
+    padding-top: 2em;
     text-align: center;
     font-family: Roboto-medium;
-    margin-left: 2em;
+    margin-left: 8em;
+    margin-right: 8em; 
+ 
+   
   
 
 }
@@ -143,12 +144,13 @@ a{
 }
 
 .faixa3-texto2{
-    text-align: left;
-    padding-top: 1em;
-    width: 850px;
+    text-align: center;
+    padding-top: 2em;
     text-align: center;
     font-family: Roboto-medium;
-    font-size: 1.5em;
+    font-size: 1em;
+    margin-left: 11em;
+    margin-right: 11em; 
 }
 
 .img-faixa3{
@@ -179,11 +181,12 @@ a{
 }
 
 .faixa4-texto2{
-    padding-top: 1em;
-    width: 800px;
+    padding-top: 2em;
     text-align: center;
     font-family: Roboto-medium;
-    font-size: 1.5em;
+    font-size: 1em;
+     margin-left: 9em;
+    margin-right: 9em; 
 }
 
 
@@ -205,17 +208,16 @@ a{
     font-size: 3em;
     text-align: center;
     font-family: Roboto-medium;
-    margin-left: 3em;
- 
+  
 }
 
 .faixa5-texto2{
     padding-top: 1em;
-    width: 700px;
     text-align: center;
     font-family: Roboto-medium;
     font-size: 1.5em;
     margin-left: 6em;
+    margin-right: 6em; 
 }
 
 .img-faixa5{
@@ -242,6 +244,7 @@ a{
     text-align: center;
     font-size: 3em;
     font-family: Roboto-medium;
+
     
 }
 
@@ -249,10 +252,10 @@ a{
     padding-top: 1em;
     color: #0B0A0A;
     text-align: center;
-    width: 700px;
     font-family: Roboto-medium;
-    font-size: 1.5em;
-    margin-left: 1em;
+    font-size: 1em;
+    margin-left: 8em;
+    margin-right: 8em; 
 }
 
 .faixa7{
