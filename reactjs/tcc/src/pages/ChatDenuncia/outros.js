@@ -24,7 +24,7 @@ const ChatInput = styled.input`
     border: none;
     background: #FFFFFF;
     border-radius: 5px;
-
+    
     outline: none;
     padding: .4em .5em;
 

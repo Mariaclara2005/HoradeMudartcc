@@ -382,11 +382,9 @@ app.get('/Chat/:idSala', async(req, resp) => {
         app.post('/chatdenu', async (req, resp) => {
             try{
                 let chatt = req.body;
-                let enviarMensagem = await db.infob_hdm_chat_denuncias.create({
-                     ds_HDM_texto: chatt.texto, 
-                     ds_HDM_localizacao_atual: chatt.textto
-                    });
+                let enviarMensagem = await db.infob_hdm_chat_denuncias.create({ ds_HDM_texto: chatt.texto, ds_HDM_localizacao_atual: chatt.textto });
                 resp.send(enviarMensagem)
+                
             }
             catch (e){
                 resp.send(e.toString);

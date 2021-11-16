@@ -1,6 +1,6 @@
 import {Link} from 'react-router-dom'
 import {Container} from './styled'
-import { ToastContainer} from 'react-toastify';
+import { toast, ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 import BoxMensagem from './boxmensagem';
@@ -28,9 +28,10 @@ export default function Chat () {
   const inserir = async() => {
    const Mensagem = await api.inserirMensagem(mensagem);
    console.log(Mensagem); 
-   alert('mensagem enviada com sucesso!!!');
-  
+   toast.dark('mensagem enviada com sucesso!!!');
+ 
  }
+ 
  
   useEffect(() => {
    const ListaMensagem = async ()=> {

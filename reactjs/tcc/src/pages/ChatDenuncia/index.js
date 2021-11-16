@@ -44,7 +44,7 @@ const api = new Api();
 const enviarMensagem = async (event) => {
     loading.current.continuousStart();
     if(mensagem === '')
-    return alert("A caixa de texto precisa ser preenchida!");
+    return toast.dark("A caixa de texto precisa ser preenchida!");
 
     const resp = await api.inserirMensagemDENUN(mensagem);
     if (event.type === "keypress" && (!event.ctrlKey || event.charCode !== 13))
@@ -88,14 +88,14 @@ const remover = async () => {
                 <div class="cabecalho-botoes">
 
                     
-                     <Link to="/Denúncia">Denúncia</Link>
-                     <Link to="/TipoViolencia">Tipos de violência</Link>
-                     <Link to=" ">Tipos de assédio</Link>
-                     <Link to="/MapaDelegacias">Mapa das Delegacia</Link>
-                     <Link to="/AutoEstima">Autoestima</Link>
-                     <Link to="/Chat">Chat</Link>
-                     <Link to="/Cadastro">Cadastro</Link>
-                     <Link to="/Login">Login</Link>
+                <Link to="/">Inicio</Link>
+                <Link to="/TipoViolencia">Tipos de violência</Link>
+                <Link to="/TiposDeAssedio">Tipos de assédio</Link>
+                <Link to="/MapaDelegacias">Mapa das Delegacia</Link>
+                <Link to="/AutoEstima">Autoestima</Link>
+                <Link to="/Denúncia">Denúncia</Link>
+                <Link to="/Cadastro">Cadastro</Link>
+                <Link to="/Login">Login</Link>
                                                    
                 </div>
 
@@ -111,9 +111,12 @@ const remover = async () => {
                  <div class="test">
                  <div class="policial1"> Policial</div>
                  <div class="user1"> <img src="/assets/imagens/pg-chatdenun-user.png" widht="100" height="100" alt=""/> </div>
+                 
                  <div class="balao1">  Olá qual é a sua denúncia </div>
+                
             
                  </div>
+                 
                  <div class= "test3">
                  <div class="policial2"> Policial</div>
                  <div class="user2"> <img src="/assets/imagens/pg-chatdenun-user.png" widht="100" height="100" alt=""/> </div>
@@ -135,9 +138,9 @@ const remover = async () => {
                  <div class="mensagem">
 
     
-       <ChatTextArea value={mensagem} onChange={e => setMsg(e.target.value)} />
+       <ChatTextArea name="" placeholder="Escreva..." value={mensagem} onChange={e => setMsg(e.target.value)} />
       <ChatButton onClick={enviarMensagem} className="btn-enviar">  Enviar </ChatButton>
-      <ChatButton onClick={remover} className="btn-enviar">  Apagar Historico </ChatButton>
+       <ChatButton onClick={remover} className="btn-enviar">  Apagar Historico </ChatButton>
 
     
 </div>    
