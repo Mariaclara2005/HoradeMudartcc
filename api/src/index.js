@@ -354,6 +354,26 @@ app.post('/Chat', async (req, resp) => {
 });
 
 
+app.get('/Chat/:idSala', async(req, resp) => {
+    try {
+        let chat = await db.infob_hdm_chat.findAll({
+            where :
+            {
+                id_HDM_sala: req.params.idSala
+            }
+        });
+
+        resp.send(chat); 
+
+    } catch (e) {
+        resp.send(e.toString());
+ 
+    }
+})
+
+
+
+
 
 
 
@@ -396,3 +416,4 @@ try{
     
 
 app.listen(process.env.PORT, () => console.log(`Server up at port ${process.env.PORT}`))
+

@@ -7,8 +7,8 @@ const api = axios.create({
 })
 
 export default class Api {
-    async listarMensagens(idSala) {
-        let r = await api.get('/Chat');
+    async listarMensagensChat(idSala) {
+        let r = await api.get(`/Chat/${idSala}`);
         return r.data;
     }
 
@@ -33,6 +33,8 @@ export default class Api {
         return r.data
     }
 
+
+    
     async listarcadastroadm () {
         let r = await api.get('/cadastro_adm')
         return r.data
@@ -63,8 +65,6 @@ export default class Api {
         let r = await api.delete(`/chatdenu`);
         return r.data;
     }
-
-
 
 
     

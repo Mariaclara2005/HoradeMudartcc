@@ -1,14 +1,15 @@
-
 import {Link} from 'react-router-dom'
 import {Container} from './styled'
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-import { useState } from 'react';
-import Cookies from 'cookies-js'
+import BoxMensagem from './boxmensagem';
+
+
+import { useEffect, useState } from 'react';
+
 import LoadingBar from 'react-top-loading-bar';
 
-import { useHistory } from 'react-router-dom'
 
 
 
@@ -16,80 +17,32 @@ import Api from '../../service/api';
 const api = new Api();
 
 
- 
-
-
-
-function lerUsuarioLogado (navigation) {
-  let Logado = Cookies.get('usuario-logado');
-   if (Logado == null);
-      navigation.push('/');
-      
-
-  let usuarioLogado = JSON.parse(Logado)
-  return usuarioLogado;
-  
-
-}
-
 
 
 export default function Chat () {
+
+  const [chat, SetChat] = useState([]);
+  const [mensagem, SetMeg] = useState('')
+   
+ 
+  const inserir = async() => {
+   const Mensagem = await api.inserirMensagem(mensagem);
+   console.log(Mensagem); 
+   alert('mensagem enviada com sucesso!!!');
   
-    const navigation = useHistory();
-    let usuarioLogado = lerUsuarioLogado(navigation);
-  
-    const [idAlterando, setIdAlterando] = useState(0);
-    const [chat, setChat] = useState([]);
-    const [usu] = useState(usuarioLogado.nm_usuario);
-    const [msg, setMsg] = useState('');
-
-    const validarResposta = (resp) => {
-      console.log(resp);
-
-      if (!resp.erro)
-          return true;
-      toast.error(`${resp.erro}`);
-      return false;
-  }
-
-
-    const carregarMensagens = async () => {
-      LoadingBar.current.continuousStart();
-
-      const mensagens = await api.listarMensagens(Chat);
-      if (validarResposta(mensagens))
-          setChat(mensagens);
-
-      LoadingBar.current.complete();
-  }
-
-  const enviarMensagem = async (event) => {
-      if (event.type === "keypress" && (!event.ctrlKey || event.charCode !==13))
-          return;
-
-      if (idAlterando > 0) {
-          const resp = await api.alterarMensagem(idAlterando, msg);
-          if (!validarResposta(resp))
-          return;
-
-
-          toast.dark('💕 Mensagem alterada com sucesso!');
-          setIdAlterando(0);
-          setMsg('');
-
-      } else {
-          const resp = await api.inserirMensagem(chat, usu, msg)
-          if (!validarResposta(resp))
-          return;
-
-          toast.dark('💕 Mensagem enviada com sucesso!');
-      }
-
-      await carregarMensagens();
-  }
-
-
+ }
+ 
+  useEffect(() => {
+   const ListaMensagem = async ()=> {
+     const ListarMensagem = await api.listarMensagensChat(1);
+     SetChat(ListarMensagem);
+    
+     }
+   
+ 
+    ListaMensagem();
+   })
+     
 
 
     return (
@@ -161,74 +114,15 @@ export default function Chat () {
 
       <div class="faixa3">
         <div class="chat1">
-          <div class="depoimento1">
-            <div class="usuario1">
-              <div class="perfil1">
-                <img src="/assets/imagens/pg-chat-perfil.png" alt=""/>
-              </div>
 
-              <div class="nome1">Juliana Santos</div>
-            </div>
-
-            <div class="mensagem1">
-              Eu vivi um relacionamento abusivo duas vezes. Na primeira, eu era
-              agredida fisicamente. Na segunda, psicologicamente. Nenhum dos
-              relacionamentos me fez bem. E sair foi a parte mais difícil.
-              Depois de negar o que eu passava, finalmente enxerguei o que
-              acontecia. Duas vezes. Em ambas, eu era colocada como a louca,
-              desequilibrada. E pior, eu defendia a pessoa.
-            </div>
-
-            <div class="reagir_msg1">
-              <div class="curtidas1">
-                <div class="coracao1">
-                <img src="/assets/imagens/pg-chat-coracao.png" alt="" />
-                </div>
-
-                <div class="quantidade1">74</div>
-              </div>
-            </div>
-          </div>
-
+          {chat.map(item => <BoxMensagem
+          key = {item.idSala}
+          info = {item}
+          />)}
+          
           
 
-          <div class="depoimento3">
-            <div class="usuario3">
-              <div class="perfil3">
-                <img src="/assets/imagens/pg-chat-perfil.png" alt="" />
-              </div>
-
-              <div class="nome3">Manuela Nunes</div>
-            </div>
-
-            <div class="mensagem3">
-              Eu tinha uns 13 anos quando comecei a sair sozinha. Mas eu era
-              bastante inocente, já que meus pais nunca tiveram uma conversa
-              sobre sexo comigo. Um dia me envolvi com um cara de uns 30 anos,
-              que sempre foi muito simpático comigo. Certa vez ele me levou a
-              uma sala e me colocou contra a parede, falou que dali eu não
-              escapava dele. Eu não queria transar, não tinha vontade alguma,
-              até porque eu era virgem e não sabia o que estava acontecendo. Ele
-              me pegou e me colocou em cima de uma mesa e acabamos transando
-              contra a minha vontade. Quis muito contar para os meus pais, mas
-              tinha medo da reação deles. Já aos 14 anos resolvi contar para
-              minha mãe. Ela contou pra o meu pai. Ele quis processar o cara que
-              fez isso comigo, mais eu estava com medo de virar uma confusão
-              ainda maior e ele querer fazer alguma coisa conosco. Hoje tenho 18
-              anos e vejo que isso que ele fez comigo é imperdoável, e quando
-              meu pai queria denunciar, eu deveria ter deixado.
-            </div>
-
-            <div class="reagir_msg3">
-              <div class="curtidas3">
-                <div class="coracao3">
-                    <img src="/assets/imagens/pg-chat-coracao.png" alt=""/>
-                </div>
-
-                <div class="quantidade3">23</div>
-              </div>
-            </div>
-          </div>
+         
 
           <div class="comentario">
             <div class="meu_perfil">
@@ -236,10 +130,10 @@ export default function Chat () {
             </div>
 
             <div clss="digitar">
-              <input type="text" name="" value={msg} onChange={e => setMsg(e.target.value)} onKeyPress={enviarMensagem} placeholder="Faça um comentário"  />
+              <input type="text" name="" placeholder="Faça um comentário" value={mensagem} onChange={e => SetMeg(e.target.value) }  />
             </div>
             <div class="publicar">
-              <button onClick={enviarMensagem} className="btn-enviar">Publicar</button>
+              <button   onClick= {inserir}  className="btn-enviar"> Publicar</button>
             </div>
           </div>
         </div>
